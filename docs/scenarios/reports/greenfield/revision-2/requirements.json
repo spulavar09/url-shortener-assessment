@@ -1,0 +1,17 @@
+{
+  "sandbox": "read-only",
+  "execution": "actual",
+  "candidateHash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+  "tokenUsage": {
+    "input_tokens": 66157,
+    "cached_input_tokens": 59392,
+    "output_tokens": 1672
+  },
+  "monetaryCost": "unavailable",
+  "invocationId": "94d52351-2310-45e0-9a6c-74a5d28d523b",
+  "inputHash": "7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d",
+  "exitCode": 0,
+  "result": "{\"summary\": \"Confirmed contract: implement only the isolated in-memory demo.LinkBook fixture; preserve the supplied pom.xml and acceptance tests; keep destinations immutable; reserve every created code permanently, including after deletion; reject duplicate creation with IllegalArgumentException; support optional expiration with equality considered expired; resolve only existing, enabled, undeleted, unexpired links; treat record=false as HEAD and increment analytics only for successful resolutions with record=true; retain counts after disable/delete; expose total counts and UTC LocalDate daily buckets; return zero counts for unknown codes. No HTTP server, database, destination fetch, external dependency, deployment, or production-service reconstruction is in scope. Observable acceptance criteria are the behaviors above plus a successful future mvn verify run. This requirements-only invocation made no file changes and did not claim Maven verification.\", \"questions\": [], \"risks\": [\"Implementation cannot occur in this invocation: the selected versioned skill explicitly limits this role to requirements normalization, narrative output is required, and the only allowed write path is artifacts/requirements/, which excludes the required src/main/java/demo/LinkBook.java source file.\", \"No independent Maven verification was performed; a later authorized implementation/review stage must run mvn verify without weakening or modifying verification plugins.\", \"The README does not define null-argument handling, concurrency guarantees, or behavior when disable/delete receives an unknown code. Those behaviors should not be invented as additional product guarantees unless a later test or approval specifies them.\", \"In-memory analytics are non-durable and process-local by fixture design; they must not be represented as production-grade or durable visit analytics.\"], \"tasks\": [{\"id\": \"REQ-1\", \"description\": \"Record approval of this normalized contract and its observable acceptance criteria in the control layer while preserving the existing failed evidence and requiring fresh design approval for any recovery path.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}, {\"id\": \"IMPL-1\", \"description\": \"After a separate implementation authorization grants an owned source write path, add demo.LinkBook without changing pom.xml or the supplied acceptance tests, then run fresh verification.\", \"dependencies\": [\"REQ-1\"], \"allowedPaths\": [\"artifacts/requirements/\"]}, {\"id\": \"REVIEW-1\", \"description\": \"After actual verification, perform candidate review against the README contract and retain final human approval as a separate mandatory gate; do not infer or self-grant approval.\", \"dependencies\": [\"IMPL-1\"], \"allowedPaths\": [\"artifacts/requirements/\"]}]}",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

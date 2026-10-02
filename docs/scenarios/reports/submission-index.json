@@ -1,0 +1,61 @@
+{
+  "classification": "actual runtime Codex workflow execution on isolated domain fixtures",
+  "applicationTests": "PASS: final full Maven verify, 87 passed, zero failures/errors/skips",
+  "latestApplicationPackage": "PASS: verified and packaged from current source",
+  "scenarioReverification": "docs/validation/scenario-reverification.json",
+  "scenarios": [
+    {
+      "scenario": "greenfield",
+      "runId": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 2,
+      "version": 11,
+      "state": "SUCCEEDED",
+      "candidateHash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "candidatePath": ".local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/candidates/d56eaff7-e255-4b68-83df-ba6a60d4db40",
+      "archiveCandidatePath": "scenarios/greenfield",
+      "reportPath": "docs/scenarios/reports/greenfield.json",
+      "fixtureTestsPassed": 3,
+      "verification": "PASS: actual fixed Maven verify and fresh final offline candidate recheck",
+      "candidateReview": "completed; same candidate hash",
+      "handoff": "completed",
+      "finalHumanApproval": "SUCCEEDED",
+      "finalGateEvidenceHash": "285f586dfe8d69e74348d983847742acc6fee0d5a2619fcdffaaedf40bc48f4d"
+    },
+    {
+      "scenario": "brownfield",
+      "runId": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+      "revision": 2,
+      "version": 11,
+      "state": "SUCCEEDED",
+      "candidateHash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "candidatePath": ".local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/candidates/ae4d9c81-dec1-494a-aec1-034a8b71a29f",
+      "archiveCandidatePath": "scenarios/brownfield",
+      "reportPath": "docs/scenarios/reports/brownfield.json",
+      "fixtureTestsPassed": 3,
+      "verification": "PASS: actual fixed Maven verify and fresh final offline candidate recheck",
+      "candidateReview": "completed; same candidate hash",
+      "handoff": "completed",
+      "finalHumanApproval": "SUCCEEDED",
+      "finalGateEvidenceHash": "0ad7c89c15168cad915367c062ccaa2fac9d4750e031586af382970beca90085"
+    },
+    {
+      "scenario": "ambiguous",
+      "runId": "fe5d1047-93ba-4e5a-82a0-a91cd4c1c873",
+      "revision": 2,
+      "version": 7,
+      "state": "SUCCEEDED",
+      "candidateHash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "candidatePath": ".local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/candidates/70c7d900-e8c8-41da-9f4a-069427f4d217",
+      "archiveCandidatePath": "scenarios/ambiguous",
+      "reportPath": "docs/scenarios/reports/ambiguous.json",
+      "fixtureTestsPassed": 3,
+      "verification": "PASS: actual fixed Maven verify and fresh final offline candidate recheck",
+      "candidateReview": "completed; same candidate hash",
+      "handoff": "completed",
+      "finalHumanApproval": "SUCCEEDED",
+      "finalGateEvidenceHash": "dab5174fd2113865fcc282a7518cb5ed36880cba07cf6014f261ccd67de99457"
+    }
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

@@ -1,0 +1,17 @@
+{
+  "tokenUsage": {
+    "input_tokens": 108718,
+    "cached_input_tokens": 95488,
+    "output_tokens": 2056
+  },
+  "monetaryCost": "unavailable",
+  "invocationId": "747ef04e-68df-4f9c-ab5b-92186b1fd95c",
+  "inputHash": "c0e2b64662779b6fbdd9b83f264401611b80f70c9742a8063f9835fedcc1880f",
+  "exitCode": 0,
+  "result": "{\"summary\": \"Review found no contract defect in the supplied candidate. LinkBook preserves destinations, permanently reserves codes, treats now == expiresAt as expired, excludes HEAD and unsuccessful resolutions from counts, preserves counts after disable/delete, and buckets recorded successes by UTC date. The supplied POM and acceptance tests are intact; the candidate contains no server, database, deployment, credential, or live-data additions. Evidence classification: direct javac compilation was actual execution and succeeded; the actual offline Maven attempt failed during plugin dependency resolution before tests ran. No passing Maven verification is claimed.\", \"questions\": [], \"risks\": [\"The acceptance suite has not been executed successfully in the supplied evidence because Maven dependencies were unavailable offline; code inspection and direct compilation do not replace the fixed verifier.\", \"The implementation is intentionally in-memory, so counts are lost on process termination; this is consistent with the disposable fixture and its no-database scope.\"], \"tasks\": [{\"id\": \"run-fixed-verifier\", \"description\": \"Run the unchanged `mvn verify` command in the approved dependency environment and record its actual result for this exact candidate.\", \"dependencies\": [], \"allowedPaths\": []}]}",
+  "sandbox": "read-only",
+  "execution": "actual",
+  "candidateHash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

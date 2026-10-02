@@ -1,0 +1,582 @@
+{
+  "id": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+  "scenario": "brownfield",
+  "requirement": "See the normalized functional requirements in docs/scenarios/DESIGN-REVIEW.md; private request text is omitted.",
+  "state": "RUNNING",
+  "revision": 2,
+  "version": 6,
+  "created_at": "2026-10-02T14:18:14.594919Z",
+  "updated_at": "2026-10-02T14:44:31.106642Z",
+  "active_ms": 403229,
+  "repair_count": 0,
+  "baseline_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+  "reason": "Attempt failed; bounded recovery unavailable: Unresolved agent questions require reviewed clarification: [\"Does the human reviewer approve candidate ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935 and its declared evidence for release progression? specific human-review outcome needed\"]",
+  "pendingQuestions": [],
+  "finalReviewItems": [],
+  "tasks": [
+    {
+      "task_id": "architecture",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "task_id": "design-approval",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "task_id": "final-approval",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "task_id": "handoff",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "task_id": "implementation",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "task_id": "join",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "task_id": "requirements",
+      "state": "RUNNING",
+      "attempts": 1,
+      "fence": 1,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": "fe30d97b05344344f48ccf1263b2ae3bd39849457fc90abc9c7a68f9d6f10d11"
+    },
+    {
+      "task_id": "review",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "task_id": "verify",
+      "state": "PENDING",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    }
+  ],
+  "attemptHistory": [
+    {
+      "id": "29a17483-afe9-47fd-897a-47096f881f92",
+      "revision": 1,
+      "task_id": "requirements",
+      "fence": 1,
+      "invocation_id": "7e457c1b-1308-4246-b573-9f38db2a869b",
+      "input_hash": "84214383eb6079a9b5fb435060960c2103d550accf7b7c6598967baefdd0f31f",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:18:15.496977Z",
+      "deadline": "2026-10-02T14:28:15.496977Z",
+      "ended_at": "2026-10-02T14:19:03.034602Z",
+      "exit_code": 0,
+      "input_tokens": 82282,
+      "cached_input_tokens": 63232,
+      "output_tokens": 1437,
+      "evidence_hash": "219dbe89244d47184b20fe1ae64f79d94406fdfaf122bc02ddee844421826754",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "6962d34b-62ac-4e03-af93-3776f9dced51",
+      "revision": 1,
+      "task_id": "architecture",
+      "fence": 1,
+      "invocation_id": "c4d1005f-65f7-4cb4-ae3e-88f807c14a52",
+      "input_hash": "c404baecb40f66b0ece830a9f248c258c3a12fcad6a16d40b1d07f36b3aaf085",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:19:03.925478Z",
+      "deadline": "2026-10-02T14:29:03.925478Z",
+      "ended_at": "2026-10-02T14:19:51.261099Z",
+      "exit_code": 0,
+      "input_tokens": 60697,
+      "cached_input_tokens": 50176,
+      "output_tokens": 1591,
+      "evidence_hash": "6f291e650dcf83d1ca533dc7ecd38608d43a9dc6ebc18628a6d3c2dbb66e7fd1",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "1fe21a30-0abd-4502-8f0d-005aa55f52e2",
+      "revision": 1,
+      "task_id": "implementation",
+      "fence": 1,
+      "invocation_id": "fc7b6412-3d3f-42d4-a10f-c7f9daabb7af",
+      "input_hash": "c9ef5552a96693e3967fe122dd5374b3ad7348fc77979a1b8f2783a0b7769b64",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:29:03.64222Z",
+      "deadline": "2026-10-02T14:39:03.64222Z",
+      "ended_at": "2026-10-02T14:31:47.654926Z",
+      "exit_code": 0,
+      "input_tokens": 232839,
+      "cached_input_tokens": 205440,
+      "output_tokens": 4980,
+      "evidence_hash": "0d43a88113fdfb486914f36c8c044187250a430e32b2497c7c4a2f97e4c602fe",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "083b963f-0e6d-4ecc-b079-dab3ccf7e210",
+      "revision": 1,
+      "task_id": "review",
+      "fence": 1,
+      "invocation_id": "e5d1bb0a-418c-4359-a1cf-22fc08234fdc",
+      "input_hash": "6b3f471b3858f8827c527a50401dbf278022d6c38f74421a3d9ff77729707b45",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:31:54.13583Z",
+      "deadline": "2026-10-02T14:41:54.135831Z",
+      "ended_at": "2026-10-02T14:33:16.446949Z",
+      "exit_code": 0,
+      "input_tokens": 109672,
+      "cached_input_tokens": 84224,
+      "output_tokens": 2804,
+      "evidence_hash": "1b0a266d2444fd1a09c68ec83ff40a9861b611707a703aac028c906c18400eb3",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "9faef22e-98bc-4590-aaa5-9ae405bb554d",
+      "revision": 1,
+      "task_id": "verify",
+      "fence": 1,
+      "invocation_id": "a27e2290-1999-43f0-8969-55c9db7bfb30",
+      "input_hash": "d34204c62ea5be8327f212bafaac47a7649491ad14c42895e77beda8873ffb74",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:32:39.60568Z",
+      "deadline": "2026-10-02T14:37:39.60568Z",
+      "ended_at": "2026-10-02T14:32:43.769061Z",
+      "exit_code": 0,
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "evidence_hash": "b9529d8571c8661f4bd5bb313a745bc0d4e2e9575d1e979c4fa565e5212291d2",
+      "detail": "Actual Maven verify passed against exact candidate"
+    },
+    {
+      "id": "cb39f039-0a2b-4a52-863b-ff75163a6b73",
+      "revision": 1,
+      "task_id": "handoff",
+      "fence": 1,
+      "invocation_id": "cf4c3105-6af4-488f-abf0-85083702aa9f",
+      "input_hash": "fe6099918c29743e1b9726dc49885d181f866f40188f2575f4176ad9e0491708",
+      "state": "FAILED",
+      "started_at": "2026-10-02T14:33:18.048376Z",
+      "deadline": "2026-10-02T14:43:18.048376Z",
+      "ended_at": "2026-10-02T14:34:15.920327Z",
+      "exit_code": 0,
+      "input_tokens": 84902,
+      "cached_input_tokens": 65280,
+      "output_tokens": 1768,
+      "evidence_hash": "fe4e6dfaed3dd0f0fbfcce02af41cb3686512c06522cfeaef7968b8d76dd83d7",
+      "detail": "Unresolved agent questions require reviewed clarification: [\"Does the human reviewer approve candidate ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935 and its declared evidence for release progression? specific human-review outcome needed\"]"
+    },
+    {
+      "id": "52165ee1-ce8e-4ac5-b674-853c3483b05b",
+      "revision": 2,
+      "task_id": "requirements",
+      "fence": 1,
+      "invocation_id": "4de7e370-b8bb-4d8c-b025-0955b28fdb5f",
+      "input_hash": "fe30d97b05344344f48ccf1263b2ae3bd39849457fc90abc9c7a68f9d6f10d11",
+      "state": "RUNNING",
+      "started_at": "2026-10-02T14:44:31.966271Z",
+      "deadline": "2026-10-02T14:54:31.966271Z",
+      "ended_at": null,
+      "exit_code": null,
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "evidence_hash": null,
+      "detail": null
+    }
+  ],
+  "approvals": [
+    {
+      "revision": 1,
+      "task_id": "design-approval",
+      "run_version": 2,
+      "evidence_hash": "d92a21fe984540a8f3b03af9465ac5be64284f72d30593b78defe7116a1d3dcc",
+      "approved": true,
+      "principal": "operator",
+      "rationale": "Private human discussion omitted from submission export.",
+      "occurred_at": "2026-10-02T14:29:02.666369Z"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 2,
+      "revision": 1,
+      "task_id": null,
+      "event_type": "CREATED",
+      "detail": "Actual CLI execution; unresolved ambiguity blocks dispatch; baseline=98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "occurred_at": "2026-10-02T14:18:14.600373Z"
+    },
+    {
+      "sequence": 5,
+      "revision": 1,
+      "task_id": "requirements",
+      "event_type": "CLAIMED",
+      "detail": "attempt=29a17483-afe9-47fd-897a-47096f881f92 invocation=7e457c1b-1308-4246-b573-9f38db2a869b input=84214383eb6079a9b5fb435060960c2103d550accf7b7c6598967baefdd0f31f",
+      "occurred_at": "2026-10-02T14:18:15.497419Z"
+    },
+    {
+      "sequence": 6,
+      "revision": 1,
+      "task_id": "requirements",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:19:03.042831Z"
+    },
+    {
+      "sequence": 7,
+      "revision": 1,
+      "task_id": "architecture",
+      "event_type": "CLAIMED",
+      "detail": "attempt=6962d34b-62ac-4e03-af93-3776f9dced51 invocation=c4d1005f-65f7-4cb4-ae3e-88f807c14a52 input=c404baecb40f66b0ece830a9f248c258c3a12fcad6a16d40b1d07f36b3aaf085",
+      "occurred_at": "2026-10-02T14:19:03.925768Z"
+    },
+    {
+      "sequence": 12,
+      "revision": 1,
+      "task_id": "architecture",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:19:51.267795Z"
+    },
+    {
+      "sequence": 13,
+      "revision": 1,
+      "task_id": "design-approval",
+      "event_type": "GATE_READY",
+      "detail": "Exact input and candidate evidence published",
+      "occurred_at": "2026-10-02T14:19:51.473928Z"
+    },
+    {
+      "sequence": 15,
+      "revision": 1,
+      "task_id": "design-approval",
+      "event_type": "HUMAN_APPROVED",
+      "detail": "Human decision recorded; private discussion omitted from submission export.",
+      "occurred_at": "2026-10-02T14:29:02.667354Z"
+    },
+    {
+      "sequence": 17,
+      "revision": 1,
+      "task_id": "implementation",
+      "event_type": "CLAIMED",
+      "detail": "attempt=1fe21a30-0abd-4502-8f0d-005aa55f52e2 invocation=fc7b6412-3d3f-42d4-a10f-c7f9daabb7af input=c9ef5552a96693e3967fe122dd5374b3ad7348fc77979a1b8f2783a0b7769b64",
+      "occurred_at": "2026-10-02T14:29:03.642547Z"
+    },
+    {
+      "sequence": 21,
+      "revision": 1,
+      "task_id": "implementation",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:31:47.660656Z"
+    },
+    {
+      "sequence": 27,
+      "revision": 1,
+      "task_id": "review",
+      "event_type": "CLAIMED",
+      "detail": "attempt=083b963f-0e6d-4ecc-b079-dab3ccf7e210 invocation=e5d1bb0a-418c-4359-a1cf-22fc08234fdc input=6b3f471b3858f8827c527a50401dbf278022d6c38f74421a3d9ff77729707b45",
+      "occurred_at": "2026-10-02T14:31:54.136024Z"
+    },
+    {
+      "sequence": 29,
+      "revision": 1,
+      "task_id": "verify",
+      "event_type": "CLAIMED",
+      "detail": "attempt=9faef22e-98bc-4590-aaa5-9ae405bb554d invocation=a27e2290-1999-43f0-8969-55c9db7bfb30 input=d34204c62ea5be8327f212bafaac47a7649491ad14c42895e77beda8873ffb74",
+      "occurred_at": "2026-10-02T14:32:39.606654Z"
+    },
+    {
+      "sequence": 30,
+      "revision": 1,
+      "task_id": "verify",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Maven verify passed against exact candidate",
+      "occurred_at": "2026-10-02T14:32:43.775054Z"
+    },
+    {
+      "sequence": 32,
+      "revision": 1,
+      "task_id": "review",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:33:16.45192Z"
+    },
+    {
+      "sequence": 33,
+      "revision": 1,
+      "task_id": "join",
+      "event_type": "JOIN_PASSED",
+      "detail": "Exact input and candidate evidence published",
+      "occurred_at": "2026-10-02T14:33:17.028623Z"
+    },
+    {
+      "sequence": 34,
+      "revision": 1,
+      "task_id": "handoff",
+      "event_type": "CLAIMED",
+      "detail": "attempt=cb39f039-0a2b-4a52-863b-ff75163a6b73 invocation=cf4c3105-6af4-488f-abf0-85083702aa9f input=fe6099918c29743e1b9726dc49885d181f866f40188f2575f4176ad9e0491708",
+      "occurred_at": "2026-10-02T14:33:18.048776Z"
+    },
+    {
+      "sequence": 37,
+      "revision": 1,
+      "task_id": null,
+      "event_type": "SAFE_STOP",
+      "detail": "Attempt failed; bounded recovery unavailable: Unresolved agent questions require reviewed clarification: [\"Does the human reviewer approve candidate ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935 and its declared evidence for release progression? specific human-review outcome needed\"]",
+      "occurred_at": "2026-10-02T14:34:15.921805Z"
+    },
+    {
+      "sequence": 41,
+      "revision": 2,
+      "task_id": null,
+      "event_type": "KNOWN_QUESTION_STOP_RECOVERED",
+      "detail": "Human clarification created a new immutable revision; all evidence and approvals invalidated; attempt/time/repair consumption retained",
+      "occurred_at": "2026-10-02T14:44:31.112263Z"
+    },
+    {
+      "sequence": 43,
+      "revision": 2,
+      "task_id": "requirements",
+      "event_type": "CLAIMED",
+      "detail": "attempt=52165ee1-ce8e-4ac5-b674-853c3483b05b invocation=4de7e370-b8bb-4d8c-b025-0955b28fdb5f input=fe30d97b05344344f48ccf1263b2ae3bd39849457fc90abc9c7a68f9d6f10d11",
+      "occurred_at": "2026-10-02T14:44:31.96658Z"
+    }
+  ],
+  "graphRevisions": [
+    {
+      "revision": 1,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Repair the deliberately planted expiry-boundary defect in demo.LinkBook: at now equal to expiresAt, resolution must fail and must not count. Preserve all other behavior, the POM, and supplied acceptance tests. The owned fixture is the entire repair scope; no live service or deployment changes.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "6f291e650dcf83d1ca533dc7ecd38608d43a9dc6ebc18628a6d3c2dbb66e7fd1",
+      "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "input_hash": "c404baecb40f66b0ece830a9f248c258c3a12fcad6a16d40b1d07f36b3aaf085"
+    },
+    {
+      "revision": 1,
+      "task_id": "design-approval",
+      "definition": "{\"id\": \"design-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review normalized requirements and architecture\", \"dependencies\": [\"requirements\", \"architecture\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": "d92a21fe984540a8f3b03af9465ac5be64284f72d30593b78defe7116a1d3dcc",
+      "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "input_hash": "8753a1c24c1172d0e68764a1c8893cc8d3534cb302014ac3bff4bde4373f5db2"
+    },
+    {
+      "revision": 1,
+      "task_id": "final-approval",
+      "definition": "{\"id\": \"final-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review final candidate and actual verification evidence\", \"dependencies\": [\"handoff\", \"join\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 1,
+      "task_id": "handoff",
+      "definition": "{\"id\": \"handoff\", \"type\": \"AGENT\", \"skill\": \"shortener-handoff\", \"prompt\": \"Prepare release readiness report\", \"dependencies\": [\"join\"], \"allowedPaths\": [\"artifacts/handoff/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": "fe6099918c29743e1b9726dc49885d181f866f40188f2575f4176ad9e0491708"
+    },
+    {
+      "revision": 1,
+      "task_id": "implementation",
+      "definition": "{\"id\": \"implementation\", \"type\": \"AGENT\", \"skill\": \"shortener-implementation-repair\", \"prompt\": \"Repair the deliberately planted expiry-boundary defect in demo.LinkBook: at now equal to expiresAt, resolution must fail and must not count. Preserve all other behavior, the POM, and supplied acceptance tests. The owned fixture is the entire repair scope; no live service or deployment changes.\", \"dependencies\": [\"design-approval\"], \"allowedPaths\": [\"src/\", \"pom.xml\", \"artifacts/implementation/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "0d43a88113fdfb486914f36c8c044187250a430e32b2497c7c4a2f97e4c602fe",
+      "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "input_hash": "c9ef5552a96693e3967fe122dd5374b3ad7348fc77979a1b8f2783a0b7769b64"
+    },
+    {
+      "revision": 1,
+      "task_id": "join",
+      "definition": "{\"id\": \"join\", \"type\": \"JOIN\", \"skill\": null, \"prompt\": \"Synchronize independent checks\", \"dependencies\": [\"verify\", \"review\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": "5a8c2673f42deda52b5eb8c7c659f531c6e6551bc10c5d12545604a5894a5808",
+      "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "input_hash": "4ba3a053340a849b18eddd46f40f3056339529d1cbf52eda3227bf407e45f7de"
+    },
+    {
+      "revision": 1,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Repair the deliberately planted expiry-boundary defect in demo.LinkBook: at now equal to expiresAt, resolution must fail and must not count. Preserve all other behavior, the POM, and supplied acceptance tests. The owned fixture is the entire repair scope; no live service or deployment changes.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "219dbe89244d47184b20fe1ae64f79d94406fdfaf122bc02ddee844421826754",
+      "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "input_hash": "84214383eb6079a9b5fb435060960c2103d550accf7b7c6598967baefdd0f31f"
+    },
+    {
+      "revision": 1,
+      "task_id": "review",
+      "definition": "{\"id\": \"review\", \"type\": \"AGENT\", \"skill\": \"shortener-verification-review\", \"prompt\": \"Review the exact implementation candidate\", \"dependencies\": [\"implementation\"], \"allowedPaths\": [\"artifacts/review/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "1b0a266d2444fd1a09c68ec83ff40a9861b611707a703aac028c906c18400eb3",
+      "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "input_hash": "6b3f471b3858f8827c527a50401dbf278022d6c38f74421a3d9ff77729707b45"
+    },
+    {
+      "revision": 1,
+      "task_id": "verify",
+      "definition": "{\"id\": \"verify\", \"type\": \"VERIFY\", \"skill\": null, \"prompt\": \"Run Maven verification\", \"dependencies\": [\"implementation\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": "b9529d8571c8661f4bd5bb313a745bc0d4e2e9575d1e979c4fa565e5212291d2",
+      "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "input_hash": "d34204c62ea5be8327f212bafaac47a7649491ad14c42895e77beda8873ffb74"
+    },
+    {
+      "revision": 2,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 2,
+      "task_id": "design-approval",
+      "definition": "{\"id\": \"design-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review normalized requirements and architecture\", \"dependencies\": [\"requirements\", \"architecture\"], \"allowedPaths\": []}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 2,
+      "task_id": "final-approval",
+      "definition": "{\"id\": \"final-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review final candidate and actual verification evidence\", \"dependencies\": [\"handoff\", \"join\"], \"allowedPaths\": []}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 2,
+      "task_id": "handoff",
+      "definition": "{\"id\": \"handoff\", \"type\": \"AGENT\", \"skill\": \"shortener-handoff\", \"prompt\": \"Prepare release readiness report\", \"dependencies\": [\"join\"], \"allowedPaths\": [\"artifacts/handoff/\"]}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 2,
+      "task_id": "implementation",
+      "definition": "{\"id\": \"implementation\", \"type\": \"AGENT\", \"skill\": \"shortener-implementation-repair\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [\"design-approval\"], \"allowedPaths\": [\"src/\", \"pom.xml\", \"artifacts/implementation/\"]}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 2,
+      "task_id": "join",
+      "definition": "{\"id\": \"join\", \"type\": \"JOIN\", \"skill\": null, \"prompt\": \"Synchronize independent checks\", \"dependencies\": [\"verify\", \"review\"], \"allowedPaths\": []}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 2,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "RUNNING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": "fe30d97b05344344f48ccf1263b2ae3bd39849457fc90abc9c7a68f9d6f10d11"
+    },
+    {
+      "revision": 2,
+      "task_id": "review",
+      "definition": "{\"id\": \"review\", \"type\": \"AGENT\", \"skill\": \"shortener-verification-review\", \"prompt\": \"Review the exact implementation candidate\", \"dependencies\": [\"implementation\"], \"allowedPaths\": [\"artifacts/review/\"]}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 2,
+      "task_id": "verify",
+      "definition": "{\"id\": \"verify\", \"type\": \"VERIFY\", \"skill\": null, \"prompt\": \"Run Maven verification\", \"dependencies\": [\"implementation\"], \"allowedPaths\": []}",
+      "state": "PENDING",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    }
+  ],
+  "metrics": {
+    "attempts": 7,
+    "retryFrequency": 0.0,
+    "successRateAcrossObservedTerminalRuns": "unavailable",
+    "cancelledRunsReportedSeparately": 0,
+    "compensationFrequency": 0.0,
+    "endToEndLatencyMs": 1605609,
+    "humanWaitMs": 551193,
+    "activeExecutionMs": 403229,
+    "activeExecutionSemantics": "sum of worker attempt elapsed time; concurrent attempts consume separate budget reservations",
+    "repairCycles": 0,
+    "tokenUsage": {
+      "input_tokens": 570392,
+      "input_tokens_attempts_with_reported_usage": 5,
+      "cached_input_tokens": 468352,
+      "cached_input_tokens_attempts_with_reported_usage": 5,
+      "output_tokens": 12580,
+      "output_tokens_attempts_with_reported_usage": 5,
+      "attempts_with_unknown_usage": 2
+    },
+    "monetaryCost": "unavailable: subscription CLI",
+    "completedRecoveryTimesMs": "unavailable"
+  },
+  "executionClassification": "actual; test adapters and injected faults are identified in attempt details",
+  "limitations": [
+    "Single process embedded H2",
+    "Application allowlist and Codex sandbox do not prove read/network isolation",
+    "Candidate workspaces never merged into user checkout",
+    "Local events are not tamper-proof",
+    "No deployment performed"
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

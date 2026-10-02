@@ -1,0 +1,54 @@
+{
+  "candidateHash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+  "revision": 2,
+  "dependencies": [
+    {
+      "run_id": "fe5d1047-93ba-4e5a-82a0-a91cd4c1c873",
+      "revision": 2,
+      "task_id": "verify",
+      "definition": "{\"id\": \"verify\", \"type\": \"VERIFY\", \"skill\": null, \"prompt\": \"Run Maven verification\", \"dependencies\": [\"implementation\"], \"allowedPaths\": []}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T16:05:48.440102Z",
+      "retry_after": null,
+      "skill_hash": null,
+      "evidence_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/evidence/7845c798-fa4a-4fac-945b-6c86bd51cd86.json",
+      "evidence_hash": "4242d48b489a2b3ff7b99c4111a3c3c70782a08566d8bacc56e51a3fb0511795",
+      "candidate_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/candidates/70c7d900-e8c8-41da-9f4a-069427f4d217",
+      "candidate_hash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "input_hash": "e313a8a9214e3021db42538436b1286ca8dc1221cc0880e12369561da23bdb2d"
+    },
+    {
+      "run_id": "fe5d1047-93ba-4e5a-82a0-a91cd4c1c873",
+      "revision": 2,
+      "task_id": "review",
+      "definition": "{\"id\": \"review\", \"type\": \"AGENT\", \"skill\": \"shortener-verification-review\", \"prompt\": \"Review the exact implementation candidate\", \"dependencies\": [\"implementation\"], \"allowedPaths\": [\"artifacts/review/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T16:06:31.740691Z",
+      "retry_after": null,
+      "skill_hash": "bfe1344b6c7732d3e5d62322e57ec536e31a2f195587e0bcefda84e3c3e64e6f",
+      "evidence_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/evidence/3eff8e16-18c3-443e-849b-d11b43e5043b.json",
+      "evidence_hash": "02ce60aec339fc80f26dc141f4eeda93d90e87ababc7d80e764779406554c718",
+      "candidate_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/candidates/70c7d900-e8c8-41da-9f4a-069427f4d217",
+      "candidate_hash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "input_hash": "94ada231eaf7721cc1fa1919588146b54ee02bb3e4fbb69d85c5e1ebe6f1c2b4"
+    }
+  ],
+  "task": {
+    "id": "join",
+    "type": "JOIN",
+    "skill": null,
+    "prompt": "Synchronize independent checks",
+    "dependencies": [
+      "verify",
+      "review"
+    ],
+    "allowedPaths": []
+  },
+  "inputHash": "aa2b4ff5f9634994e6631415bb278f497e893b8f04576541ff71fc3ff7013ef9",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

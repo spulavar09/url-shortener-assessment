@@ -1,0 +1,24 @@
+{
+  "kind": "actual local HTTP redirect smoke measurement",
+  "atUtc": "2026-10-02T16:45:34.120492+00:00",
+  "system": "Darwin",
+  "architecture": "arm64",
+  "requests": 1000,
+  "targetRequestsPerSecond": 100,
+  "elapsedSeconds": 10.010522415977903,
+  "observedRequestsPerSecond": 99.89488644507595,
+  "responses": {
+    "302": 1000
+  },
+  "medianMilliseconds": 10.412208997877315,
+  "p95Milliseconds": 19.20208299998194,
+  "maxMilliseconds": 43.378040980314836,
+  "recordedCountIncreaseAtMeasurementEnd": 1000,
+  "limits": [
+    "Loopback on this development machine; one repeatedly accessed link.",
+    "Not a 100,000-link dataset, endurance test, remote network test, or capacity guarantee.",
+    "Best-effort async count observations; no zero-loss promise."
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

@@ -1,0 +1,54 @@
+{
+  "inputHash": "5145e0d030bb02e20ee7c3b08b9e6fd57b382a47a75ffe91787a6ed65b7bd36a",
+  "task": {
+    "id": "design-approval",
+    "type": "APPROVAL",
+    "skill": null,
+    "prompt": "Review normalized requirements and architecture",
+    "dependencies": [
+      "requirements",
+      "architecture"
+    ],
+    "allowedPaths": []
+  },
+  "dependencies": [
+    {
+      "run_id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 2,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:45:53.368106Z",
+      "retry_after": null,
+      "skill_hash": "2d3e19cc0971cc8b6ce2d7619c131c95c4533cc47965e80b4c074b2704246865",
+      "evidence_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/evidence/88fd55c5-bd2b-4a18-84c4-4d846a641f78.json",
+      "evidence_hash": "9052cb3da04c2640f169161a9f06a1468c0a0776dc4df92624845fad4e1e48da",
+      "candidate_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/baseline",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d"
+    },
+    {
+      "run_id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 2,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:46:34.728812Z",
+      "retry_after": null,
+      "skill_hash": "906d1a60b9eced53d82ee98f58dbc137d9f5408dd6e850053d981c9eafbb550e",
+      "evidence_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/evidence/997df7f6-e17e-487b-b41e-79cafea6e269.json",
+      "evidence_hash": "a2f3f1f53ff5f4e3e666b0cb489c17f0fd522c13d44081936b40e8be50d9af8a",
+      "candidate_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/baseline",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "871f834dc284d37d79262d370231e3f33df543f4c5ed90b60a2c1911946dc938"
+    }
+  ],
+  "revision": 2,
+  "candidateHash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

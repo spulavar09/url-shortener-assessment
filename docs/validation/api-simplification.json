@@ -1,0 +1,50 @@
+{
+  "classification": "actual packaged-service HTTP check after API simplification",
+  "result": "PASS",
+  "atUtc": "2026-10-02T16:45:19.939894+00:00",
+  "businessHttpOperations": [
+    "POST /api/v1/workflow-runs",
+    "POST /api/v1/workflow-runs/{id}/clarifications",
+    "POST /api/v1/workflow-runs/{id}/cancel",
+    "POST /api/v1/workflow-runs/{id}/approvals",
+    "POST /api/v1/links",
+    "GET /api/v1/links/{code}",
+    "DELETE /api/v1/links/{code}",
+    "PATCH /api/v1/links/{code}",
+    "GET /r/{code}",
+    "HEAD /r/{code}",
+    "GET /api/v1/workflow-runs/{id}"
+  ],
+  "operationCount": 11,
+  "removedRoutesAbsent": true,
+  "existingLinkDetailsAndAnalyticsAccessible": true,
+  "persistedWorkflowChecks": [
+    {
+      "scenario": "greenfield",
+      "state": "AWAITING_APPROVAL",
+      "revision": 2,
+      "version": 10,
+      "gateHashPreserved": true,
+      "reviewEvidenceArtifacts": 17
+    },
+    {
+      "scenario": "brownfield",
+      "state": "AWAITING_APPROVAL",
+      "revision": 2,
+      "version": 10,
+      "gateHashPreserved": true,
+      "reviewEvidenceArtifacts": 17
+    },
+    {
+      "scenario": "ambiguous",
+      "state": "AWAITING_APPROVAL",
+      "revision": 2,
+      "version": 6,
+      "gateHashPreserved": true,
+      "reviewEvidenceArtifacts": 9
+    }
+  ],
+  "limits": "Does not grant design or final approval; all three runs remain at their existing human gates.",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

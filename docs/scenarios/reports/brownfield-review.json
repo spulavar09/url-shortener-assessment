@@ -1,0 +1,17 @@
+{
+  "tokenUsage": {
+    "input_tokens": 109672,
+    "cached_input_tokens": 84224,
+    "output_tokens": 2804
+  },
+  "monetaryCost": "unavailable",
+  "invocationId": "e5d1bb0a-418c-4359-a1cf-22fc08234fdc",
+  "inputHash": "6b3f471b3858f8827c527a50401dbf278022d6c38f74421a3d9ff77729707b45",
+  "exitCode": 0,
+  "result": "{\"summary\": \"Review found no code-level blocker. `resolve` now treats `now == expiresAt` as expired and returns before incrementing either total or daily counts. Supplied tests cover the exact boundary, pre-expiry HEAD versus recorded resolution, missing/expired/disabled failures, destination preservation, deleted-code reservation, retained counts, and UTC rollover. The POM contains no verification bypass or unexplained dependency addition, and no credential or live-data indicators were found. Declared evidence shows actual main-source compilation, but not Maven acceptance-test execution. The candidate should therefore proceed only to the fixed independent verifier, not be considered independently verified by this review.\", \"questions\": [], \"risks\": [\"No `mvn verify` result was supplied or produced, so acceptance-suite passage remains unproven.\", \"The supplied copy has no Git metadata or candidate manifest from which this review could independently recompute and bind the declared candidate hash `ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935`; lineage remains a control-layer hash check.\", \"The fixture is intentionally in-memory, so counts are lost on process crash; persistence and crash recovery are outside its declared scope.\"], \"tasks\": [{\"id\": \"fixed-verifier\", \"description\": \"Run the workflow’s fixed independent Maven verifier against the declared candidate hash and record its actual acceptance-test result without modifying the POM, tests, or implementation.\", \"dependencies\": [\"0d43a88113fdfb486914f36c8c044187250a430e32b2497c7c4a2f97e4c602fe\"], \"allowedPaths\": []}]}",
+  "sandbox": "read-only",
+  "execution": "actual",
+  "candidateHash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

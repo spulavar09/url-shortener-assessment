@@ -1,0 +1,43 @@
+{
+  "revision": 1,
+  "task_id": "handoff",
+  "state": "FAILED",
+  "input_hash": "fe6099918c29743e1b9726dc49885d181f866f40188f2575f4176ad9e0491708",
+  "evidenceHash": "fe4e6dfaed3dd0f0fbfcce02af41cb3686512c06522cfeaef7968b8d76dd83d7",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "failure": "Unresolved agent questions require reviewed clarification: [\"Does the human reviewer approve candidate ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935 and its declared evidence for release progression? specific human-review outcome needed\"]",
+  "tokenUsage": {
+    "input_tokens": 84902,
+    "cached_input_tokens": 65280,
+    "output_tokens": 1768
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Release-readiness status: ready for human review, not released. In the supplied engineering fixture, demo.LinkBook.resolve rejects a link when now equals expiresAt via !now.isBefore(link.expiresAt), and counting occurs only after that rejection check; equality therefore fails without incrementing total or daily counts. The supplied acceptance test explicitly covers the boundary and subsequent count. Other fixture behavior and pom.xml remain preserved. The declared dependency evidence records verify and review as SUCCEEDED for candidate ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935, but this handoff did not independently run Maven. A human may reproduce verification with mvn verify. This is only the disposable Java domain fixture—not the delivered Spring service—and includes no HTTP, database, authentication, deployment, or external actions. Usage, cost, elapsed-time, and recovery metrics were not supplied and are unavailable. Final readiness remains gated on human review of this exact candidate and evidence.",
+    "questions": [
+      "Does the human reviewer approve candidate ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935 and its declared evidence for release progression? specific human-review outcome needed"
+    ],
+    "risks": [
+      "Verification success is reported only from the supplied dependency evidence; no independent Maven verification was performed during this handoff.",
+      "The fixture does not validate full Spring-service concerns such as HTTP behavior, persistence, authentication or ownership, analytics durability, or deployment.",
+      "The single-process H2 limit, accepted best-effort analytics loss, and parked authentication/ownership checkpoint remain relevant to the separate full local service and are not resolved by this fixture repair.",
+      "Release remains blocked pending human review; this report does not authorize a merge, release, or deployment."
+    ],
+    "tasks": [
+      {
+        "id": "human-release-review",
+        "description": "Review the exact candidate, supplied acceptance test, and declared verify/review evidence; record an explicit approve or reject decision without deploying or publishing.",
+        "dependencies": [
+          "join"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "13fe2b960cd2a1b9a5c996008ffbfdec10def2ffd6d394aa4964583376a60201",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

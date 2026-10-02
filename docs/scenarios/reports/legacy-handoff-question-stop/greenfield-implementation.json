@@ -1,0 +1,17 @@
+{
+  "tokenUsage": {
+    "input_tokens": 135024,
+    "cached_input_tokens": 92160,
+    "output_tokens": 2870
+  },
+  "monetaryCost": "unavailable",
+  "invocationId": "a7d66c51-4477-4ff3-9224-c91ee2994f64",
+  "inputHash": "d8147f7e160d3db11dfef3cc07cc9fcdeb6570885aaf59d0a5e6346266f3a174",
+  "exitCode": 0,
+  "result": "{\"summary\": \"Implemented demo.LinkBook in src/main/java/demo/LinkBook.java with permanent code reservation, fixed destinations, optional expiration where equality is expired, disable/delete behavior, recorded-success-only counting, and UTC daily totals. Preserved pom.xml and the supplied acceptance tests. Direct javac compilation succeeded. Offline Maven verification was attempted but could not resolve locally absent Maven plugin dependencies, so no independent Maven verification is claimed.\", \"questions\": [], \"risks\": [\"The independent verifier still needs to run Maven with its approved dependency environment.\"], \"tasks\": []}",
+  "sandbox": "workspace-write",
+  "execution": "actual",
+  "candidateHash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

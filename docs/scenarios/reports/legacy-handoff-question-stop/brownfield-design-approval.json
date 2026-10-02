@@ -1,0 +1,54 @@
+{
+  "inputHash": "8753a1c24c1172d0e68764a1c8893cc8d3534cb302014ac3bff4bde4373f5db2",
+  "task": {
+    "id": "design-approval",
+    "type": "APPROVAL",
+    "skill": null,
+    "prompt": "Review normalized requirements and architecture",
+    "dependencies": [
+      "requirements",
+      "architecture"
+    ],
+    "allowedPaths": []
+  },
+  "dependencies": [
+    {
+      "run_id": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+      "revision": 1,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Repair the deliberately planted expiry-boundary defect in demo.LinkBook: at now equal to expiresAt, resolution must fail and must not count. Preserve all other behavior, the POM, and supplied acceptance tests. The owned fixture is the entire repair scope; no live service or deployment changes.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:19:32.995838Z",
+      "retry_after": null,
+      "skill_hash": "2d3e19cc0971cc8b6ce2d7619c131c95c4533cc47965e80b4c074b2704246865",
+      "evidence_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/evidence/29a17483-afe9-47fd-897a-47096f881f92.json",
+      "evidence_hash": "219dbe89244d47184b20fe1ae64f79d94406fdfaf122bc02ddee844421826754",
+      "candidate_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/baseline",
+      "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "input_hash": "84214383eb6079a9b5fb435060960c2103d550accf7b7c6598967baefdd0f31f"
+    },
+    {
+      "run_id": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+      "revision": 1,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Repair the deliberately planted expiry-boundary defect in demo.LinkBook: at now equal to expiresAt, resolution must fail and must not count. Preserve all other behavior, the POM, and supplied acceptance tests. The owned fixture is the entire repair scope; no live service or deployment changes.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:20:20.415223Z",
+      "retry_after": null,
+      "skill_hash": "906d1a60b9eced53d82ee98f58dbc137d9f5408dd6e850053d981c9eafbb550e",
+      "evidence_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/evidence/6962d34b-62ac-4e03-af93-3776f9dced51.json",
+      "evidence_hash": "6f291e650dcf83d1ca533dc7ecd38608d43a9dc6ebc18628a6d3c2dbb66e7fd1",
+      "candidate_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/baseline",
+      "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "input_hash": "c404baecb40f66b0ece830a9f248c258c3a12fcad6a16d40b1d07f36b3aaf085"
+    }
+  ],
+  "revision": 1,
+  "candidateHash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

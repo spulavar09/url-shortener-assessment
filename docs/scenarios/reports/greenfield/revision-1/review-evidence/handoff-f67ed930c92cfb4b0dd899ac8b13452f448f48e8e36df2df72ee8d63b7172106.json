@@ -1,0 +1,53 @@
+{
+  "revision": 1,
+  "task_id": "handoff",
+  "state": "FAILED",
+  "input_hash": "25d8e537e3e89051fe0bfbd74e2850e59968abf4f89895958088bd185fa2f015",
+  "evidenceHash": "f67ed930c92cfb4b0dd899ac8b13452f448f48e8e36df2df72ee8d63b7172106",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "failure": "Unresolved agent questions require reviewed clarification: [\"Will a human reviewer approve candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf using the declared verification and review evidence?\",\"Is the in-memory engineering fixture, rather than a production Spring service, the intended release artifact for this gate?\"]",
+  "tokenUsage": {
+    "input_tokens": 67469,
+    "cached_input_tokens": 48384,
+    "output_tokens": 1254
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Release-readiness handoff for invocation 6daddef7-8c44-4028-b0cd-0f6ac60cbe33 and candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf: the supplied Java engineering fixture implements the README contract in demo.LinkBook. It preserves fixed destinations; permanently reserves codes, including deleted codes; supports optional expiration with equality treated as expired; returns no destination for missing, expired, disabled, or deleted links; records analytics only for successful resolutions when record=true; and exposes retained total and UTC daily counts, with zero for unknown codes. The implementation is an in-memory, synchronized domain fixture—not the delivered Spring REST/database service—and includes no HTTP server, database, authentication, deployment, or destination fetching. The fixture POM and supplied acceptance tests are preserved. Authoritative dependency evidence records the verify and review tasks as SUCCEEDED for this exact candidate; this handoff did not independently rerun Maven verification. No usage, cost, elapsed-time, recovery-event, deployment, or approval data was supplied. Release readiness remains subject to human review of this exact revision and evidence.",
+    "questions": [
+      "Will a human reviewer approve candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf using the declared verification and review evidence?",
+      "Is the in-memory engineering fixture, rather than a production Spring service, the intended release artifact for this gate?"
+    ],
+    "risks": [
+      "The handoff relies on supplied dependency evidence and does not constitute an independent Maven verification result.",
+      "All links and analytics exist only in process memory and are lost when the process ends.",
+      "The fixture exposes no HTTP API, persistence, authentication, ownership controls, deployment configuration, or multi-process coordination; those capabilities are outside the README contract.",
+      "Final release approval is a human gate and cannot be granted by this report."
+    ],
+    "tasks": [
+      {
+        "id": "human-review",
+        "description": "Review the exact candidate hash, README contract, implementation, acceptance tests, and declared dependency evidence; record an explicit approve or reject decision.",
+        "dependencies": [
+          "verify",
+          "review"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "release-decision",
+        "description": "Confirm that the disposable in-memory Java fixture is the intended artifact and, only after human approval, authorize any separate release action.",
+        "dependencies": [
+          "human-review"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "602438a383a47620a59944beabfbad0c471524466f3d34de640073452c6715a2",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

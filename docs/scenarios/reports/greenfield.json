@@ -1,0 +1,1481 @@
+{
+  "id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+  "scenario": "greenfield",
+  "requirement": "See the normalized functional requirements in docs/scenarios/DESIGN-REVIEW.md; private request text is omitted.",
+  "state": "SUCCEEDED",
+  "revision": 2,
+  "version": 11,
+  "created_at": "2026-10-02T14:18:14.498114Z",
+  "updated_at": "2026-10-02T16:50:25.64982Z",
+  "active_ms": 635553,
+  "repair_count": 0,
+  "baseline_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+  "reason": null,
+  "pendingQuestions": [],
+  "finalReviewItems": [
+    "Will the designated human reviewer approve candidate e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be after examining the exact candidate, detailed Maven output, and candidate-review findings?",
+    "Can the authoritative detailed outputs for verification evidence 774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd and review evidence 07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f be presented at the final human gate without accessing disallowed locations?"
+  ],
+  "tasks": [
+    {
+      "task_id": "architecture",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "evidence_hash": "a2f3f1f53ff5f4e3e666b0cb489c17f0fd522c13d44081936b40e8be50d9af8a",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "871f834dc284d37d79262d370231e3f33df543f4c5ed90b60a2c1911946dc938"
+    },
+    {
+      "task_id": "design-approval",
+      "state": "SUCCEEDED",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": "c053d0835f1539e60280d9445a9395c5df637e1a7158f24182e8f6af41706421",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "5145e0d030bb02e20ee7c3b08b9e6fd57b382a47a75ffe91787a6ed65b7bd36a"
+    },
+    {
+      "task_id": "final-approval",
+      "state": "SUCCEEDED",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": "285f586dfe8d69e74348d983847742acc6fee0d5a2619fcdffaaedf40bc48f4d",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "579a29c791e74a6f4aad2595a53d8ec815d530007435c61f2015a24b4bffb55d"
+    },
+    {
+      "task_id": "handoff",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "evidence_hash": "e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92"
+    },
+    {
+      "task_id": "implementation",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "evidence_hash": "0ee74bc9865f9abedc6a716c0b8116ab19a72737252fa713c882b7c86b697010",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "0f42413edf901dbd93cdf1e4f8823b51f56314c2e57be026c27be194a84692d9"
+    },
+    {
+      "task_id": "join",
+      "state": "SUCCEEDED",
+      "attempts": 0,
+      "fence": 0,
+      "evidence_hash": "ce76991313b7d7ced82f07776e9507f371a913e6aad127bf3fb56127aebc3151",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "6f1594c1d80a459c56b1f51d9a430ced943d00f68ae4f8e634216693f07b0b2e"
+    },
+    {
+      "task_id": "requirements",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "evidence_hash": "9052cb3da04c2640f169161a9f06a1468c0a0776dc4df92624845fad4e1e48da",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d"
+    },
+    {
+      "task_id": "review",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "evidence_hash": "07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab"
+    },
+    {
+      "task_id": "verify",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "evidence_hash": "774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "84236ea06e94372861a1f5f18341f34bc8b20eec3285aa29f2dda6529f446d20"
+    }
+  ],
+  "attemptHistory": [
+    {
+      "id": "8fb0926a-3c9f-47bc-ba92-9afda4437c71",
+      "revision": 1,
+      "task_id": "requirements",
+      "fence": 1,
+      "invocation_id": "c0fd4d27-909f-4fe8-b69a-64e91d6cab64",
+      "input_hash": "68c46745e60e9bf269a433ada57553135053e68fb065b8da1fb142ce986b02bf",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:18:15.482096Z",
+      "deadline": "2026-10-02T14:28:15.482096Z",
+      "ended_at": "2026-10-02T14:19:12.501191Z",
+      "exit_code": 0,
+      "input_tokens": 65252,
+      "cached_input_tokens": 46976,
+      "output_tokens": 1533,
+      "evidence_hash": "09bfa6d85adbf343404e23eba8605826a100c73338fd91aee232391602aadb4d",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "cfe09c10-53c8-432f-81ab-6126f7e5ed19",
+      "revision": 1,
+      "task_id": "architecture",
+      "fence": 1,
+      "invocation_id": "3c90c256-4820-4aa6-9d1c-8f2773225845",
+      "input_hash": "ce3827c87e02aa0bc803dd13fdec0d92bb0dacdc5a7e6ed1d3be7a3eaa18aa17",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:19:13.002985Z",
+      "deadline": "2026-10-02T14:29:13.002985Z",
+      "ended_at": "2026-10-02T14:19:37.10494Z",
+      "exit_code": 0,
+      "input_tokens": 37994,
+      "cached_input_tokens": 18048,
+      "output_tokens": 716,
+      "evidence_hash": "10c1c824aa0a3cb12d28ced8f2345958edcea233bda7ca840a5a425c4f79b178",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "00758486-2998-4510-a4cf-98511de86e66",
+      "revision": 1,
+      "task_id": "implementation",
+      "fence": 1,
+      "invocation_id": "a7d66c51-4477-4ff3-9224-c91ee2994f64",
+      "input_hash": "d8147f7e160d3db11dfef3cc07cc9fcdeb6570885aaf59d0a5e6346266f3a174",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:29:03.626781Z",
+      "deadline": "2026-10-02T14:39:03.626782Z",
+      "ended_at": "2026-10-02T14:30:42.666785Z",
+      "exit_code": 0,
+      "input_tokens": 135024,
+      "cached_input_tokens": 92160,
+      "output_tokens": 2870,
+      "evidence_hash": "6ca172956f9a3a3429aa9466c93364a87afef0b007c81a7661f37209348253f4",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "f26d3e59-1b7e-431b-968c-f42a1400c3de",
+      "revision": 1,
+      "task_id": "review",
+      "fence": 1,
+      "invocation_id": "747ef04e-68df-4f9c-ab5b-92186b1fd95c",
+      "input_hash": "c0e2b64662779b6fbdd9b83f264401611b80f70c9742a8063f9835fedcc1880f",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:30:43.457601Z",
+      "deadline": "2026-10-02T14:40:43.457601Z",
+      "ended_at": "2026-10-02T14:31:52.193477Z",
+      "exit_code": 0,
+      "input_tokens": 108718,
+      "cached_input_tokens": 95488,
+      "output_tokens": 2056,
+      "evidence_hash": "f98c5357f6904a73d997728f889ffd8ee0bb0ac2ab5d442df1508b7cefff37ff",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "bc1d377f-a2d7-427e-a090-2fba48970045",
+      "revision": 1,
+      "task_id": "verify",
+      "fence": 1,
+      "invocation_id": "e475e6db-6f92-48b5-978a-dbdf0d78c5c5",
+      "input_hash": "0cd360f8b636813ff8c2b2e8adf9503b8e009a87df6f076f2e5e33ec199c43c0",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:31:48.047705Z",
+      "deadline": "2026-10-02T14:36:48.047705Z",
+      "ended_at": "2026-10-02T14:31:52.207677Z",
+      "exit_code": 0,
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "evidence_hash": "ba8805edc095aab106687e938387fb493fdde71dd3ae40c21cadd3136ecd5b4a",
+      "detail": "Actual Maven verify passed against exact candidate"
+    },
+    {
+      "id": "7ee914bf-5e8a-431f-a837-f59d037f8e3f",
+      "revision": 1,
+      "task_id": "handoff",
+      "fence": 1,
+      "invocation_id": "6daddef7-8c44-4028-b0cd-0f6ac60cbe33",
+      "input_hash": "25d8e537e3e89051fe0bfbd74e2850e59968abf4f89895958088bd185fa2f015",
+      "state": "FAILED",
+      "started_at": "2026-10-02T14:31:54.122025Z",
+      "deadline": "2026-10-02T14:41:54.122025Z",
+      "ended_at": "2026-10-02T14:32:38.680718Z",
+      "exit_code": 0,
+      "input_tokens": 67469,
+      "cached_input_tokens": 48384,
+      "output_tokens": 1254,
+      "evidence_hash": "f67ed930c92cfb4b0dd899ac8b13452f448f48e8e36df2df72ee8d63b7172106",
+      "detail": "Unresolved agent questions require reviewed clarification: [\"Will a human reviewer approve candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf using the declared verification and review evidence?\",\"Is the in-memory engineering fixture, rather than a production Spring service, the intended release artifact for this gate?\"]"
+    },
+    {
+      "id": "88fd55c5-bd2b-4a18-84c4-4d846a641f78",
+      "revision": 2,
+      "task_id": "requirements",
+      "fence": 1,
+      "invocation_id": "94d52351-2310-45e0-9a6c-74a5d28d523b",
+      "input_hash": "7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:44:31.950082Z",
+      "deadline": "2026-10-02T14:54:31.950082Z",
+      "ended_at": "2026-10-02T14:45:24.348407Z",
+      "exit_code": 0,
+      "input_tokens": 66157,
+      "cached_input_tokens": 59392,
+      "output_tokens": 1672,
+      "evidence_hash": "9052cb3da04c2640f169161a9f06a1468c0a0776dc4df92624845fad4e1e48da",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "997df7f6-e17e-487b-b41e-79cafea6e269",
+      "revision": 2,
+      "task_id": "architecture",
+      "fence": 1,
+      "invocation_id": "a7d1510b-bd01-4e55-a4d2-03add78f3882",
+      "input_hash": "871f834dc284d37d79262d370231e3f33df543f4c5ed90b60a2c1911946dc938",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T14:45:24.407408Z",
+      "deadline": "2026-10-02T14:55:24.407408Z",
+      "ended_at": "2026-10-02T14:46:05.646904Z",
+      "exit_code": 0,
+      "input_tokens": 39558,
+      "cached_input_tokens": 32768,
+      "output_tokens": 1417,
+      "evidence_hash": "a2f3f1f53ff5f4e3e666b0cb489c17f0fd522c13d44081936b40e8be50d9af8a",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "d56eaff7-e255-4b68-83df-ba6a60d4db40",
+      "revision": 2,
+      "task_id": "implementation",
+      "fence": 1,
+      "invocation_id": "210bceb7-cc97-46f5-8b61-5962e8289421",
+      "input_hash": "0f42413edf901dbd93cdf1e4f8823b51f56314c2e57be026c27be194a84692d9",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T16:00:06.476571Z",
+      "deadline": "2026-10-02T16:10:06.476572Z",
+      "ended_at": "2026-10-02T16:01:56.928059Z",
+      "exit_code": 0,
+      "input_tokens": 142125,
+      "cached_input_tokens": 98688,
+      "output_tokens": 3915,
+      "evidence_hash": "0ee74bc9865f9abedc6a716c0b8116ab19a72737252fa713c882b7c86b697010",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "9270b152-465f-47f9-bd02-76ff8d41084e",
+      "revision": 2,
+      "task_id": "review",
+      "fence": 1,
+      "invocation_id": "a01ce8c8-14f5-47d5-9e58-9559399da449",
+      "input_hash": "179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T16:01:57.462425Z",
+      "deadline": "2026-10-02T16:11:57.462425Z",
+      "ended_at": "2026-10-02T16:03:04.658047Z",
+      "exit_code": 0,
+      "input_tokens": 86668,
+      "cached_input_tokens": 62464,
+      "output_tokens": 2178,
+      "evidence_hash": "07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f",
+      "detail": "Actual Codex structured result published"
+    },
+    {
+      "id": "9003ca98-fa67-4cae-a06d-450ecf01ea05",
+      "revision": 2,
+      "task_id": "verify",
+      "fence": 1,
+      "invocation_id": "471edee9-5c8f-44f7-8106-400d5709dc67",
+      "input_hash": "84236ea06e94372861a1f5f18341f34bc8b20eec3285aa29f2dda6529f446d20",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T16:02:50.941099Z",
+      "deadline": "2026-10-02T16:07:50.941099Z",
+      "ended_at": "2026-10-02T16:02:54.435886Z",
+      "exit_code": 0,
+      "input_tokens": null,
+      "cached_input_tokens": null,
+      "output_tokens": null,
+      "evidence_hash": "774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd",
+      "detail": "Actual Maven verify passed against exact candidate"
+    },
+    {
+      "id": "599d9d24-0f02-4c49-86a0-f28b52f39f43",
+      "revision": 2,
+      "task_id": "handoff",
+      "fence": 1,
+      "invocation_id": "c40ebe41-d29a-4762-8130-724edfe93b5a",
+      "input_hash": "93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92",
+      "state": "SUCCEEDED",
+      "started_at": "2026-10-02T16:03:06.088505Z",
+      "deadline": "2026-10-02T16:13:06.088505Z",
+      "ended_at": "2026-10-02T16:04:09.253814Z",
+      "exit_code": 0,
+      "input_tokens": 87562,
+      "cached_input_tokens": 67584,
+      "output_tokens": 1971,
+      "evidence_hash": "e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544",
+      "detail": "Actual Codex structured result published"
+    }
+  ],
+  "reviewEvidence": [
+    {
+      "revision": 1,
+      "task_id": "architecture",
+      "state": "INVALIDATED",
+      "input_hash": "ce3827c87e02aa0bc803dd13fdec0d92bb0dacdc5a7e6ed1d3be7a3eaa18aa17",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "evidenceHash": "10c1c824aa0a3cb12d28ced8f2345958edcea233bda7ca840a5a425c4f79b178",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "read-only",
+      "tokenUsage": {
+        "input_tokens": 37994,
+        "cached_input_tokens": 18048,
+        "output_tokens": 716
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "The approved design is a single in-memory demo.LinkBook domain class using a permanent code registry. Each entry preserves its destination and optional expiration, tracks disabled/deleted state, and stores total plus UTC-date resolution counts. Resolution succeeds only for present, active, non-expired entries; expiresAt equality is expired, and counting occurs only for successful record=true resolutions. This architecture phase wrote no files and did not run or claim Maven verification.",
+        "questions": [],
+        "risks": [
+          "Implementation cannot occur in this invocation because the selected architecture skill authorizes task decomposition only and the declared write boundary artifacts/architecture/ excludes src/main/java/demo/LinkBook.java.",
+          "Thread-safety and null handling beyond nullable expiresAt are unspecified; implementation should not add unapproved behavior.",
+          "mvn verify remains an execution gate and must not be reported as passed until actually run against the combined candidate."
+        ],
+        "tasks": [
+          {
+            "id": "implement-linkbook",
+            "description": "Create src/main/java/demo/LinkBook.java as a dependency-free in-memory domain model implementing permanent code reservation, immutable destinations, optional expiration with equality expired, disable/delete state, successful recorded-resolution counting, and total plus UTC daily queries. Preserve pom.xml and the supplied acceptance tests.",
+            "dependencies": [],
+            "allowedPaths": [
+              "src/main/java/demo/LinkBook.java"
+            ]
+          },
+          {
+            "id": "verify-linkbook",
+            "description": "Run mvn verify against the combined candidate without changing pom.xml or bypassing verification, and report the actual result.",
+            "dependencies": [
+              "implement-linkbook"
+            ],
+            "allowedPaths": []
+          }
+        ]
+      },
+      "fullOutputHash": "87ee63f83fd8ab5b30470e7bd2b69b10af0744bcc67e736ea509f8adfe35a8d6"
+    },
+    {
+      "revision": 1,
+      "task_id": "design-approval",
+      "state": "INVALIDATED",
+      "input_hash": "f17c53c56a8a4771c918463282d473af119d319c98b10671fdab2e8c2a16c2ed",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "evidenceHash": "ab7ecea2fec69de056d13b0c361e542550dbf72c399a47f38d69793d175cc7ac",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "dependencies": [
+        {
+          "task_id": "requirements",
+          "state": "SUCCEEDED",
+          "evidence_hash": "09bfa6d85adbf343404e23eba8605826a100c73338fd91aee232391602aadb4d",
+          "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+          "input_hash": "68c46745e60e9bf269a433ada57553135053e68fb065b8da1fb142ce986b02bf"
+        },
+        {
+          "task_id": "architecture",
+          "state": "SUCCEEDED",
+          "evidence_hash": "10c1c824aa0a3cb12d28ced8f2345958edcea233bda7ca840a5a425c4f79b178",
+          "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+          "input_hash": "ce3827c87e02aa0bc803dd13fdec0d92bb0dacdc5a7e6ed1d3be7a3eaa18aa17"
+        }
+      ]
+    },
+    {
+      "revision": 1,
+      "task_id": "implementation",
+      "state": "INVALIDATED",
+      "input_hash": "d8147f7e160d3db11dfef3cc07cc9fcdeb6570885aaf59d0a5e6346266f3a174",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "evidenceHash": "6ca172956f9a3a3429aa9466c93364a87afef0b007c81a7661f37209348253f4",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "workspace-write",
+      "tokenUsage": {
+        "input_tokens": 135024,
+        "cached_input_tokens": 92160,
+        "output_tokens": 2870
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Implemented demo.LinkBook in src/main/java/demo/LinkBook.java with permanent code reservation, fixed destinations, optional expiration where equality is expired, disable/delete behavior, recorded-success-only counting, and UTC daily totals. Preserved pom.xml and the supplied acceptance tests. Direct javac compilation succeeded. Offline Maven verification was attempted but could not resolve locally absent Maven plugin dependencies, so no independent Maven verification is claimed.",
+        "questions": [],
+        "risks": [
+          "The independent verifier still needs to run Maven with its approved dependency environment."
+        ],
+        "tasks": []
+      },
+      "fullOutputHash": "41c094107a0b6d05f65c7f128a7bba4f779434ecd82f43c1f522b8fe9dec1492"
+    },
+    {
+      "revision": 1,
+      "task_id": "join",
+      "state": "INVALIDATED",
+      "input_hash": "d4c070dfa20ef006577a4c66e9d114de6c82a239b5badd8598e2b2b901c4d5f2",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "evidenceHash": "cfe20580a76a10001b4c8db3d5c967e4ce15337859691c838769a2a563c25c9f",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "dependencies": [
+        {
+          "task_id": "verify",
+          "state": "SUCCEEDED",
+          "evidence_hash": "ba8805edc095aab106687e938387fb493fdde71dd3ae40c21cadd3136ecd5b4a",
+          "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+          "input_hash": "0cd360f8b636813ff8c2b2e8adf9503b8e009a87df6f076f2e5e33ec199c43c0"
+        },
+        {
+          "task_id": "review",
+          "state": "SUCCEEDED",
+          "evidence_hash": "f98c5357f6904a73d997728f889ffd8ee0bb0ac2ab5d442df1508b7cefff37ff",
+          "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+          "input_hash": "c0e2b64662779b6fbdd9b83f264401611b80f70c9742a8063f9835fedcc1880f"
+        }
+      ]
+    },
+    {
+      "revision": 1,
+      "task_id": "requirements",
+      "state": "INVALIDATED",
+      "input_hash": "68c46745e60e9bf269a433ada57553135053e68fb065b8da1fb142ce986b02bf",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "evidenceHash": "09bfa6d85adbf343404e23eba8605826a100c73338fd91aee232391602aadb4d",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "read-only",
+      "tokenUsage": {
+        "input_tokens": 65252,
+        "cached_input_tokens": 46976,
+        "output_tokens": 1533
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Requirements are complete and unambiguous: implement an in-memory demo.LinkBook that permanently reserves codes, preserves destinations, treats expiresAt equality as expired, resolves only active links, records only successful record=true resolutions, retains counts after disable/delete, and exposes total plus UTC daily counts. No HTTP server, database, destination fetch, deployment, dependency, or POM change is in scope. This requirements-only invocation wrote no files and did not run or claim Maven verification.",
+        "questions": [],
+        "risks": [
+          "Implementation is blocked in this invocation: the selected skill prohibits source changes, and the sole allowed write path artifacts/requirements/ does not include the required Java source path.",
+          "Thread-safety and behavior for null arguments other than expiresAt are unspecified; implementations should avoid inventing additional validation unless separately approved."
+        ],
+        "tasks": [
+          {
+            "id": "implement-linkbook",
+            "description": "In a separately authorized implementation phase, add demo.LinkBook with the exact README behavior while preserving pom.xml and the supplied acceptance tests.",
+            "dependencies": [],
+            "allowedPaths": [
+              "src/main/java/demo/LinkBook.java"
+            ]
+          },
+          {
+            "id": "verify-linkbook",
+            "description": "After implementation, run the existing Maven verification lifecycle without changing verification plugins; report the actual result without claiming independent verification.",
+            "dependencies": [
+              "implement-linkbook"
+            ],
+            "allowedPaths": []
+          }
+        ]
+      },
+      "fullOutputHash": "8efee039d9e3081f231c45c2107f88a358e4a678e565b58970e93c6dd92a54e5"
+    },
+    {
+      "revision": 1,
+      "task_id": "review",
+      "state": "INVALIDATED",
+      "input_hash": "c0e2b64662779b6fbdd9b83f264401611b80f70c9742a8063f9835fedcc1880f",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "evidenceHash": "f98c5357f6904a73d997728f889ffd8ee0bb0ac2ab5d442df1508b7cefff37ff",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "read-only",
+      "tokenUsage": {
+        "input_tokens": 108718,
+        "cached_input_tokens": 95488,
+        "output_tokens": 2056
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Review found no contract defect in the supplied candidate. LinkBook preserves destinations, permanently reserves codes, treats now == expiresAt as expired, excludes HEAD and unsuccessful resolutions from counts, preserves counts after disable/delete, and buckets recorded successes by UTC date. The supplied POM and acceptance tests are intact; the candidate contains no server, database, deployment, credential, or live-data additions. Evidence classification: direct javac compilation was actual execution and succeeded; the actual offline Maven attempt failed during plugin dependency resolution before tests ran. No passing Maven verification is claimed.",
+        "questions": [],
+        "risks": [
+          "The acceptance suite has not been executed successfully in the supplied evidence because Maven dependencies were unavailable offline; code inspection and direct compilation do not replace the fixed verifier.",
+          "The implementation is intentionally in-memory, so counts are lost on process termination; this is consistent with the disposable fixture and its no-database scope."
+        ],
+        "tasks": [
+          {
+            "id": "run-fixed-verifier",
+            "description": "Run the unchanged `mvn verify` command in the approved dependency environment and record its actual result for this exact candidate.",
+            "dependencies": [],
+            "allowedPaths": []
+          }
+        ]
+      },
+      "fullOutputHash": "347fac0d0840a724aebbd955bf9c67805ec5888ac14d38f65ba317fe7b0a1a42"
+    },
+    {
+      "revision": 1,
+      "task_id": "verify",
+      "state": "INVALIDATED",
+      "input_hash": "0cd360f8b636813ff8c2b2e8adf9503b8e009a87df6f076f2e5e33ec199c43c0",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "evidenceHash": "ba8805edc095aab106687e938387fb493fdde71dd3ae40c21cadd3136ecd5b4a",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "filtered environment; fixed Maven verify",
+      "tokenUsage": "unavailable",
+      "monetaryCost": "unavailable",
+      "fullOutputHash": "199101f3b28cefdde99a62fa79749b6475d208b22b07f43882b6cc85f41212e0",
+      "verifierOutput": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -------------------< demo:shortener-domain-fixture >--------------------\n[INFO] Building shortener-domain-fixture 1.0.0\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.5.0:resources (default-resources) @ shortener-domain-fixture ---\n[INFO] skip non existing resourceDirectory <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/bc1d377f-a2d7-427e-a090-2fba48970045/src/main/resources\n[INFO] skip non existing resourceDirectory <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/bc1d377f-a2d7-427e-a090-2fba48970045/src/main/resources\n[INFO] \n[INFO] --- compiler:3.15.0:compile (default-compile) @ shortener-domain-fixture ---\n[INFO] Recompiling the module because of changed source code.\n[INFO] Compiling 1 source file with javac [debug parameters release 21] to target/classes\n[INFO] \n[INFO] --- resources:3.5.0:testResources (default-testResources) @ shortener-domain-fixture ---\n[INFO] skip non existing resourceDirectory <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/bc1d377f-a2d7-427e-a090-2fba48970045/src/test/resources\n[INFO] \n[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ shortener-domain-fixture ---\n[INFO] Recompiling the module because of changed dependency.\n[INFO] Compiling 1 source file with javac [debug parameters release 21] to target/test-classes\n[INFO] \n[INFO] --- surefire:3.5.6:test (default-test) @ shortener-domain-fixture ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running demo.LinkBookTest\n[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s -- in demo.LinkBookTest\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] \n[INFO] --- jar:3.5.1:jar (default-jar) @ shortener-domain-fixture ---\n[INFO] Building jar: <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/bc1d377f-a2d7-427e-a090-2fba48970045/target/shortener-domain-fixture-1.0.0.jar\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  2.778 s\n[INFO] Finished at: 2026-10-02T09:31:52-05:00\n[INFO] ------------------------------------------------------------------------\n",
+      "verifierOutputTruncated": false,
+      "verificationResult": "Actual Maven verify exit 0"
+    },
+    {
+      "revision": 2,
+      "task_id": "architecture",
+      "state": "SUCCEEDED",
+      "input_hash": "871f834dc284d37d79262d370231e3f33df543f4c5ed90b60a2c1911946dc938",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "evidenceHash": "a2f3f1f53ff5f4e3e666b0cb489c17f0fd522c13d44081936b40e8be50d9af8a",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "read-only",
+      "tokenUsage": {
+        "input_tokens": 39558,
+        "cached_input_tokens": 32768,
+        "output_tokens": 1417
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Proposed architecture: implement demo.LinkBook as one process-local in-memory domain object backed by a code-to-entry map. Each retained entry stores the immutable destination, optional expiration Instant, disabled/deleted lifecycle state, cumulative recorded-resolution count, and a map of UTC LocalDate buckets. Creation rejects any already-present code, so deletion changes state but never removes the reservation. Resolution performs eligibility checks before recording: missing, disabled, deleted, or now greater than or equal to expiresAt returns Optional.empty(); otherwise it returns the original destination and, only when record=true, increments the total and the UTC date derived from now. total and daily return zero for unknown codes, while retained entries preserve analytics after disable or delete. This is deliberately a domain-only fixture: no HTTP layer, persistence, destination fetch, external dependency, deployment, or reconstruction of the full service is proposed. The supplied pom.xml and acceptance tests remain unchanged. This architecture-only invocation wrote no files, did not implement source code, and does not claim that Maven verification passed.",
+        "questions": [],
+        "risks": [
+          "The current invocation cannot implement demo.LinkBook because narrative-only output is required and the sole allowed write path, artifacts/architecture/, excludes src/main/java/demo/LinkBook.java.",
+          "Actual verification remains outstanding. A later authorized implementation stage must run mvn verify against the combined candidate without modifying the supplied POM or acceptance tests and without weakening verification checks.",
+          "The contract does not specify null handling, behavior of disable/delete for unknown codes, or concurrency guarantees. The implementation should avoid advertising extra guarantees; any behavior needed beyond the supplied acceptance contract requires clarification or focused evidence.",
+          "All state and analytics are intentionally process-local and non-durable. This fixture must not be represented as the full REST/database service or a production analytics design.",
+          "Final human approval remains a separate mandatory gate after fresh implementation verification and candidate review; it has not been granted. Any recovery must retain prior failed evidence and obtain fresh design approval."
+        ],
+        "tasks": [
+          {
+            "id": "ARCH-1",
+            "description": "Record the proposed single-class in-memory design and its invariants: immutable destination, permanent code reservation, optional expiration with equality expired, retained lifecycle entries and counts, successful-recorded resolutions only, and UTC daily buckets.",
+            "dependencies": [],
+            "allowedPaths": [
+              "artifacts/architecture/"
+            ]
+          },
+          {
+            "id": "IMPL-1",
+            "description": "After the control layer grants a separate owned source write path, create src/main/java/demo/LinkBook.java using the approved design while preserving pom.xml and src/test/java/demo/LinkBookTest.java exactly.",
+            "dependencies": [
+              "ARCH-1"
+            ],
+            "allowedPaths": [
+              "artifacts/architecture/"
+            ]
+          },
+          {
+            "id": "VERIFY-1",
+            "description": "On the resulting combined candidate, perform a fresh mvn verify run and preserve the actual command result as verification evidence; do not alter the POM or tests to obtain a pass.",
+            "dependencies": [
+              "IMPL-1"
+            ],
+            "allowedPaths": [
+              "artifacts/architecture/"
+            ]
+          },
+          {
+            "id": "REVIEW-1",
+            "description": "Review the verified candidate against every README behavior and the approved fixture boundary, preserving prior failed evidence and leaving final human approval as a separate control-layer gate.",
+            "dependencies": [
+              "VERIFY-1"
+            ],
+            "allowedPaths": [
+              "artifacts/architecture/"
+            ]
+          }
+        ]
+      },
+      "fullOutputHash": "e2493b5c0e3975db49d117899ebdb73d7e89d5e766f9a89e57137f853e86a549"
+    },
+    {
+      "revision": 2,
+      "task_id": "design-approval",
+      "state": "SUCCEEDED",
+      "input_hash": "5145e0d030bb02e20ee7c3b08b9e6fd57b382a47a75ffe91787a6ed65b7bd36a",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "evidenceHash": "c053d0835f1539e60280d9445a9395c5df637e1a7158f24182e8f6af41706421",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "dependencies": [
+        {
+          "task_id": "requirements",
+          "state": "SUCCEEDED",
+          "evidence_hash": "9052cb3da04c2640f169161a9f06a1468c0a0776dc4df92624845fad4e1e48da",
+          "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+          "input_hash": "7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d"
+        },
+        {
+          "task_id": "architecture",
+          "state": "SUCCEEDED",
+          "evidence_hash": "a2f3f1f53ff5f4e3e666b0cb489c17f0fd522c13d44081936b40e8be50d9af8a",
+          "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+          "input_hash": "871f834dc284d37d79262d370231e3f33df543f4c5ed90b60a2c1911946dc938"
+        }
+      ]
+    },
+    {
+      "revision": 2,
+      "task_id": "final-approval",
+      "state": "SUCCEEDED",
+      "input_hash": "579a29c791e74a6f4aad2595a53d8ec815d530007435c61f2015a24b4bffb55d",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "evidenceHash": "285f586dfe8d69e74348d983847742acc6fee0d5a2619fcdffaaedf40bc48f4d",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "dependencies": [
+        {
+          "task_id": "handoff",
+          "state": "SUCCEEDED",
+          "evidence_hash": "e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544",
+          "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+          "input_hash": "93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92"
+        },
+        {
+          "task_id": "join",
+          "state": "SUCCEEDED",
+          "evidence_hash": "ce76991313b7d7ced82f07776e9507f371a913e6aad127bf3fb56127aebc3151",
+          "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+          "input_hash": "6f1594c1d80a459c56b1f51d9a430ced943d00f68ae4f8e634216693f07b0b2e"
+        }
+      ]
+    },
+    {
+      "revision": 2,
+      "task_id": "handoff",
+      "state": "SUCCEEDED",
+      "input_hash": "93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "evidenceHash": "e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "read-only",
+      "tokenUsage": {
+        "input_tokens": 87562,
+        "cached_input_tokens": 67584,
+        "output_tokens": 1971
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Release-readiness handoff for invocation c40ebe41-d29a-4762-8130-724edfe93b5a: the supplied candidate e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be implements the isolated in-memory demo.LinkBook fixture described by README.md. Source inspection confirms fixed destinations; permanent code reservation, including after deletion; optional expiration that begins at equality; empty resolution for missing, expired, disabled, or deleted links; counting only successful resolutions when record=true; preserved counts after disable/delete; and total plus UTC daily counts, with zero for unknown codes. Methods are synchronized for access to mutable in-memory state. The supplied POM and acceptance tests remain present and unmodified. To validate the exact candidate, run `mvn verify` from the project root with Java 21 and Maven capable of resolving the declared dependencies. The authoritative dependency record marks the verify and review workflow tasks SUCCEEDED for this candidate, but their detailed outputs are not present in the supplied project copy; therefore this report does not claim independent Maven verification passed or independently reproduce the review conclusion. No actual Codex execution metrics, injected recovery event, simulation, elapsed time, token usage, or monetary cost were supplied; those values are unavailable. This is a disposable engineering fixture, not the Spring REST/database service, and it includes no HTTP server, database, deployment, authentication, ownership, or destination fetching. No release, deployment, merge, external message, approval, or file write was performed. Final readiness remains blocked on separate human review and approval of this exact candidate and evidence.",
+        "questions": [
+          "Will the designated human reviewer approve candidate e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be after examining the exact candidate, detailed Maven output, and candidate-review findings?",
+          "Can the authoritative detailed outputs for verification evidence 774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd and review evidence 07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f be presented at the final human gate without accessing disallowed locations?"
+        ],
+        "risks": [
+          "Final human approval has not been granted; this narrative cannot release that mandatory gate.",
+          "The supplied copy contains no detailed Maven transcript or review report, so the recorded SUCCEEDED workflow states cannot be independently substantiated from approved inputs alone.",
+          "The artifact is intentionally process-local and in-memory; state and analytics disappear when the process ends and are unsuitable as production durability guarantees.",
+          "Null arguments other than the explicitly supported null expiry are not assigned behavior by the README contract and may fail implicitly.",
+          "Any recovery must retain prior failed evidence and obtain fresh design approval; no recovery event or fresh recovery approval is established by the supplied evidence."
+        ],
+        "tasks": [
+          {
+            "id": "final-human-review",
+            "description": "Have the designated human review the exact candidate hash, authoritative detailed verification output, candidate-review findings, fixture limitations, and preserved prior failure evidence before making a separate approval or rejection decision.",
+            "dependencies": [
+              "join"
+            ],
+            "allowedPaths": []
+          },
+          {
+            "id": "reverify-after-change",
+            "description": "If the candidate changes or recovery is required, preserve all prior failed evidence, obtain fresh design approval, and run fresh verification and review against the new exact candidate before returning to the human gate.",
+            "dependencies": [
+              "final-human-review"
+            ],
+            "allowedPaths": []
+          }
+        ]
+      },
+      "fullOutputHash": "7d4ab2a321dd27a6ed22f7b23cdf5d674fd30ef323cfcfd189a6914c7cdab317"
+    },
+    {
+      "revision": 2,
+      "task_id": "implementation",
+      "state": "SUCCEEDED",
+      "input_hash": "0f42413edf901dbd93cdf1e4f8823b51f56314c2e57be026c27be194a84692d9",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "evidenceHash": "0ee74bc9865f9abedc6a716c0b8116ab19a72737252fa713c882b7c86b697010",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "workspace-write",
+      "tokenUsage": {
+        "input_tokens": 142125,
+        "cached_input_tokens": 98688,
+        "output_tokens": 3915
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Implemented demo.LinkBook in src/main/java/demo/LinkBook.java. It preserves fixed destinations, permanently reserves created codes, treats now >= expiresAt as expired, excludes HEAD and unsuccessful resolutions from counts, retains counts after disable/delete, and records total plus UTC daily counts. pom.xml and the supplied acceptance test were not modified. mvn verify was run but failed during Maven plugin resolution before compilation/tests because the sandbox blocked Maven’s user-repository tracking-file write; no independent Maven verification pass is claimed.",
+        "questions": [],
+        "risks": [
+          "Compilation and acceptance tests were not reached by Maven, so the independent verification and final human approval gates remain outstanding."
+        ],
+        "tasks": [
+          {
+            "id": "fresh-verification",
+            "description": "Run mvn verify in the independent verification environment with the fixture dependencies available.",
+            "dependencies": [],
+            "allowedPaths": []
+          },
+          {
+            "id": "candidate-review",
+            "description": "Review the implemented candidate and actual verifier evidence before requesting the separate mandatory human approval.",
+            "dependencies": [
+              "fresh-verification"
+            ],
+            "allowedPaths": []
+          }
+        ]
+      },
+      "fullOutputHash": "4a7e0789cc959ff352b1ce0e35f5e622f88ae01e67c0ca95daf7446b3fb387df"
+    },
+    {
+      "revision": 2,
+      "task_id": "join",
+      "state": "SUCCEEDED",
+      "input_hash": "6f1594c1d80a459c56b1f51d9a430ced943d00f68ae4f8e634216693f07b0b2e",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "evidenceHash": "ce76991313b7d7ced82f07776e9507f371a913e6aad127bf3fb56127aebc3151",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "dependencies": [
+        {
+          "task_id": "verify",
+          "state": "SUCCEEDED",
+          "evidence_hash": "774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd",
+          "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+          "input_hash": "84236ea06e94372861a1f5f18341f34bc8b20eec3285aa29f2dda6529f446d20"
+        },
+        {
+          "task_id": "review",
+          "state": "SUCCEEDED",
+          "evidence_hash": "07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f",
+          "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+          "input_hash": "179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab"
+        }
+      ]
+    },
+    {
+      "revision": 2,
+      "task_id": "requirements",
+      "state": "SUCCEEDED",
+      "input_hash": "7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "evidenceHash": "9052cb3da04c2640f169161a9f06a1468c0a0776dc4df92624845fad4e1e48da",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "read-only",
+      "tokenUsage": {
+        "input_tokens": 66157,
+        "cached_input_tokens": 59392,
+        "output_tokens": 1672
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Confirmed contract: implement only the isolated in-memory demo.LinkBook fixture; preserve the supplied pom.xml and acceptance tests; keep destinations immutable; reserve every created code permanently, including after deletion; reject duplicate creation with IllegalArgumentException; support optional expiration with equality considered expired; resolve only existing, enabled, undeleted, unexpired links; treat record=false as HEAD and increment analytics only for successful resolutions with record=true; retain counts after disable/delete; expose total counts and UTC LocalDate daily buckets; return zero counts for unknown codes. No HTTP server, database, destination fetch, external dependency, deployment, or production-service reconstruction is in scope. Observable acceptance criteria are the behaviors above plus a successful future mvn verify run. This requirements-only invocation made no file changes and did not claim Maven verification.",
+        "questions": [],
+        "risks": [
+          "Implementation cannot occur in this invocation: the selected versioned skill explicitly limits this role to requirements normalization, narrative output is required, and the only allowed write path is artifacts/requirements/, which excludes the required src/main/java/demo/LinkBook.java source file.",
+          "No independent Maven verification was performed; a later authorized implementation/review stage must run mvn verify without weakening or modifying verification plugins.",
+          "The README does not define null-argument handling, concurrency guarantees, or behavior when disable/delete receives an unknown code. Those behaviors should not be invented as additional product guarantees unless a later test or approval specifies them.",
+          "In-memory analytics are non-durable and process-local by fixture design; they must not be represented as production-grade or durable visit analytics."
+        ],
+        "tasks": [
+          {
+            "id": "REQ-1",
+            "description": "Record approval of this normalized contract and its observable acceptance criteria in the control layer while preserving the existing failed evidence and requiring fresh design approval for any recovery path.",
+            "dependencies": [],
+            "allowedPaths": [
+              "artifacts/requirements/"
+            ]
+          },
+          {
+            "id": "IMPL-1",
+            "description": "After a separate implementation authorization grants an owned source write path, add demo.LinkBook without changing pom.xml or the supplied acceptance tests, then run fresh verification.",
+            "dependencies": [
+              "REQ-1"
+            ],
+            "allowedPaths": [
+              "artifacts/requirements/"
+            ]
+          },
+          {
+            "id": "REVIEW-1",
+            "description": "After actual verification, perform candidate review against the README contract and retain final human approval as a separate mandatory gate; do not infer or self-grant approval.",
+            "dependencies": [
+              "IMPL-1"
+            ],
+            "allowedPaths": [
+              "artifacts/requirements/"
+            ]
+          }
+        ]
+      },
+      "fullOutputHash": "0e9ba7db51bad444dc71fd4d9a23a31520b33e0a36246e95b03d8af5c5fc823b"
+    },
+    {
+      "revision": 2,
+      "task_id": "review",
+      "state": "SUCCEEDED",
+      "input_hash": "179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "evidenceHash": "07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "read-only",
+      "tokenUsage": {
+        "input_tokens": 86668,
+        "cached_input_tokens": 62464,
+        "output_tokens": 2178
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Review completed without modifying files. No blocking contract defect was found in the exact supplied candidate: destinations are fixed; codes remain reserved after deletion; expiration begins at equality; only recorded successful resolutions increment counts; disabled, deleted, expired, and missing resolutions do not count; counts survive disable/delete; and daily counts use UTC. The POM and acceptance-test hashes match the declared implementation transcript, with no added dependencies, weakened assertions, bypasses, credentials, live data, server, database, or deployment scope. The Maven evidence is actual execution, not simulation, but it failed during plugin resolution before compilation or tests; therefore this review does not claim independent verification passed or grant final approval.",
+        "questions": [],
+        "risks": [
+          "The fixed Maven verifier has not successfully compiled or tested this candidate, so static review cannot establish executable correctness.",
+          "The supplied acceptance tests do not separately exercise every implemented edge, including reservation after disable, daily-count retention after deletion, and unsuccessful-resolution daily counts, although source inspection indicates compliant behavior.",
+          "Counts are intentionally in memory and will be lost when the LinkBook instance or process is lost; this is consistent with the explicitly approved fixture scope but would not provide production durability.",
+          "The control layer must independently validate the declared aggregate candidate and input hashes; this review confirmed that the source, POM, and test hashes match those recorded in the implementation transcript."
+        ],
+        "tasks": [
+          {
+            "id": "fresh-fixed-verification",
+            "description": "Run the unchanged fixed Maven verifier against this exact candidate in an environment where required Maven artifacts are available and repository/build writes are permitted; preserve the failed attempt as prior evidence and do not modify pom.xml to bypass checks.",
+            "dependencies": [],
+            "allowedPaths": []
+          },
+          {
+            "id": "human-approval-gate",
+            "description": "After successful actual verification, present its evidence together with this candidate review for the separate mandatory human approval decision; do not infer approval automatically.",
+            "dependencies": [
+              "fresh-fixed-verification"
+            ],
+            "allowedPaths": []
+          }
+        ]
+      },
+      "fullOutputHash": "78ebf55780874ab94faf8f43c20f25a5d514129d7f08c33dd40045080d8a84ae"
+    },
+    {
+      "revision": 2,
+      "task_id": "verify",
+      "state": "SUCCEEDED",
+      "input_hash": "84236ea06e94372861a1f5f18341f34bc8b20eec3285aa29f2dda6529f446d20",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "evidenceHash": "774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "sandbox": "filtered environment; fixed Maven verify",
+      "tokenUsage": "unavailable",
+      "monetaryCost": "unavailable",
+      "fullOutputHash": "d8a15258602cc2294125ae7958b729fa0437bbc514017874266f3e93b7337aeb",
+      "verifierOutput": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -------------------< demo:shortener-domain-fixture >--------------------\n[INFO] Building shortener-domain-fixture 1.0.0\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.5.0:resources (default-resources) @ shortener-domain-fixture ---\n[INFO] skip non existing resourceDirectory <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/9003ca98-fa67-4cae-a06d-450ecf01ea05/src/main/resources\n[INFO] skip non existing resourceDirectory <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/9003ca98-fa67-4cae-a06d-450ecf01ea05/src/main/resources\n[INFO] \n[INFO] --- compiler:3.15.0:compile (default-compile) @ shortener-domain-fixture ---\n[INFO] Recompiling the module because of changed source code.\n[INFO] Compiling 1 source file with javac [debug parameters release 21] to target/classes\n[INFO] \n[INFO] --- resources:3.5.0:testResources (default-testResources) @ shortener-domain-fixture ---\n[INFO] skip non existing resourceDirectory <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/9003ca98-fa67-4cae-a06d-450ecf01ea05/src/test/resources\n[INFO] \n[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ shortener-domain-fixture ---\n[INFO] Recompiling the module because of changed dependency.\n[INFO] Compiling 1 source file with javac [debug parameters release 21] to target/test-classes\n[INFO] \n[INFO] --- surefire:3.5.6:test (default-test) @ shortener-domain-fixture ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running demo.LinkBookTest\n[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.050 s -- in demo.LinkBookTest\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] \n[INFO] --- jar:3.5.1:jar (default-jar) @ shortener-domain-fixture ---\n[INFO] Building jar: <project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/attempts/9003ca98-fa67-4cae-a06d-450ecf01ea05/target/shortener-domain-fixture-1.0.0.jar\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.991 s\n[INFO] Finished at: 2026-10-02T11:02:54-05:00\n[INFO] ------------------------------------------------------------------------\n",
+      "verifierOutputTruncated": false,
+      "verificationResult": "Actual Maven verify exit 0"
+    },
+    {
+      "revision": 1,
+      "task_id": "handoff",
+      "state": "FAILED",
+      "input_hash": "25d8e537e3e89051fe0bfbd74e2850e59968abf4f89895958088bd185fa2f015",
+      "evidenceHash": "f67ed930c92cfb4b0dd899ac8b13452f448f48e8e36df2df72ee8d63b7172106",
+      "originalEvidenceHashValidatedAtExport": true,
+      "fullEvidenceRetained": true,
+      "execution": "actual",
+      "exitCode": 0,
+      "failure": "Unresolved agent questions require reviewed clarification: [\"Will a human reviewer approve candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf using the declared verification and review evidence?\",\"Is the in-memory engineering fixture, rather than a production Spring service, the intended release artifact for this gate?\"]",
+      "tokenUsage": {
+        "input_tokens": 67469,
+        "cached_input_tokens": 48384,
+        "output_tokens": 1254
+      },
+      "monetaryCost": "unavailable",
+      "structuredResult": {
+        "summary": "Release-readiness handoff for invocation 6daddef7-8c44-4028-b0cd-0f6ac60cbe33 and candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf: the supplied Java engineering fixture implements the README contract in demo.LinkBook. It preserves fixed destinations; permanently reserves codes, including deleted codes; supports optional expiration with equality treated as expired; returns no destination for missing, expired, disabled, or deleted links; records analytics only for successful resolutions when record=true; and exposes retained total and UTC daily counts, with zero for unknown codes. The implementation is an in-memory, synchronized domain fixture—not the delivered Spring REST/database service—and includes no HTTP server, database, authentication, deployment, or destination fetching. The fixture POM and supplied acceptance tests are preserved. Authoritative dependency evidence records the verify and review tasks as SUCCEEDED for this exact candidate; this handoff did not independently rerun Maven verification. No usage, cost, elapsed-time, recovery-event, deployment, or approval data was supplied. Release readiness remains subject to human review of this exact revision and evidence.",
+        "questions": [
+          "Will a human reviewer approve candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf using the declared verification and review evidence?",
+          "Is the in-memory engineering fixture, rather than a production Spring service, the intended release artifact for this gate?"
+        ],
+        "risks": [
+          "The handoff relies on supplied dependency evidence and does not constitute an independent Maven verification result.",
+          "All links and analytics exist only in process memory and are lost when the process ends.",
+          "The fixture exposes no HTTP API, persistence, authentication, ownership controls, deployment configuration, or multi-process coordination; those capabilities are outside the README contract.",
+          "Final release approval is a human gate and cannot be granted by this report."
+        ],
+        "tasks": [
+          {
+            "id": "human-review",
+            "description": "Review the exact candidate hash, README contract, implementation, acceptance tests, and declared dependency evidence; record an explicit approve or reject decision.",
+            "dependencies": [
+              "verify",
+              "review"
+            ],
+            "allowedPaths": []
+          },
+          {
+            "id": "release-decision",
+            "description": "Confirm that the disposable in-memory Java fixture is the intended artifact and, only after human approval, authorize any separate release action.",
+            "dependencies": [
+              "human-review"
+            ],
+            "allowedPaths": []
+          }
+        ]
+      },
+      "fullOutputHash": "602438a383a47620a59944beabfbad0c471524466f3d34de640073452c6715a2"
+    }
+  ],
+  "approvals": [
+    {
+      "revision": 1,
+      "task_id": "design-approval",
+      "run_version": 2,
+      "evidence_hash": "ab7ecea2fec69de056d13b0c361e542550dbf72c399a47f38d69793d175cc7ac",
+      "approved": true,
+      "principal": "operator",
+      "rationale": "Private human discussion omitted from submission export.",
+      "occurred_at": "2026-10-02T14:29:02.628864Z"
+    },
+    {
+      "revision": 2,
+      "task_id": "design-approval",
+      "run_version": 7,
+      "evidence_hash": "c053d0835f1539e60280d9445a9395c5df637e1a7158f24182e8f6af41706421",
+      "approved": true,
+      "principal": "operator",
+      "rationale": "Private human discussion omitted from submission export.",
+      "occurred_at": "2026-10-02T16:00:05.515226Z"
+    },
+    {
+      "revision": 2,
+      "task_id": "final-approval",
+      "run_version": 10,
+      "evidence_hash": "285f586dfe8d69e74348d983847742acc6fee0d5a2619fcdffaaedf40bc48f4d",
+      "approved": true,
+      "principal": "operator",
+      "rationale": "Private human discussion omitted from submission export.",
+      "occurred_at": "2026-10-02T16:50:25.641521Z"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 1,
+      "revision": 1,
+      "task_id": null,
+      "event_type": "CREATED",
+      "detail": "Actual CLI execution; unresolved ambiguity blocks dispatch; baseline=00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "occurred_at": "2026-10-02T14:18:14.529171Z"
+    },
+    {
+      "sequence": 4,
+      "revision": 1,
+      "task_id": "requirements",
+      "event_type": "CLAIMED",
+      "detail": "attempt=8fb0926a-3c9f-47bc-ba92-9afda4437c71 invocation=c0fd4d27-909f-4fe8-b69a-64e91d6cab64 input=68c46745e60e9bf269a433ada57553135053e68fb065b8da1fb142ce986b02bf",
+      "occurred_at": "2026-10-02T14:18:15.482415Z"
+    },
+    {
+      "sequence": 8,
+      "revision": 1,
+      "task_id": "requirements",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:19:12.504366Z"
+    },
+    {
+      "sequence": 9,
+      "revision": 1,
+      "task_id": "architecture",
+      "event_type": "CLAIMED",
+      "detail": "attempt=cfe09c10-53c8-432f-81ab-6126f7e5ed19 invocation=3c90c256-4820-4aa6-9d1c-8f2773225845 input=ce3827c87e02aa0bc803dd13fdec0d92bb0dacdc5a7e6ed1d3be7a3eaa18aa17",
+      "occurred_at": "2026-10-02T14:19:13.003332Z"
+    },
+    {
+      "sequence": 10,
+      "revision": 1,
+      "task_id": "architecture",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:19:37.108852Z"
+    },
+    {
+      "sequence": 11,
+      "revision": 1,
+      "task_id": "design-approval",
+      "event_type": "GATE_READY",
+      "detail": "Exact input and candidate evidence published",
+      "occurred_at": "2026-10-02T14:19:37.227302Z"
+    },
+    {
+      "sequence": 14,
+      "revision": 1,
+      "task_id": "design-approval",
+      "event_type": "HUMAN_APPROVED",
+      "detail": "Human decision recorded; private discussion omitted from submission export.",
+      "occurred_at": "2026-10-02T14:29:02.636416Z"
+    },
+    {
+      "sequence": 16,
+      "revision": 1,
+      "task_id": "implementation",
+      "event_type": "CLAIMED",
+      "detail": "attempt=00758486-2998-4510-a4cf-98511de86e66 invocation=a7d66c51-4477-4ff3-9224-c91ee2994f64 input=d8147f7e160d3db11dfef3cc07cc9fcdeb6570885aaf59d0a5e6346266f3a174",
+      "occurred_at": "2026-10-02T14:29:03.627154Z"
+    },
+    {
+      "sequence": 19,
+      "revision": 1,
+      "task_id": "implementation",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:30:42.671342Z"
+    },
+    {
+      "sequence": 20,
+      "revision": 1,
+      "task_id": "review",
+      "event_type": "CLAIMED",
+      "detail": "attempt=f26d3e59-1b7e-431b-968c-f42a1400c3de invocation=747ef04e-68df-4f9c-ab5b-92186b1fd95c input=c0e2b64662779b6fbdd9b83f264401611b80f70c9742a8063f9835fedcc1880f",
+      "occurred_at": "2026-10-02T14:30:43.457939Z"
+    },
+    {
+      "sequence": 22,
+      "revision": 1,
+      "task_id": "verify",
+      "event_type": "CLAIMED",
+      "detail": "attempt=bc1d377f-a2d7-427e-a090-2fba48970045 invocation=e475e6db-6f92-48b5-978a-dbdf0d78c5c5 input=0cd360f8b636813ff8c2b2e8adf9503b8e009a87df6f076f2e5e33ec199c43c0",
+      "occurred_at": "2026-10-02T14:31:48.048355Z"
+    },
+    {
+      "sequence": 23,
+      "revision": 1,
+      "task_id": "review",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:31:52.19694Z"
+    },
+    {
+      "sequence": 24,
+      "revision": 1,
+      "task_id": "verify",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Maven verify passed against exact candidate",
+      "occurred_at": "2026-10-02T14:31:52.210848Z"
+    },
+    {
+      "sequence": 25,
+      "revision": 1,
+      "task_id": "join",
+      "event_type": "JOIN_PASSED",
+      "detail": "Exact input and candidate evidence published",
+      "occurred_at": "2026-10-02T14:31:53.096498Z"
+    },
+    {
+      "sequence": 26,
+      "revision": 1,
+      "task_id": "handoff",
+      "event_type": "CLAIMED",
+      "detail": "attempt=7ee914bf-5e8a-431f-a837-f59d037f8e3f invocation=6daddef7-8c44-4028-b0cd-0f6ac60cbe33 input=25d8e537e3e89051fe0bfbd74e2850e59968abf4f89895958088bd185fa2f015",
+      "occurred_at": "2026-10-02T14:31:54.122355Z"
+    },
+    {
+      "sequence": 28,
+      "revision": 1,
+      "task_id": null,
+      "event_type": "SAFE_STOP",
+      "detail": "Attempt failed; bounded recovery unavailable: Unresolved agent questions require reviewed clarification: [\"Will a human reviewer approve candidate fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf using the declared verification and review evidence?\",\"Is the in-memory engineering fixture, rather than a production Spring service, the intended release artifact for this gate?\"]",
+      "occurred_at": "2026-10-02T14:32:38.688495Z"
+    },
+    {
+      "sequence": 40,
+      "revision": 2,
+      "task_id": null,
+      "event_type": "KNOWN_QUESTION_STOP_RECOVERED",
+      "detail": "Human clarification created a new immutable revision; all evidence and approvals invalidated; attempt/time/repair consumption retained",
+      "occurred_at": "2026-10-02T14:44:31.065038Z"
+    },
+    {
+      "sequence": 42,
+      "revision": 2,
+      "task_id": "requirements",
+      "event_type": "CLAIMED",
+      "detail": "attempt=88fd55c5-bd2b-4a18-84c4-4d846a641f78 invocation=94d52351-2310-45e0-9a6c-74a5d28d523b input=7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d",
+      "occurred_at": "2026-10-02T14:44:31.950591Z"
+    },
+    {
+      "sequence": 44,
+      "revision": 2,
+      "task_id": "requirements",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:45:24.350464Z"
+    },
+    {
+      "sequence": 45,
+      "revision": 2,
+      "task_id": "architecture",
+      "event_type": "CLAIMED",
+      "detail": "attempt=997df7f6-e17e-487b-b41e-79cafea6e269 invocation=a7d1510b-bd01-4e55-a4d2-03add78f3882 input=871f834dc284d37d79262d370231e3f33df543f4c5ed90b60a2c1911946dc938",
+      "occurred_at": "2026-10-02T14:45:24.407565Z"
+    },
+    {
+      "sequence": 48,
+      "revision": 2,
+      "task_id": "architecture",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T14:46:05.649425Z"
+    },
+    {
+      "sequence": 49,
+      "revision": 2,
+      "task_id": "design-approval",
+      "event_type": "GATE_READY",
+      "detail": "Exact input and candidate evidence published",
+      "occurred_at": "2026-10-02T14:46:05.741193Z"
+    },
+    {
+      "sequence": 52,
+      "revision": 2,
+      "task_id": "design-approval",
+      "event_type": "HUMAN_APPROVED",
+      "detail": "Human decision recorded; private discussion omitted from submission export.",
+      "occurred_at": "2026-10-02T16:00:05.524958Z"
+    },
+    {
+      "sequence": 55,
+      "revision": 2,
+      "task_id": "implementation",
+      "event_type": "CLAIMED",
+      "detail": "attempt=d56eaff7-e255-4b68-83df-ba6a60d4db40 invocation=210bceb7-cc97-46f5-8b61-5962e8289421 input=0f42413edf901dbd93cdf1e4f8823b51f56314c2e57be026c27be194a84692d9",
+      "occurred_at": "2026-10-02T16:00:06.477914Z"
+    },
+    {
+      "sequence": 59,
+      "revision": 2,
+      "task_id": "implementation",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T16:01:56.93237Z"
+    },
+    {
+      "sequence": 60,
+      "revision": 2,
+      "task_id": "review",
+      "event_type": "CLAIMED",
+      "detail": "attempt=9270b152-465f-47f9-bd02-76ff8d41084e invocation=a01ce8c8-14f5-47d5-9e58-9559399da449 input=179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab",
+      "occurred_at": "2026-10-02T16:01:57.462721Z"
+    },
+    {
+      "sequence": 62,
+      "revision": 2,
+      "task_id": "verify",
+      "event_type": "CLAIMED",
+      "detail": "attempt=9003ca98-fa67-4cae-a06d-450ecf01ea05 invocation=471edee9-5c8f-44f7-8106-400d5709dc67 input=84236ea06e94372861a1f5f18341f34bc8b20eec3285aa29f2dda6529f446d20",
+      "occurred_at": "2026-10-02T16:02:50.941417Z"
+    },
+    {
+      "sequence": 63,
+      "revision": 2,
+      "task_id": "verify",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Maven verify passed against exact candidate",
+      "occurred_at": "2026-10-02T16:02:54.438801Z"
+    },
+    {
+      "sequence": 68,
+      "revision": 2,
+      "task_id": "review",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T16:03:04.662899Z"
+    },
+    {
+      "sequence": 69,
+      "revision": 2,
+      "task_id": "join",
+      "event_type": "JOIN_PASSED",
+      "detail": "Exact input and candidate evidence published",
+      "occurred_at": "2026-10-02T16:03:05.071123Z"
+    },
+    {
+      "sequence": 70,
+      "revision": 2,
+      "task_id": "handoff",
+      "event_type": "CLAIMED",
+      "detail": "attempt=599d9d24-0f02-4c49-86a0-f28b52f39f43 invocation=c40ebe41-d29a-4762-8130-724edfe93b5a input=93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92",
+      "occurred_at": "2026-10-02T16:03:06.088864Z"
+    },
+    {
+      "sequence": 75,
+      "revision": 2,
+      "task_id": "handoff",
+      "event_type": "TASK_SUCCEEDED",
+      "detail": "Actual Codex structured result published",
+      "occurred_at": "2026-10-02T16:04:09.258451Z"
+    },
+    {
+      "sequence": 76,
+      "revision": 2,
+      "task_id": "handoff",
+      "event_type": "HANDOFF_REVIEW_ITEMS",
+      "detail": "[\"Will the designated human reviewer approve candidate e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be after examining the exact candidate, detailed Maven output, and candidate-review findings?\", \"Can the authoritative detailed outputs for verification evidence 774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd and review evidence 07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f be presented at the final human gate without accessing disallowed locations?\"]",
+      "occurred_at": "2026-10-02T16:04:09.258796Z"
+    },
+    {
+      "sequence": 77,
+      "revision": 2,
+      "task_id": "final-approval",
+      "event_type": "GATE_READY",
+      "detail": "Exact input and candidate evidence published",
+      "occurred_at": "2026-10-02T16:04:09.624118Z"
+    },
+    {
+      "sequence": 88,
+      "revision": 2,
+      "task_id": "final-approval",
+      "event_type": "HUMAN_APPROVED",
+      "detail": "Human explicitly approved final sign-off for all three verified assessment fixture candidates on October 2, 2026. Approval covers local fixture handoff.",
+      "occurred_at": "2026-10-02T16:50:25.652736Z"
+    }
+  ],
+  "graphRevisions": [
+    {
+      "revision": 1,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Implement demo.LinkBook exactly as the supplied README.md contract specifies. Preserve the fixture POM and existing acceptance tests. No separate HTTP server, database, or deployment is requested. Fixed destinations, optional expiration with equality expired, count only recorded successful resolutions, and total plus UTC daily counts are approved product choices.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "10c1c824aa0a3cb12d28ced8f2345958edcea233bda7ca840a5a425c4f79b178",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "ce3827c87e02aa0bc803dd13fdec0d92bb0dacdc5a7e6ed1d3be7a3eaa18aa17"
+    },
+    {
+      "revision": 1,
+      "task_id": "design-approval",
+      "definition": "{\"id\": \"design-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review normalized requirements and architecture\", \"dependencies\": [\"requirements\", \"architecture\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": "ab7ecea2fec69de056d13b0c361e542550dbf72c399a47f38d69793d175cc7ac",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "f17c53c56a8a4771c918463282d473af119d319c98b10671fdab2e8c2a16c2ed"
+    },
+    {
+      "revision": 1,
+      "task_id": "final-approval",
+      "definition": "{\"id\": \"final-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review final candidate and actual verification evidence\", \"dependencies\": [\"handoff\", \"join\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": null
+    },
+    {
+      "revision": 1,
+      "task_id": "handoff",
+      "definition": "{\"id\": \"handoff\", \"type\": \"AGENT\", \"skill\": \"shortener-handoff\", \"prompt\": \"Prepare release readiness report\", \"dependencies\": [\"join\"], \"allowedPaths\": [\"artifacts/handoff/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": null,
+      "candidate_hash": null,
+      "input_hash": "25d8e537e3e89051fe0bfbd74e2850e59968abf4f89895958088bd185fa2f015"
+    },
+    {
+      "revision": 1,
+      "task_id": "implementation",
+      "definition": "{\"id\": \"implementation\", \"type\": \"AGENT\", \"skill\": \"shortener-implementation-repair\", \"prompt\": \"Implement demo.LinkBook exactly as the supplied README.md contract specifies. Preserve the fixture POM and existing acceptance tests. No separate HTTP server, database, or deployment is requested. Fixed destinations, optional expiration with equality expired, count only recorded successful resolutions, and total plus UTC daily counts are approved product choices.\", \"dependencies\": [\"design-approval\"], \"allowedPaths\": [\"src/\", \"pom.xml\", \"artifacts/implementation/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "6ca172956f9a3a3429aa9466c93364a87afef0b007c81a7661f37209348253f4",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "input_hash": "d8147f7e160d3db11dfef3cc07cc9fcdeb6570885aaf59d0a5e6346266f3a174"
+    },
+    {
+      "revision": 1,
+      "task_id": "join",
+      "definition": "{\"id\": \"join\", \"type\": \"JOIN\", \"skill\": null, \"prompt\": \"Synchronize independent checks\", \"dependencies\": [\"verify\", \"review\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": "cfe20580a76a10001b4c8db3d5c967e4ce15337859691c838769a2a563c25c9f",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "input_hash": "d4c070dfa20ef006577a4c66e9d114de6c82a239b5badd8598e2b2b901c4d5f2"
+    },
+    {
+      "revision": 1,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Implement demo.LinkBook exactly as the supplied README.md contract specifies. Preserve the fixture POM and existing acceptance tests. No separate HTTP server, database, or deployment is requested. Fixed destinations, optional expiration with equality expired, count only recorded successful resolutions, and total plus UTC daily counts are approved product choices.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "09bfa6d85adbf343404e23eba8605826a100c73338fd91aee232391602aadb4d",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "68c46745e60e9bf269a433ada57553135053e68fb065b8da1fb142ce986b02bf"
+    },
+    {
+      "revision": 1,
+      "task_id": "review",
+      "definition": "{\"id\": \"review\", \"type\": \"AGENT\", \"skill\": \"shortener-verification-review\", \"prompt\": \"Review the exact implementation candidate\", \"dependencies\": [\"implementation\"], \"allowedPaths\": [\"artifacts/review/\"]}",
+      "state": "INVALIDATED",
+      "evidence_hash": "f98c5357f6904a73d997728f889ffd8ee0bb0ac2ab5d442df1508b7cefff37ff",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "input_hash": "c0e2b64662779b6fbdd9b83f264401611b80f70c9742a8063f9835fedcc1880f"
+    },
+    {
+      "revision": 1,
+      "task_id": "verify",
+      "definition": "{\"id\": \"verify\", \"type\": \"VERIFY\", \"skill\": null, \"prompt\": \"Run Maven verification\", \"dependencies\": [\"implementation\"], \"allowedPaths\": []}",
+      "state": "INVALIDATED",
+      "evidence_hash": "ba8805edc095aab106687e938387fb493fdde71dd3ae40c21cadd3136ecd5b4a",
+      "candidate_hash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+      "input_hash": "0cd360f8b636813ff8c2b2e8adf9503b8e009a87df6f076f2e5e33ec199c43c0"
+    },
+    {
+      "revision": 2,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "a2f3f1f53ff5f4e3e666b0cb489c17f0fd522c13d44081936b40e8be50d9af8a",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "871f834dc284d37d79262d370231e3f33df543f4c5ed90b60a2c1911946dc938"
+    },
+    {
+      "revision": 2,
+      "task_id": "design-approval",
+      "definition": "{\"id\": \"design-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review normalized requirements and architecture\", \"dependencies\": [\"requirements\", \"architecture\"], \"allowedPaths\": []}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "c053d0835f1539e60280d9445a9395c5df637e1a7158f24182e8f6af41706421",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "5145e0d030bb02e20ee7c3b08b9e6fd57b382a47a75ffe91787a6ed65b7bd36a"
+    },
+    {
+      "revision": 2,
+      "task_id": "final-approval",
+      "definition": "{\"id\": \"final-approval\", \"type\": \"APPROVAL\", \"skill\": null, \"prompt\": \"Review final candidate and actual verification evidence\", \"dependencies\": [\"handoff\", \"join\"], \"allowedPaths\": []}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "285f586dfe8d69e74348d983847742acc6fee0d5a2619fcdffaaedf40bc48f4d",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "579a29c791e74a6f4aad2595a53d8ec815d530007435c61f2015a24b4bffb55d"
+    },
+    {
+      "revision": 2,
+      "task_id": "handoff",
+      "definition": "{\"id\": \"handoff\", \"type\": \"AGENT\", \"skill\": \"shortener-handoff\", \"prompt\": \"Prepare release readiness report\", \"dependencies\": [\"join\"], \"allowedPaths\": [\"artifacts/handoff/\"]}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92"
+    },
+    {
+      "revision": 2,
+      "task_id": "implementation",
+      "definition": "{\"id\": \"implementation\", \"type\": \"AGENT\", \"skill\": \"shortener-implementation-repair\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [\"design-approval\"], \"allowedPaths\": [\"src/\", \"pom.xml\", \"artifacts/implementation/\"]}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "0ee74bc9865f9abedc6a716c0b8116ab19a72737252fa713c882b7c86b697010",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "0f42413edf901dbd93cdf1e4f8823b51f56314c2e57be026c27be194a84692d9"
+    },
+    {
+      "revision": 2,
+      "task_id": "join",
+      "definition": "{\"id\": \"join\", \"type\": \"JOIN\", \"skill\": null, \"prompt\": \"Synchronize independent checks\", \"dependencies\": [\"verify\", \"review\"], \"allowedPaths\": []}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "ce76991313b7d7ced82f07776e9507f371a913e6aad127bf3fb56127aebc3151",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "6f1594c1d80a459c56b1f51d9a430ced943d00f68ae4f8e634216693f07b0b2e"
+    },
+    {
+      "revision": 2,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "9052cb3da04c2640f169161a9f06a1468c0a0776dc4df92624845fad4e1e48da",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "7e64e81614049416e0cf25e8db448693159c02cff94c8e7e8d7402b3ed1b496d"
+    },
+    {
+      "revision": 2,
+      "task_id": "review",
+      "definition": "{\"id\": \"review\", \"type\": \"AGENT\", \"skill\": \"shortener-verification-review\", \"prompt\": \"Review the exact implementation candidate\", \"dependencies\": [\"implementation\"], \"allowedPaths\": [\"artifacts/review/\"]}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab"
+    },
+    {
+      "revision": 2,
+      "task_id": "verify",
+      "definition": "{\"id\": \"verify\", \"type\": \"VERIFY\", \"skill\": null, \"prompt\": \"Run Maven verification\", \"dependencies\": [\"implementation\"], \"allowedPaths\": []}",
+      "state": "SUCCEEDED",
+      "evidence_hash": "774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "84236ea06e94372861a1f5f18341f34bc8b20eec3285aa29f2dda6529f446d20"
+    }
+  ],
+  "metrics": {
+    "attempts": 12,
+    "retryFrequency": 0.0,
+    "successRateAcrossObservedTerminalRuns": 1.0,
+    "cancelledRunsReportedSeparately": 0,
+    "compensationFrequency": 0.0,
+    "endToEndLatencyMs": 9131151,
+    "humanWaitMs": 7781220,
+    "activeExecutionMs": 635553,
+    "activeExecutionSemantics": "sum of worker attempt elapsed time; concurrent attempts consume separate budget reservations",
+    "repairCycles": 0,
+    "tokenUsage": {
+      "input_tokens": 836527,
+      "input_tokens_attempts_with_reported_usage": 10,
+      "cached_input_tokens": 621952,
+      "cached_input_tokens_attempts_with_reported_usage": 10,
+      "output_tokens": 19582,
+      "output_tokens_attempts_with_reported_usage": 10,
+      "attempts_with_unknown_usage": 2
+    },
+    "monetaryCost": "unavailable: subscription CLI",
+    "completedRecoveryTimesMs": "unavailable"
+  },
+  "executionClassification": "actual; test adapters and injected faults are identified in attempt details",
+  "limitations": [
+    "Single process embedded H2",
+    "Application allowlist and Codex sandbox do not prove read/network isolation",
+    "Candidate workspaces never merged into user checkout",
+    "Local events are not tamper-proof",
+    "No deployment performed"
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

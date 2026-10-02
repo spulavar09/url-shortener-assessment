@@ -1,0 +1,60 @@
+{
+  "revision": 1,
+  "task_id": "architecture",
+  "state": "INVALIDATED",
+  "input_hash": "c404baecb40f66b0ece830a9f248c258c3a12fcad6a16d40b1d07f36b3aaf085",
+  "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+  "evidenceHash": "6f291e650dcf83d1ca533dc7ecd38608d43a9dc6ebc18628a6d3c2dbb66e7fd1",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 60697,
+    "cached_input_tokens": 50176,
+    "output_tokens": 1591
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "The smallest compliant repair is a one-condition change in the in-memory domain model: LinkBook.resolve must reject a non-null expiry whenever now is not before expiresAt. The expiry check remains before analytics mutation, so equality and later resolutions return Optional.empty() without changing total or UTC daily counts. No API, test, dependency, POM, persistence, service, or deployment changes are needed. No files were written and no Maven verification is claimed.",
+    "questions": [],
+    "risks": [
+      "The current authorization permits writes only under artifacts/architecture/, while the actual repair requires a later control-layer authorization for src/main/java/demo/LinkBook.java.",
+      "Changing only isAfter to an equality-inclusive predicate is essential; reordering the check after analytics recording would still incorrectly count failed resolutions.",
+      "Verification must run against the exact combined candidate with the supplied tests and unchanged pom.xml; this architecture pass did not execute or independently validate Maven."
+    ],
+    "tasks": [
+      {
+        "id": "IMPLEMENT-EXPIRY-BOUNDARY",
+        "description": "Using REQ-EXPIRY-BOUNDARY as input, update only LinkBook.resolve so a link with a non-null expiry is rejected when now equals or follows expiresAt, preferably expressed as !now.isBefore(link.expiresAt). Keep this guard before record-based total and UTC daily mutations, and preserve every other behavior and public API.",
+        "dependencies": [
+          "REQ-EXPIRY-BOUNDARY"
+        ],
+        "allowedPaths": [
+          "src/main/java/demo/LinkBook.java"
+        ]
+      },
+      {
+        "id": "VERIFY-SUPPLIED-ACCEPTANCE",
+        "description": "Against the candidate produced by IMPLEMENT-EXPIRY-BOUNDARY, run the supplied Maven verification without modifying pom.xml or the supplied tests. Confirm success immediately before expiry, failure at equality and afterward, no count increase for failed or record=false resolutions, and preservation of destination, lifecycle, reservation, and UTC bucket behavior.",
+        "dependencies": [
+          "IMPLEMENT-EXPIRY-BOUNDARY"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "REVIEW-REPAIR-SCOPE",
+        "description": "Review the same verified candidate and confirm the diff is limited to the expiry-boundary correction, with pom.xml and supplied acceptance tests unchanged and no service, database, dependency, deployment, or external-action expansion.",
+        "dependencies": [
+          "IMPLEMENT-EXPIRY-BOUNDARY",
+          "VERIFY-SUPPLIED-ACCEPTANCE"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "bb917e8bc224c52e35968263da9cf8d691942fbe288174b90984c35fbcd351c3",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

@@ -1,0 +1,54 @@
+{
+  "revision": 2,
+  "task_id": "handoff",
+  "state": "SUCCEEDED",
+  "input_hash": "f3091d914907693a1b1e149348652cfc753f55a37497621945becbbab4d2dbab",
+  "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+  "evidenceHash": "8f62507e56aff3adbd2a35366752efdf921b5d3b8dda254246691da7c918db48",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 85467,
+    "cached_input_tokens": 79616,
+    "output_tokens": 1893
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Release-readiness handoff for isolated in-memory fixture only. The supplied demo.LinkBook candidate implements the expiry boundary with `!now.isBefore(expiresAt)`, so resolution fails when `now == expiresAt` before any count is recorded. It preserves fixed destinations, optional expiration, permanently reserved deleted codes, disabled/deleted count history, record=false behavior, total counts, and UTC daily counts. The supplied POM and acceptance tests remain unchanged. Orchestrator-declared evidence reports VERIFY and REVIEW tasks succeeded against exact candidate hash ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935 at revision 2; this report did not independently run Maven and does not claim independent verification. This artifact is a disposable Java domain fixture, not the delivered Spring REST/database service, and no deployment, publishing, merge, or live-service change occurred. Execution time, token usage, and monetary cost are unavailable from the supplied evidence. Candidate release readiness remains blocked on mandatory human review and approval of this exact revision and evidence.",
+    "questions": [
+      "Will the designated human approve revision 2, candidate hash ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935, and its declared verification and review evidence?"
+    ],
+    "risks": [
+      "Final human approval has not been granted, so this candidate is not authorized for release, merge, deployment, or publication.",
+      "The verification result is orchestrator-declared dependency evidence; Maven was not independently executed during this handoff.",
+      "The fixture does not establish readiness of any Spring REST/database service or production environment.",
+      "If recovery becomes necessary, prior failed evidence must remain preserved and fresh design approval must be obtained before a replacement candidate proceeds."
+    ],
+    "tasks": [
+      {
+        "id": "human-final-review",
+        "description": "Have the designated human review exact revision 2, candidate hash ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935, the declared VERIFY evidence hash 69301996bd2969af1aad34792b6305038ebaafb6b03ddef2df27c54a8375c30d, and REVIEW evidence hash a282ca23fbca919725debd0f5e8cfcf33aba64132fc99b2560edfe05f0894544; record an explicit decision without treating this proposal as authority.",
+        "dependencies": [
+          "join"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "recovery-gate-if-needed",
+        "description": "Only if recovery is initiated, preserve all prior failed evidence, obtain fresh human design approval, produce a new exact candidate and fresh verification/review evidence, then repeat final human review.",
+        "dependencies": [
+          "human-final-review"
+        ],
+        "allowedPaths": [
+          "artifacts/handoff/"
+        ]
+      }
+    ]
+  },
+  "fullOutputHash": "c985b9f9fc5f4555693599298bcd747c89ac5d88c39596ad230d9f767e91b83c",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

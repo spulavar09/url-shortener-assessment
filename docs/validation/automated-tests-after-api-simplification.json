@@ -1,0 +1,39 @@
+{
+  "classification": "actual automated verification after API simplification",
+  "result": "PASS",
+  "totalTests": 53,
+  "suites": [
+    {
+      "name": "com.example.shortener.ApiIntegrationTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "7.035"
+    },
+    {
+      "name": "com.example.shortener.links.LinkIntegrationTest",
+      "tests": "24",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "1.145"
+    },
+    {
+      "name": "com.example.shortener.workflow.WorkflowControlTest",
+      "tests": "26",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "3.098"
+    }
+  ],
+  "command": "Maven wrapper 3.10.0 offline verify with Java 21.0.12",
+  "notes": [
+    "Pagination test removed along with the feature; combined responses and removed-route behavior verified over actual HTTP.",
+    "Workflow tests cover compact review evidence, artifact tampering, fixed graph validation, gates and recovery.",
+    "H2 2.4.240 is newer than the Flyway reported verified H2 version 2.3.232; migrations and tests passed."
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

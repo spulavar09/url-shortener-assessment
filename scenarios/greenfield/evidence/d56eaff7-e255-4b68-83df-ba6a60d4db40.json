@@ -1,0 +1,17 @@
+{
+  "inputHash": "0f42413edf901dbd93cdf1e4f8823b51f56314c2e57be026c27be194a84692d9",
+  "invocationId": "210bceb7-cc97-46f5-8b61-5962e8289421",
+  "monetaryCost": "unavailable",
+  "tokenUsage": {
+    "input_tokens": 142125,
+    "cached_input_tokens": 98688,
+    "output_tokens": 3915
+  },
+  "candidateHash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+  "execution": "actual",
+  "sandbox": "workspace-write",
+  "result": "{\"summary\": \"Implemented demo.LinkBook in src/main/java/demo/LinkBook.java. It preserves fixed destinations, permanently reserves created codes, treats now >= expiresAt as expired, excludes HEAD and unsuccessful resolutions from counts, retains counts after disable/delete, and records total plus UTC daily counts. pom.xml and the supplied acceptance test were not modified. mvn verify was run but failed during Maven plugin resolution before compilation/tests because the sandbox blocked Maven’s user-repository tracking-file write; no independent Maven verification pass is claimed.\", \"questions\": [], \"risks\": [\"Compilation and acceptance tests were not reached by Maven, so the independent verification and final human approval gates remain outstanding.\"], \"tasks\": [{\"id\": \"fresh-verification\", \"description\": \"Run mvn verify in the independent verification environment with the fixture dependencies available.\", \"dependencies\": [], \"allowedPaths\": []}, {\"id\": \"candidate-review\", \"description\": \"Review the implemented candidate and actual verifier evidence before requesting the separate mandatory human approval.\", \"dependencies\": [\"fresh-verification\"], \"allowedPaths\": []}]}",
+  "exitCode": 0,
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

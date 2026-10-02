@@ -1,0 +1,54 @@
+{
+  "inputHash": "f17c53c56a8a4771c918463282d473af119d319c98b10671fdab2e8c2a16c2ed",
+  "task": {
+    "id": "design-approval",
+    "type": "APPROVAL",
+    "skill": null,
+    "prompt": "Review normalized requirements and architecture",
+    "dependencies": [
+      "requirements",
+      "architecture"
+    ],
+    "allowedPaths": []
+  },
+  "dependencies": [
+    {
+      "run_id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 1,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Implement demo.LinkBook exactly as the supplied README.md contract specifies. Preserve the fixture POM and existing acceptance tests. No separate HTTP server, database, or deployment is requested. Fixed destinations, optional expiration with equality expired, count only recorded successful resolutions, and total plus UTC daily counts are approved product choices.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:19:42.052693Z",
+      "retry_after": null,
+      "skill_hash": "2d3e19cc0971cc8b6ce2d7619c131c95c4533cc47965e80b4c074b2704246865",
+      "evidence_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/evidence/8fb0926a-3c9f-47bc-ba92-9afda4437c71.json",
+      "evidence_hash": "09bfa6d85adbf343404e23eba8605826a100c73338fd91aee232391602aadb4d",
+      "candidate_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/baseline",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "68c46745e60e9bf269a433ada57553135053e68fb065b8da1fb142ce986b02bf"
+    },
+    {
+      "run_id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 1,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Implement demo.LinkBook exactly as the supplied README.md contract specifies. Preserve the fixture POM and existing acceptance tests. No separate HTTP server, database, or deployment is requested. Fixed destinations, optional expiration with equality expired, count only recorded successful resolutions, and total plus UTC daily counts are approved product choices.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:20:06.21346Z",
+      "retry_after": null,
+      "skill_hash": "906d1a60b9eced53d82ee98f58dbc137d9f5408dd6e850053d981c9eafbb550e",
+      "evidence_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/evidence/cfe09c10-53c8-432f-81ab-6126f7e5ed19.json",
+      "evidence_hash": "10c1c824aa0a3cb12d28ced8f2345958edcea233bda7ca840a5a425c4f79b178",
+      "candidate_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/baseline",
+      "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+      "input_hash": "ce3827c87e02aa0bc803dd13fdec0d92bb0dacdc5a7e6ed1d3be7a3eaa18aa17"
+    }
+  ],
+  "revision": 1,
+  "candidateHash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

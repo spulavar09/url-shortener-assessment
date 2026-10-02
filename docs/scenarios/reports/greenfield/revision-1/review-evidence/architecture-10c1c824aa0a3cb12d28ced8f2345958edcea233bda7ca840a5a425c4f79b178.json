@@ -1,0 +1,49 @@
+{
+  "revision": 1,
+  "task_id": "architecture",
+  "state": "INVALIDATED",
+  "input_hash": "ce3827c87e02aa0bc803dd13fdec0d92bb0dacdc5a7e6ed1d3be7a3eaa18aa17",
+  "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+  "evidenceHash": "10c1c824aa0a3cb12d28ced8f2345958edcea233bda7ca840a5a425c4f79b178",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 37994,
+    "cached_input_tokens": 18048,
+    "output_tokens": 716
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "The approved design is a single in-memory demo.LinkBook domain class using a permanent code registry. Each entry preserves its destination and optional expiration, tracks disabled/deleted state, and stores total plus UTC-date resolution counts. Resolution succeeds only for present, active, non-expired entries; expiresAt equality is expired, and counting occurs only for successful record=true resolutions. This architecture phase wrote no files and did not run or claim Maven verification.",
+    "questions": [],
+    "risks": [
+      "Implementation cannot occur in this invocation because the selected architecture skill authorizes task decomposition only and the declared write boundary artifacts/architecture/ excludes src/main/java/demo/LinkBook.java.",
+      "Thread-safety and null handling beyond nullable expiresAt are unspecified; implementation should not add unapproved behavior.",
+      "mvn verify remains an execution gate and must not be reported as passed until actually run against the combined candidate."
+    ],
+    "tasks": [
+      {
+        "id": "implement-linkbook",
+        "description": "Create src/main/java/demo/LinkBook.java as a dependency-free in-memory domain model implementing permanent code reservation, immutable destinations, optional expiration with equality expired, disable/delete state, successful recorded-resolution counting, and total plus UTC daily queries. Preserve pom.xml and the supplied acceptance tests.",
+        "dependencies": [],
+        "allowedPaths": [
+          "src/main/java/demo/LinkBook.java"
+        ]
+      },
+      {
+        "id": "verify-linkbook",
+        "description": "Run mvn verify against the combined candidate without changing pom.xml or bypassing verification, and report the actual result.",
+        "dependencies": [
+          "implement-linkbook"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "87ee63f83fd8ab5b30470e7bd2b69b10af0744bcc67e736ea509f8adfe35a8d6",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

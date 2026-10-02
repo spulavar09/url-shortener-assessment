@@ -1,0 +1,44 @@
+{
+  "revision": 2,
+  "task_id": "requirements",
+  "state": "SUCCEEDED",
+  "input_hash": "9be2af341055baf2087f93b99ca74d284dfbf2a8b8812ae9d783327c63c5a36e",
+  "candidate_hash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+  "evidenceHash": "40ff4b18cf0aaee5b3c500f4ebea7213c4cf4a786ddd7533ba6dc34eae403f69",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 66240,
+    "cached_input_tokens": 61440,
+    "output_tokens": 1342
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Requirements are fully clarified for the supplied LinkBook fixture. “Permanent” means each code remains permanently reserved, including after deletion, and its destination never changes; links may optionally expire, with expiration beginning when now equals expiresAt. A resolution succeeds only for an existing, active, non-deleted, non-expired link. Analytics count only successful resolutions with record=true: expose a lifetime total and UTC-calendar-day counts based on the supplied resolution instant. record=false (HEAD), missing links, expired links, disabled links, and deleted links do not increment analytics. Disabling or deleting a link preserves its existing counts. Unknown codes report zero. Preserve the fixture pom.xml and supplied acceptance tests. Scope excludes an HTTP server, persistence system, destination fetch, external dependencies, deployment, and changes outside artifacts/requirements/.",
+    "questions": [],
+    "risks": [
+      "“Permanent” must not be interpreted as forcing every link to be non-expiring; optional expiry remains supported.",
+      "Analytics represent recorded successful resolutions, not verified visits to or successful fetches from destination URLs.",
+      "The fixture is in-memory, so counts and reserved codes are not durable across process restarts; durable storage is explicitly outside scope.",
+      "Boundary implementations can accidentally count HEAD or failed resolutions, or treat expiresAt equality as still valid.",
+      "Normalizing or rewriting destination strings would violate the fixed-destination requirement.",
+      "The supplied implementation appears aligned with the clarified observable behavior, but no independent Maven verification is claimed."
+    ],
+    "tasks": [
+      {
+        "id": "REQ-1",
+        "description": "Record the approved fixture requirements and observable acceptance criteria in a requirements artifact: immutable destinations; permanently reserved unique codes, including deleted codes; nullable expiry; expiration at now >= expiresAt; empty resolution for missing, expired, disabled, or deleted links; counting only successful record=true resolutions; lifetime totals and UTC daily buckets; count preservation after disable/delete; and zero counts for unknown codes. State the explicit exclusions and preservation constraints for pom.xml and supplied acceptance tests.",
+        "dependencies": [],
+        "allowedPaths": [
+          "artifacts/requirements/"
+        ]
+      }
+    ]
+  },
+  "fullOutputHash": "9bd8319d7160be01aac84688af9f8d538593c7fce41e4855ca72fc0803071df8",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

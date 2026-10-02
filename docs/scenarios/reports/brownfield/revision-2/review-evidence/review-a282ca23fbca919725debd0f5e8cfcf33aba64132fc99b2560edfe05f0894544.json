@@ -1,0 +1,57 @@
+{
+  "revision": 2,
+  "task_id": "review",
+  "state": "SUCCEEDED",
+  "input_hash": "2833d07c1677114086d037f274892b60068c8418e6884d30dc8a88bc316d5694",
+  "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+  "evidenceHash": "a282ca23fbca919725debd0f5e8cfcf33aba64132fc99b2560edfe05f0894544",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 109795,
+    "cached_input_tokens": 84736,
+    "output_tokens": 2814
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Code inspection finds the candidate behavior correct: `!now.isBefore(link.expiresAt)` rejects equality and later instants before either total or UTC-daily counts are updated. The supplied source also preserves fixed destinations, optional expiration, HEAD/non-recording behavior, disabled/deleted handling, permanent code reservation, and retained counts. The acceptance tests cover the boundary, HEAD, missing/expired failures, destination preservation, deletion, total counts, and UTC rollover without weakened assertions or POM bypasses. However, the actual Maven attempt failed during dependency resolution before tests ran, so this candidate cannot yet receive a verification-backed review acceptance. No successful independent Maven verification is claimed.",
+    "questions": [],
+    "risks": [
+      "The supplied Maven evidence is an actual failed execution, not a passing test result: required plugin dependencies were absent from the offline cache and no tests executed.",
+      "No baseline snapshot or canonical candidate-hash procedure was supplied, so this review cannot independently prove the claimed one-line diff, unchanged tests/POM, or reproduce candidate hash `ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935`; the control layer must enforce that lineage.",
+      "Static inspection supports the intended behavior but does not replace execution of the fixed verifier against this exact candidate.",
+      "The fixture stores links and counts only in memory, so process crashes lose them. This is consistent with the approved isolated fixture scope but must not be interpreted as production durability.",
+      "Final human approval remains a separate mandatory gate and has not been granted."
+    ],
+    "tasks": [
+      {
+        "id": "independent-verification",
+        "description": "Run the unchanged supplied acceptance suite with the fixed verifier in an approved environment, using this exact candidate hash, and preserve fresh actual execution evidence.",
+        "dependencies": [],
+        "allowedPaths": []
+      },
+      {
+        "id": "verification-backed-review",
+        "description": "Review the fresh verifier evidence and confirm it is tied to the exact candidate hash before accepting the candidate review.",
+        "dependencies": [
+          "independent-verification"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "final-human-approval",
+        "description": "Request the separate mandatory human approval only after successful independent verification and verification-backed candidate review.",
+        "dependencies": [
+          "verification-backed-review"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "d9241990fd800c82167ffaef1453296ddf651bdc18c4f53d800327cd02561102",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

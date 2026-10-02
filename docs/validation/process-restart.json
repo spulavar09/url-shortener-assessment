@@ -1,0 +1,33 @@
+{
+  "classification": "actual final packaged-service stop/start persistence check",
+  "result": "PASS",
+  "beforeUtc": "2026-10-02T16:46:33.531513+00:00",
+  "afterUtc": "2026-10-02T16:47:27.049032+00:00",
+  "linkMetadataPreserved": true,
+  "recordedCountsPreserved": true,
+  "recordedTotal": 3002,
+  "workflowRevisionsStatesTasksAndGateHashesPreserved": true,
+  "workflows": [
+    {
+      "id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 2,
+      "version": 10,
+      "state": "AWAITING_APPROVAL"
+    },
+    {
+      "id": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+      "revision": 2,
+      "version": 10,
+      "state": "AWAITING_APPROVAL"
+    },
+    {
+      "id": "fe5d1047-93ba-4e5a-82a0-a91cd4c1c873",
+      "revision": 2,
+      "version": 6,
+      "state": "AWAITING_APPROVAL"
+    }
+  ],
+  "headExcludedFromCounts": true,
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

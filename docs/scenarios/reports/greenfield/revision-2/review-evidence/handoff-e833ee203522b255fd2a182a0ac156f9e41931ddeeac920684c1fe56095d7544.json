@@ -1,0 +1,54 @@
+{
+  "revision": 2,
+  "task_id": "handoff",
+  "state": "SUCCEEDED",
+  "input_hash": "93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92",
+  "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+  "evidenceHash": "e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 87562,
+    "cached_input_tokens": 67584,
+    "output_tokens": 1971
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Release-readiness handoff for invocation c40ebe41-d29a-4762-8130-724edfe93b5a: the supplied candidate e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be implements the isolated in-memory demo.LinkBook fixture described by README.md. Source inspection confirms fixed destinations; permanent code reservation, including after deletion; optional expiration that begins at equality; empty resolution for missing, expired, disabled, or deleted links; counting only successful resolutions when record=true; preserved counts after disable/delete; and total plus UTC daily counts, with zero for unknown codes. Methods are synchronized for access to mutable in-memory state. The supplied POM and acceptance tests remain present and unmodified. To validate the exact candidate, run `mvn verify` from the project root with Java 21 and Maven capable of resolving the declared dependencies. The authoritative dependency record marks the verify and review workflow tasks SUCCEEDED for this candidate, but their detailed outputs are not present in the supplied project copy; therefore this report does not claim independent Maven verification passed or independently reproduce the review conclusion. No actual Codex execution metrics, injected recovery event, simulation, elapsed time, token usage, or monetary cost were supplied; those values are unavailable. This is a disposable engineering fixture, not the Spring REST/database service, and it includes no HTTP server, database, deployment, authentication, ownership, or destination fetching. No release, deployment, merge, external message, approval, or file write was performed. Final readiness remains blocked on separate human review and approval of this exact candidate and evidence.",
+    "questions": [
+      "Will the designated human reviewer approve candidate e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be after examining the exact candidate, detailed Maven output, and candidate-review findings?",
+      "Can the authoritative detailed outputs for verification evidence 774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd and review evidence 07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f be presented at the final human gate without accessing disallowed locations?"
+    ],
+    "risks": [
+      "Final human approval has not been granted; this narrative cannot release that mandatory gate.",
+      "The supplied copy contains no detailed Maven transcript or review report, so the recorded SUCCEEDED workflow states cannot be independently substantiated from approved inputs alone.",
+      "The artifact is intentionally process-local and in-memory; state and analytics disappear when the process ends and are unsuitable as production durability guarantees.",
+      "Null arguments other than the explicitly supported null expiry are not assigned behavior by the README contract and may fail implicitly.",
+      "Any recovery must retain prior failed evidence and obtain fresh design approval; no recovery event or fresh recovery approval is established by the supplied evidence."
+    ],
+    "tasks": [
+      {
+        "id": "final-human-review",
+        "description": "Have the designated human review the exact candidate hash, authoritative detailed verification output, candidate-review findings, fixture limitations, and preserved prior failure evidence before making a separate approval or rejection decision.",
+        "dependencies": [
+          "join"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "reverify-after-change",
+        "description": "If the candidate changes or recovery is required, preserve all prior failed evidence, obtain fresh design approval, and run fresh verification and review against the new exact candidate before returning to the human gate.",
+        "dependencies": [
+          "final-human-review"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "7d4ab2a321dd27a6ed22f7b23cdf5d674fd30ef323cfcfd189a6914c7cdab317",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

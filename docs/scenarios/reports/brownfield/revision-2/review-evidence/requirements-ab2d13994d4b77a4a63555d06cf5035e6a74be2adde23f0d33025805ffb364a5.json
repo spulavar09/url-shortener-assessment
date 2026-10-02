@@ -1,0 +1,58 @@
+{
+  "revision": 2,
+  "task_id": "requirements",
+  "state": "SUCCEEDED",
+  "input_hash": "fe30d97b05344344f48ccf1263b2ae3bd39849457fc90abc9c7a68f9d6f10d11",
+  "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+  "evidenceHash": "ab2d13994d4b77a4a63555d06cf5035e6a74be2adde23f0d33025805ffb364a5",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 83269,
+    "cached_input_tokens": 64000,
+    "output_tokens": 1874
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Confirmed requirement: within the isolated in-memory demo.LinkBook fixture, a link is expired when now is equal to or later than expiresAt. resolve(code, now, record) must return Optional.empty() at that boundary and must not increment total or UTC daily counts. Preserve immutable destinations, null meaning no expiration, permanent code reservation after disable/delete, record=false behavior, retained counts, unknown-code zero counts, UTC daily buckets, synchronization, the supplied POM, and all supplied acceptance tests. No live service, database, deployment, destination fetch, or production change is in scope. This requirements role made no file changes and does not claim Maven verification passed.",
+    "questions": [],
+    "risks": [
+      "The planted predicate uses now.isAfter(expiresAt), which incorrectly treats equality as resolvable and allows it to be counted when record=true.",
+      "Changing broader expiration, counting, lifecycle, synchronization, dependency, or build behavior could violate the narrowly approved fixture scope.",
+      "Prior failed evidence must remain preserved; later verification must be fresh and must not be represented as final human approval.",
+      "Candidate review and actual verification are still required, followed by a separate mandatory final-human-approval gate."
+    ],
+    "tasks": [
+      {
+        "id": "repair-expiry-boundary",
+        "description": "In a separately authorized implementation phase, make the smallest candidate change to demo.LinkBook so a non-null expiresAt rejects resolution when now is equal to or later than expiresAt, before any count mutation. Preserve every other behavior and do not modify pom.xml or supplied acceptance tests.",
+        "dependencies": [],
+        "allowedPaths": [
+          "src/main/java/demo/LinkBook.java"
+        ]
+      },
+      {
+        "id": "fresh-verification",
+        "description": "After implementation, run the supplied Maven verification without modifying verification plugins. Confirm the acceptance test for EXPIRY.minusNanos(1) succeeds, EXPIRY and later fail, failed resolutions do not count, record=false does not count, and all preservation behaviors remain intact. Record the result as verification evidence, not final approval.",
+        "dependencies": [
+          "repair-expiry-boundary"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "candidate-review",
+        "description": "Review the verified candidate for minimal scope, preservation of the POM and supplied tests, absence of live-service or deployment changes, and retention of prior failed evidence. Submit it to the separate final human approval gate; do not self-approve.",
+        "dependencies": [
+          "fresh-verification"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "5c4f062de30763dbb06d195980e47cf0a445ae87138099dd793d60e6e1f4620d",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

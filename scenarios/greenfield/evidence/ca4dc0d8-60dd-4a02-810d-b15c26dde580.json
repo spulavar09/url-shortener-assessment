@@ -1,0 +1,54 @@
+{
+  "candidateHash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+  "revision": 2,
+  "dependencies": [
+    {
+      "run_id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 2,
+      "task_id": "handoff",
+      "definition": "{\"id\": \"handoff\", \"type\": \"AGENT\", \"skill\": \"shortener-handoff\", \"prompt\": \"Prepare release readiness report\", \"dependencies\": [\"join\"], \"allowedPaths\": [\"artifacts/handoff/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T16:04:38.605608Z",
+      "retry_after": null,
+      "skill_hash": "8ea2b726a61e10165a2f238442aee93b2e4e63ce84b7c76a087b32ee0f1ca253",
+      "evidence_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/evidence/599d9d24-0f02-4c49-86a0-f28b52f39f43.json",
+      "evidence_hash": "e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544",
+      "candidate_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/candidates/d56eaff7-e255-4b68-83df-ba6a60d4db40",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "93ef772ed5b938edd929c9d1d6969866bece37a49eba71879f36151569844e92"
+    },
+    {
+      "run_id": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 2,
+      "task_id": "join",
+      "definition": "{\"id\": \"join\", \"type\": \"JOIN\", \"skill\": null, \"prompt\": \"Synchronize independent checks\", \"dependencies\": [\"verify\", \"review\"], \"allowedPaths\": []}",
+      "state": "SUCCEEDED",
+      "attempts": 0,
+      "fence": 0,
+      "lease_until": null,
+      "retry_after": null,
+      "skill_hash": null,
+      "evidence_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/evidence/dd703019-be50-4b8f-8333-5c2df7ece43d.json",
+      "evidence_hash": "ce76991313b7d7ced82f07776e9507f371a913e6aad127bf3fb56127aebc3151",
+      "candidate_path": "<project-root>/.local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/candidates/d56eaff7-e255-4b68-83df-ba6a60d4db40",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "6f1594c1d80a459c56b1f51d9a430ced943d00f68ae4f8e634216693f07b0b2e"
+    }
+  ],
+  "task": {
+    "id": "final-approval",
+    "type": "APPROVAL",
+    "skill": null,
+    "prompt": "Review final candidate and actual verification evidence",
+    "dependencies": [
+      "handoff",
+      "join"
+    ],
+    "allowedPaths": []
+  },
+  "inputHash": "579a29c791e74a6f4aad2595a53d8ec815d530007435c61f2015a24b4bffb55d",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

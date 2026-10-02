@@ -1,0 +1,213 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 23963 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] ---------------------< com.example:url-shortener >----------------------
+[INFO] Building URL Shortener and Engineering Workflow 0.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Loaded 23963 auto-discovered prefixes for remote repository maven-central (prefixes-maven-central.txt)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ url-shortener ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ url-shortener ---
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ url-shortener ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ url-shortener ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ url-shortener ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.shortener.ApiIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+{"timestamp":"2026-10-02T16:43:59.461Z","level":"INFO","logger":"com.example.shortener.ApiIntegrationTest","message":"Starting ApiIntegrationTest using Java 21.0.12 with PID 58992 (started by local-user in <project-root>)"}
+{"timestamp":"2026-10-02T16:43:59.467Z","level":"INFO","logger":"com.example.shortener.ApiIntegrationTest","message":"No active profile set, falling back to 1 default profile: \"default\""}
+{"timestamp":"2026-10-02T16:43:59.704Z","level":"INFO","logger":"org.hibernate.validator.internal.util.Version","message":"HV000001: Hibernate Validator 9.1.3.Final"}
+{"timestamp":"2026-10-02T16:44:00.571Z","level":"INFO","logger":"org.springframework.boot.tomcat.TomcatWebServer","message":"Tomcat initialized with port 0 (http)"}
+{"timestamp":"2026-10-02T16:44:00.585Z","level":"INFO","logger":"org.apache.coyote.http11.Http11NioProtocol","message":"Initializing ProtocolHandler [\"http-nio-127.0.0.1-auto-1\"]"}
+{"timestamp":"2026-10-02T16:44:00.586Z","level":"INFO","logger":"org.apache.catalina.core.StandardService","message":"Starting service [Tomcat]"}
+{"timestamp":"2026-10-02T16:44:00.587Z","level":"INFO","logger":"org.apache.catalina.core.StandardEngine","message":"Starting Servlet engine: [Apache Tomcat/11.0.24]"}
+{"timestamp":"2026-10-02T16:44:00.620Z","level":"INFO","logger":"org.springframework.boot.web.context.servlet.WebApplicationContextInitializer","message":"Root WebApplicationContext: initialization completed in 1132 ms"}
+{"timestamp":"2026-10-02T16:44:00.909Z","level":"INFO","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Starting..."}
+{"timestamp":"2026-10-02T16:44:01.033Z","level":"INFO","logger":"com.zaxxer.hikari.pool.HikariPool","message":"HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:http-contract user=SA"}
+{"timestamp":"2026-10-02T16:44:01.034Z","level":"INFO","logger":"com.zaxxer.hikari.HikariDataSource","message":"HikariPool-1 - Start completed."}
+{"timestamp":"2026-10-02T16:44:01.043Z","level":"INFO","logger":"org.flywaydb.core.FlywayExecutor","message":"Database: jdbc:h2:mem:http-contract (H2 2.4)"}
+{"timestamp":"2026-10-02T16:44:01.080Z","level":"WARN","logger":"org.flywaydb.core.internal.database.base.Database","message":"Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232."}
+{"timestamp":"2026-10-02T16:44:01.102Z","level":"INFO","logger":"org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory","message":"Schema history table \"PUBLIC\".\"flyway_schema_history\" does not exist yet"}
+{"timestamp":"2026-10-02T16:44:01.105Z","level":"INFO","logger":"org.flywaydb.core.internal.command.DbValidate","message":"Successfully validated 2 migrations (execution time 00:00.014s)"}
+{"timestamp":"2026-10-02T16:44:01.110Z","level":"INFO","logger":"org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory","message":"Creating Schema History table \"PUBLIC\".\"flyway_schema_history\" ..."}
+{"timestamp":"2026-10-02T16:44:01.142Z","level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate","message":"Current version of schema \"PUBLIC\": << Empty Schema >>"}
+{"timestamp":"2026-10-02T16:44:01.148Z","level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate","message":"Migrating schema \"PUBLIC\" to version \"1 - links\""}
+{"timestamp":"2026-10-02T16:44:01.167Z","level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate","message":"Migrating schema \"PUBLIC\" to version \"2 - workflow\""}
+{"timestamp":"2026-10-02T16:44:01.181Z","level":"INFO","logger":"org.flywaydb.core.internal.command.DbMigrate","message":"Successfully applied 2 migrations to schema \"PUBLIC\", now at version v2 (execution time 00:00.018s)"}
+{"timestamp":"2026-10-02T16:44:01.258Z","level":"INFO","logger":"com.example.shortener.analytics.AnalyticsService","message":"Analytics worker started"}
+{"timestamp":"2026-10-02T16:44:01.833Z","level":"INFO","logger":"org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver","message":"Exposing 2 endpoints beneath base path '/actuator'"}
+{"timestamp":"2026-10-02T16:44:01.872Z","level":"INFO","logger":"org.apache.coyote.http11.Http11NioProtocol","message":"Starting ProtocolHandler [\"http-nio-127.0.0.1-auto-1\"]"}
+{"timestamp":"2026-10-02T16:44:01.891Z","level":"INFO","logger":"org.springframework.boot.tomcat.TomcatWebServer","message":"Tomcat started on port 58873 (http) with context path '/'"}
+{"timestamp":"2026-10-02T16:44:01.906Z","level":"INFO","logger":"com.example.shortener.ApiIntegrationTest","message":"Started ApiIntegrationTest in 2.725 seconds (process running for 3.958)"}
+{"timestamp":"2026-10-02T16:44:01.970Z","level":"WARN","logger":"org.springdoc.core.events.SpringDocAppInitializer","message":"SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'"}
+{"timestamp":"2026-10-02T16:44:01.971Z","level":"WARN","logger":"org.springdoc.core.events.SpringDocAppInitializer","message":"SpringDoc /docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'"}
+{"timestamp":"2026-10-02T16:44:02.479Z","level":"INFO","logger":"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'"}
+{"timestamp":"2026-10-02T16:44:02.648Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=http783afc0f7225 id=09e6204d-fcf5-4b9e-85b0-246bde439066","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:02.735Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=httpf4172ac3d89f id=4bab6a0c-d9a7-4f06-92f7-6d5591ef9157","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:02.811Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link disable completed code=httpf4172ac3d89f id=4bab6a0c-d9a7-4f06-92f7-6d5591ef9157","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:02.823Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=httpf4172ac3d89f","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:02.826Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=httpf4172ac3d89f","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:03.080Z","level":"INFO","logger":"org.springdoc.api.AbstractOpenApiResource","message":"Init duration for springdoc-openapi is: 206 ms","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:03.135Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=6cdd7eda-b504-40e5-b335-cc930c212bc0 revision=1 taskId=null event=CREATED","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:03.198Z","level":"WARN","logger":"com.example.shortener.security.RequestBoundaryFilter","message":"Request rejected errorCode=BODY_TOO_LARGE","context":{"correlationId":"http-contract-test"}}
+{"timestamp":"2026-10-02T16:44:03.201Z","level":"WARN","logger":"org.springframework.web.servlet.PageNotFound","message":"Request method 'GET' is not supported","context":{"correlationId":"http-contract-test"}}
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.685 s -- in com.example.shortener.ApiIntegrationTest
+[INFO] Running com.example.shortener.links.DestinationValidatorTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s -- in com.example.shortener.links.DestinationValidatorTest
+[INFO] Running com.example.shortener.links.LinkIntegrationTest
+{"timestamp":"2026-10-02T16:44:03.392Z","level":"WARN","logger":"com.example.shortener.analytics.AnalyticsService","message":"Analytics recording exhausted bounded retries id=16d74498-52c9-4dbf-ae48-4f0b02cb5e86 failureType=DataAccessResourceFailureException"}
+{"timestamp":"2026-10-02T16:44:03.411Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=precise id=a2036de2-f750-4f65-9ad3-4b79321d1933"}
+{"timestamp":"2026-10-02T16:44:03.413Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=precise id=a2036de2-f750-4f65-9ad3-4b79321d1933"}
+{"timestamp":"2026-10-02T16:44:03.423Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=racecode id=b327f23e-137e-4d81-b72f-5ddd05847dd2"}
+{"timestamp":"2026-10-02T16:44:03.428Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link disable completed code=racecode id=b327f23e-137e-4d81-b72f-5ddd05847dd2"}
+{"timestamp":"2026-10-02T16:44:03.428Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=racecode"}
+{"timestamp":"2026-10-02T16:44:03.429Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=racecode"}
+{"timestamp":"2026-10-02T16:44:03.440Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=replay id=442dc412-c19e-4b8f-bd3b-71b7b79b7f4e"}
+{"timestamp":"2026-10-02T16:44:03.441Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=replay"}
+{"timestamp":"2026-10-02T16:44:03.442Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=replay id=442dc412-c19e-4b8f-bd3b-71b7b79b7f4e"}
+{"timestamp":"2026-10-02T16:44:03.452Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=worker id=5ccfff53-5ca2-45dd-819a-761d7abc555e"}
+{"timestamp":"2026-10-02T16:44:03.452Z","level":"INFO","logger":"com.example.shortener.analytics.AnalyticsService","message":"Analytics worker started"}
+{"timestamp":"2026-10-02T16:44:03.659Z","level":"INFO","logger":"com.example.shortener.analytics.AnalyticsService","message":"Analytics worker shutdown requested remainingQueue=0 workerAlive=false"}
+{"timestamp":"2026-10-02T16:44:03.765Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=persist id=ea1aa914-2c00-4bf9-882a-e5430b53fe56"}
+{"timestamp":"2026-10-02T16:44:03.923Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=persist id=ea1aa914-2c00-4bf9-882a-e5430b53fe56"}
+{"timestamp":"2026-10-02T16:44:04.030Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=heads id=f72ab8a6-04b7-483c-8dc8-24fcc954c0ad"}
+{"timestamp":"2026-10-02T16:44:04.041Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=counts id=49b2aa6b-ce6e-48ad-8b91-ec748c8ae35b"}
+{"timestamp":"2026-10-02T16:44:04.057Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=counts"}
+{"timestamp":"2026-10-02T16:44:04.067Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=88a252e23f id=a276c020-f677-4961-8bab-215e35caff71"}
+{"timestamp":"2026-10-02T16:44:04.068Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=a5668e8e20 id=099f9ab8-8a93-481b-bf4d-77577b153c36"}
+{"timestamp":"2026-10-02T16:44:04.069Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=bd64950f81 id=45b36e3c-bd35-4a69-9d45-624c0cdb3598"}
+{"timestamp":"2026-10-02T16:44:04.076Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=failure id=f4045856-c54f-4687-a9aa-8972dba54a0a"}
+{"timestamp":"2026-10-02T16:44:04.091Z","level":"WARN","logger":"com.example.shortener.links.LinkController","message":"Redirect analytics enqueue failed code=failure id=f4045856-c54f-4687-a9aa-8972dba54a0a failureType=IllegalStateException"}
+{"timestamp":"2026-10-02T16:44:04.109Z","level":"WARN","logger":"com.example.shortener.links.LinkService","message":"Link storage operation failed failureType=DataAccessResourceFailureException"}
+{"timestamp":"2026-10-02T16:44:04.114Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=custom id=628d69b6-10b2-460d-ad62-e06461ea9b58"}
+{"timestamp":"2026-10-02T16:44:04.116Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link disable completed code=custom id=628d69b6-10b2-460d-ad62-e06461ea9b58"}
+{"timestamp":"2026-10-02T16:44:04.117Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link disable completed code=custom id=628d69b6-10b2-460d-ad62-e06461ea9b58"}
+{"timestamp":"2026-10-02T16:44:04.118Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=custom"}
+{"timestamp":"2026-10-02T16:44:04.118Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=custom"}
+{"timestamp":"2026-10-02T16:44:04.121Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link delete completed code=unknown"}
+{"timestamp":"2026-10-02T16:44:04.132Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=boundary id=bcb47b38-31e5-4a7f-b830-756dc18c30f2"}
+{"timestamp":"2026-10-02T16:44:04.143Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=samealias id=eb5890a8-b0ba-4c7a-88ff-66fafdbd7014"}
+{"timestamp":"2026-10-02T16:44:04.149Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.150Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.150Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.150Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.151Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.151Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.151Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.151Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=1aa27239a6 id=53271bab-0ba5-461f-84aa-2450ba2d249a"}
+{"timestamp":"2026-10-02T16:44:04.157Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=validate id=7231aec6-939f-46cd-b507-4f0381c007b2"}
+{"timestamp":"2026-10-02T16:44:04.163Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=abcdefghij id=38cb1a5a-903a-4a17-9d6f-9e3bae3e9c63"}
+{"timestamp":"2026-10-02T16:44:04.167Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=newcode123 id=13e79ab7-8661-4090-bb02-d2559649795a"}
+{"timestamp":"2026-10-02T16:44:04.170Z","level":"WARN","logger":"com.example.shortener.links.LinkService","message":"Link code allocation exhausted after bounded collision retries"}
+{"timestamp":"2026-10-02T16:44:04.177Z","level":"WARN","logger":"com.example.shortener.links.LinkService","message":"Link storage operation failed failureType=DataAccessResourceFailureException"}
+{"timestamp":"2026-10-02T16:44:04.179Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link created code=rollback id=67d29809-b64d-4af2-9825-0cd2ada9bf92"}
+{"timestamp":"2026-10-02T16:44:04.180Z","level":"INFO","logger":"com.example.shortener.links.LinkService","message":"Link creation replayed code=rollback id=67d29809-b64d-4af2-9825-0cd2ada9bf92"}
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.907 s -- in com.example.shortener.links.LinkIntegrationTest
+[INFO] Running com.example.shortener.workflow.WorkflowControlTest
+{"timestamp":"2026-10-02T16:44:04.215Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=ae274bc7-d82d-4e16-b7ab-762bd04759cd revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:04.235Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=ae274bc7-d82d-4e16-b7ab-762bd04759cd revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:04.251Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=f0fac2bd-a797-4487-ac8e-5db620728062 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:04.263Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=f0fac2bd-a797-4487-ac8e-5db620728062 revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:04.263Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=f0fac2bd-a797-4487-ac8e-5db620728062 revision=1 taskId=requirements event=RECONCILED_UNKNOWN"}
+{"timestamp":"2026-10-02T16:44:04.294Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=f16f8a90-011b-46e5-bd15-34373cebb07f revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:04.344Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=f16f8a90-011b-46e5-bd15-34373cebb07f revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:04.382Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=f16f8a90-011b-46e5-bd15-34373cebb07f revision=2 taskId=implementation event=REPAIR_REVISION"}
+{"timestamp":"2026-10-02T16:44:04.413Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=f16f8a90-011b-46e5-bd15-34373cebb07f revision=3 taskId=implementation event=REPAIR_REVISION"}
+{"timestamp":"2026-10-02T16:44:04.438Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=f16f8a90-011b-46e5-bd15-34373cebb07f revision=3 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:04.498Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=17782b5a-02f3-4da3-ba35-af68440d5d49 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:04.535Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=17782b5a-02f3-4da3-ba35-af68440d5d49 revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:04.564Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=17782b5a-02f3-4da3-ba35-af68440d5d49 revision=1 taskId=review event=CLARIFICATION_REQUIRED"}
+{"timestamp":"2026-10-02T16:44:04.571Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=17782b5a-02f3-4da3-ba35-af68440d5d49 revision=1 taskId=verify event=FAILURE_DEFERRED_FOR_CLARIFICATION"}
+{"timestamp":"2026-10-02T16:44:04.592Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=17782b5a-02f3-4da3-ba35-af68440d5d49 revision=2 taskId=null event=CLARIFIED"}
+{"timestamp":"2026-10-02T16:44:04.631Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=dced70f9-1693-45e8-9f0a-28861d61d78a revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:04.663Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=dced70f9-1693-45e8-9f0a-28861d61d78a revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:04.690Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=dced70f9-1693-45e8-9f0a-28861d61d78a revision=1 taskId=review event=CLARIFICATION_REQUIRED"}
+{"timestamp":"2026-10-02T16:44:04.696Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=dced70f9-1693-45e8-9f0a-28861d61d78a revision=1 taskId=verify event=FAILURE_DEFERRED_FOR_CLARIFICATION"}
+{"timestamp":"2026-10-02T16:44:04.714Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=dced70f9-1693-45e8-9f0a-28861d61d78a revision=2 taskId=null event=CLARIFIED"}
+{"timestamp":"2026-10-02T16:44:04.763Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=f6cc5858-c923-46f0-a466-0c7cceb7e4c0 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:04.859Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=f6cc5858-c923-46f0-a466-0c7cceb7e4c0 revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:04.859Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=f6cc5858-c923-46f0-a466-0c7cceb7e4c0 revision=1 taskId=requirements event=RECONCILED_UNKNOWN"}
+{"timestamp":"2026-10-02T16:44:06.184Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=ad1827c6-d8b3-4e61-acf1-dd14eb1be4fc revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.217Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=ad1827c6-d8b3-4e61-acf1-dd14eb1be4fc revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:06.244Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=ad1827c6-d8b3-4e61-acf1-dd14eb1be4fc revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:06.290Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=cf160f46-9572-46d9-9025-c8ea7698a1da revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.336Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=b2c5dbb8-8bea-472e-bedd-e475d9032cfb revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.340Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=b2c5dbb8-8bea-472e-bedd-e475d9032cfb revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:06.361Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=7a63ca32-da47-4e80-9789-600cc846d1be revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.398Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=9edc8262-11a3-445c-9214-a039d4581c7f revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.406Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=9edc8262-11a3-445c-9214-a039d4581c7f revision=1 taskId=requirements event=BOUNDED_RETRY"}
+{"timestamp":"2026-10-02T16:44:06.413Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=9edc8262-11a3-445c-9214-a039d4581c7f revision=1 taskId=requirements event=BOUNDED_RETRY"}
+{"timestamp":"2026-10-02T16:44:06.419Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=9edc8262-11a3-445c-9214-a039d4581c7f revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:06.442Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=2201be8a-0145-4743-875c-f9dba3f8d460 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.449Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=2201be8a-0145-4743-875c-f9dba3f8d460 revision=1 taskId=null event=CANCELLED"}
+{"timestamp":"2026-10-02T16:44:06.473Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=ac66b8f1-aed9-4491-a66c-34a5077dceb2 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.483Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=ac66b8f1-aed9-4491-a66c-34a5077dceb2 revision=2 taskId=null event=CLARIFIED"}
+{"timestamp":"2026-10-02T16:44:06.511Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=d71cb2dd-ea69-4988-b3f5-89a3d5b2f2a8 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.536Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=30de03de-fa08-4ca3-b820-2e2b93c8ff0e revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.562Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=30de03de-fa08-4ca3-b820-2e2b93c8ff0e revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:06.614Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=43039880-4fac-4009-a181-bf9c58ba5077 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.639Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=43039880-4fac-4009-a181-bf9c58ba5077 revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:06.668Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=43039880-4fac-4009-a181-bf9c58ba5077 revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:06.682Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=43039880-4fac-4009-a181-bf9c58ba5077 revision=2 taskId=null event=KNOWN_QUESTION_STOP_RECOVERED"}
+{"timestamp":"2026-10-02T16:44:06.724Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=74503cfd-6b0a-4567-8f01-e4e01f8b76fe revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.748Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=74503cfd-6b0a-4567-8f01-e4e01f8b76fe revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:06.795Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=74503cfd-6b0a-4567-8f01-e4e01f8b76fe revision=1 taskId=final-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:06.834Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=ac6622c7-4cb5-444b-9d17-328a8f371d8f revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.859Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow human decision runId=ac6622c7-4cb5-444b-9d17-328a8f371d8f revision=1 taskId=design-approval event=HUMAN_APPROVED"}
+{"timestamp":"2026-10-02T16:44:06.928Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=df9447d9-96e6-4ee5-a57b-158b6beea1ff revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.933Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=df9447d9-96e6-4ee5-a57b-158b6beea1ff revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:06.958Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=786c83c7-3668-45a3-8ac3-ebb72d16723b revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.982Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=fcd9bd2f-dc30-4d39-a35d-3c896b664a18 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:06.989Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=fcd9bd2f-dc30-4d39-a35d-3c896b664a18 revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:06.989Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=fcd9bd2f-dc30-4d39-a35d-3c896b664a18 revision=1 taskId=requirements event=RECONCILED_UNKNOWN"}
+{"timestamp":"2026-10-02T16:44:07.007Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=85b1e02d-d394-41cf-a67a-6227584b2439 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:07.016Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=85b1e02d-d394-41cf-a67a-6227584b2439 revision=1 taskId=requirements event=CLARIFICATION_REQUIRED"}
+{"timestamp":"2026-10-02T16:44:07.028Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=85b1e02d-d394-41cf-a67a-6227584b2439 revision=2 taskId=null event=CLARIFIED"}
+{"timestamp":"2026-10-02T16:44:07.059Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=418b8dc2-6a6d-4119-82de-bed8562273ad revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:07.094Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=26b9b14c-5c5d-4247-ad36-ea2ac08b9c12 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:07.128Z","level":"INFO","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow transition runId=ca2a1c0d-ce30-431e-89fd-e58944a5a2a5 revision=1 taskId=null event=CREATED"}
+{"timestamp":"2026-10-02T16:44:07.136Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=ca2a1c0d-ce30-431e-89fd-e58944a5a2a5 revision=1 taskId=null event=SAFE_STOP"}
+{"timestamp":"2026-10-02T16:44:07.136Z","level":"WARN","logger":"com.example.shortener.workflow.WorkflowService","message":"Workflow failure or recovery runId=ca2a1c0d-ce30-431e-89fd-e58944a5a2a5 revision=1 taskId=requirements event=LEASE_EXPIRED_UNKNOWN"}
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.958 s -- in com.example.shortener.workflow.WorkflowControlTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ url-shortener ---
+[INFO] Building jar: <project-root>/target/url-shortener-0.1.0.jar
+[INFO] 
+[INFO] --- spring-boot:4.1.1:repackage (repackage) @ url-shortener ---
+[INFO] Replacing main artifact <project-root>/target/url-shortener-0.1.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to <project-root>/target/url-shortener-0.1.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.126 s
+[INFO] Finished at: 2026-10-02T11:44:07-05:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,62 @@
+{
+  "revision": 2,
+  "task_id": "handoff",
+  "state": "SUCCEEDED",
+  "input_hash": "6776dba0791732fcdf88d525c94f97c63540a36993d8568021e9847429ac18ea",
+  "candidate_hash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+  "evidenceHash": "9201af7c99958bba2d8b71e4578a6a627de68653ac16b5ec079bc9cb578813a9",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 69957,
+    "cached_input_tokens": 61952,
+    "output_tokens": 1717
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Release readiness is conditional, not approved. Exact candidate 3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a implements the clarified fixture behavior: immutable destinations; permanently reserved codes, including after deletion; optional expiry effective at equality; successful recorded resolutions counted in total and UTC-day buckets; and no counts for HEAD-style record=false calls or failed resolutions. Disable/delete preserve analytics. The supplied POM and acceptance tests remain intact. Declared workflow evidence reports the verify and review dependencies as SUCCEEDED, but this handoff did not independently run Maven and therefore does not claim independent Maven verification passed. This is a disposable, in-memory Java domain fixture—not the delivered Spring REST/database service—and it adds no HTTP server, persistence, authentication, deployment, or external destination access. Human review of this exact candidate and evidence remains required before any release decision.",
+    "questions": [
+      "Will an authorized human reviewer approve exact candidate 3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a using the declared verification and review evidence?"
+    ],
+    "risks": [
+      "The fixture stores links and analytics only in process memory; all state is lost when the process ends.",
+      "The fixture does not validate the readiness of a full Spring REST/database application or its operational integration.",
+      "The supplied dependency record states that verification and review succeeded, but their detailed outputs were not present in the approved project copy, and Maven was not independently rerun for this handoff.",
+      "No authentication or ownership behavior is represented; that checkpoint remains outside this fixture and parked for any full-service release.",
+      "No deployment, publishing, merge, or release approval was performed; readiness remains gated on authorized human review."
+    ],
+    "tasks": [
+      {
+        "id": "human-review",
+        "description": "Review the exact candidate hash, supplied acceptance coverage, and declared dependency evidence; record an explicit approve-or-reject decision without treating this report as release authority.",
+        "dependencies": [
+          "join"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "service-scope-check",
+        "description": "Confirm that any intended release target is this disposable fixture; if the target is the full Spring service, require separate service-level evidence covering its H2 single-process limit, accepted best-effort analytics loss, and parked authentication/ownership checkpoint.",
+        "dependencies": [
+          "human-review"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "release-decision",
+        "description": "After scope confirmation and human review, have an authorized owner decide whether to proceed; deployment, publishing, and merging remain separate actions.",
+        "dependencies": [
+          "human-review",
+          "service-scope-check"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "93d4395681048697acb28ff9397e551f9e9018b92626a960047733e3c744da15",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

@@ -1,0 +1,75 @@
+{
+  "revision": 2,
+  "task_id": "architecture",
+  "state": "SUCCEEDED",
+  "input_hash": "1f4a16f00d83551dbc8359a821a6b45d4272b71be61471546e30101cbab60881",
+  "candidate_hash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+  "evidenceHash": "44e75640f55d263577a1400a216e14c39a86fbfacb38680aecd71dfc351e4930",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 63345,
+    "cached_input_tokens": 40448,
+    "output_tokens": 1523
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Proposed architecture: retain the existing synchronized, in-memory demo.LinkBook domain model and make one behavioral change in resolve: when expiresAt is non-null, reject the link unless now is strictly before expiresAt. This places equality and later instants on the expired path before total or UTC daily counters can mutate. Preserve the public API, immutable destinations, optional expiration, permanent code reservation, disable/delete behavior, record=false behavior, retained and unknown-code counts, UTC bucketing, supplied POM, dependency versions, and acceptance tests. This is a fixture-only proposal; no REST service, persistence, live system, deployment, or external action is included. No files were changed and Maven verification is not claimed.",
+    "questions": [],
+    "risks": [
+      "Using only now.isAfter(expiresAt) leaves equality valid and permits an incorrect count; the predicate must cover both equality and later instants.",
+      "Refactoring surrounding lifecycle, counting, synchronization, build, or test code would expand the approved repair unnecessarily and risk changing preserved behavior.",
+      "Verification must execute against the same combined candidate without altering pom.xml or the supplied acceptance tests; a planned command is not evidence of success.",
+      "Prior failed evidence must remain intact. Recovery requires fresh design approval, fresh verification, candidate review, and a separate final-human-approval decision.",
+      "Neither this architecture proposal nor successful technical verification constitutes final human approval."
+    ],
+    "tasks": [
+      {
+        "id": "fresh-design-approval",
+        "description": "Have the control layer obtain fresh human approval for the minimal design: in LinkBook.resolve, treat a non-null expiresAt as expired whenever now is not strictly before it, with the rejection occurring before all count mutations. Preserve prior failed evidence and every other fixture behavior.",
+        "dependencies": [],
+        "allowedPaths": []
+      },
+      {
+        "id": "repair-expiry-boundary",
+        "description": "After fresh design approval, make the smallest candidate change only in demo.LinkBook so resolve returns Optional.empty() when now equals or follows expiresAt. Do not modify the public API, synchronization, counting logic, lifecycle behavior, pom.xml, dependencies, or supplied tests.",
+        "dependencies": [
+          "fresh-design-approval"
+        ],
+        "allowedPaths": [
+          "src/main/java/demo/LinkBook.java"
+        ]
+      },
+      {
+        "id": "fresh-verification",
+        "description": "Run the supplied Maven verification against the repaired candidate without changing pom.xml or bypassing checks. Confirm the supplied acceptance suite covers success immediately before expiry, failure at equality and afterward, no counting for failed or record=false resolutions, destination preservation, permanent code reservation, retained counts, unknown-code zero counts, and UTC daily buckets. Record actual results as verification evidence only.",
+        "dependencies": [
+          "repair-expiry-boundary"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "candidate-review",
+        "description": "Review the exact verified candidate and evidence for minimal scope, preservation of the POM and supplied tests, absence of live-service or deployment changes, and retention of prior failed evidence. Do not self-approve.",
+        "dependencies": [
+          "fresh-verification"
+        ],
+        "allowedPaths": []
+      },
+      {
+        "id": "final-human-approval",
+        "description": "Present the verified and reviewed candidate to the separate mandatory human approval gate. The control layer, not this proposal or implementation role, records the final decision.",
+        "dependencies": [
+          "candidate-review"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "2319770372310df61c4cdb3cfbbf9f9d150c8bca4b90a8ceca4f10bea4198634",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

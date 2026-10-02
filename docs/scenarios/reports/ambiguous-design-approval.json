@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    {
+      "run_id": "fe5d1047-93ba-4e5a-82a0-a91cd4c1c873",
+      "revision": 2,
+      "task_id": "requirements",
+      "definition": "{\"id\": \"requirements\", \"type\": \"AGENT\", \"skill\": \"shortener-requirements\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:34:01.104924Z",
+      "retry_after": null,
+      "skill_hash": "2d3e19cc0971cc8b6ce2d7619c131c95c4533cc47965e80b4c074b2704246865",
+      "evidence_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/evidence/5e48db4f-9eb2-4d73-90de-df997c06d132.json",
+      "evidence_hash": "40ff4b18cf0aaee5b3c500f4ebea7213c4cf4a786ddd7533ba6dc34eae403f69",
+      "candidate_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/baseline",
+      "candidate_hash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "input_hash": "9be2af341055baf2087f93b99ca74d284dfbf2a8b8812ae9d783327c63c5a36e"
+    },
+    {
+      "run_id": "fe5d1047-93ba-4e5a-82a0-a91cd4c1c873",
+      "revision": 2,
+      "task_id": "architecture",
+      "definition": "{\"id\": \"architecture\", \"type\": \"AGENT\", \"skill\": \"shortener-architecture\", \"prompt\": \"Human decision recorded; private discussion omitted from submission export.\", \"dependencies\": [\"requirements\"], \"allowedPaths\": [\"artifacts/architecture/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:35:36.919249Z",
+      "retry_after": null,
+      "skill_hash": "906d1a60b9eced53d82ee98f58dbc137d9f5408dd6e850053d981c9eafbb550e",
+      "evidence_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/evidence/c4dac7cf-130a-434c-a82d-0cdbe200d0dd.json",
+      "evidence_hash": "ddd657cc8039b99624372cff8e7db4e83d39ab95a391c0ce9ee7e1c722cbff94",
+      "candidate_path": "<project-root>/.local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/baseline",
+      "candidate_hash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "input_hash": "a13fb1e7df0b6ba7be219a6ec13ee009c5e4da7d2c5bd345bc9f6338b97525c2"
+    }
+  ],
+  "revision": 2,
+  "candidateHash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+  "inputHash": "25cf93a181febf2227da00e908d6a2423fe2018eb4f1af751293570a1397647a",
+  "task": {
+    "id": "design-approval",
+    "type": "APPROVAL",
+    "skill": null,
+    "prompt": "Review normalized requirements and architecture",
+    "dependencies": [
+      "requirements",
+      "architecture"
+    ],
+    "allowedPaths": []
+  },
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

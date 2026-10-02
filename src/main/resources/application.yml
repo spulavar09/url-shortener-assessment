@@ -1,0 +1,63 @@
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  forward-headers-strategy: none
+  shutdown: graceful
+  tomcat:
+    max-http-form-post-size: 16KB
+    max-swallow-size: 16KB
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.security.autoconfigure.UserDetailsServiceAutoConfiguration
+  application:
+    name: url-shortener
+  datasource:
+    url: ${DATABASE_URL:jdbc:h2:file:./.local-data/shortener;WRITE_DELAY=0;LOCK_TIMEOUT=2000;DB_CLOSE_ON_EXIT=FALSE}
+    username: sa
+    password: ${DATABASE_PASSWORD:}
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 3000
+  flyway:
+    enabled: true
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  lifecycle:
+    timeout-per-shutdown-phase: 15s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: when-authorized
+app:
+  links:
+    public-base-url: ${PUBLIC_BASE_URL:http://localhost:8080}
+  analytics:
+    enabled: true
+    queue-capacity: 1000
+  security:
+    operator-token: ${OPERATOR_TOKEN:}
+  limits:
+    enabled: true
+workflow:
+  enabled: true
+  project-root: ${WORKFLOW_PROJECT_ROOT:.}
+  workspace-root: ${WORKFLOW_WORKSPACE_ROOT:.local-data/workflow}
+  skills-root: ${WORKFLOW_SKILLS_ROOT:agent-skills}
+  codex-command: ${CODEX_COMMAND:codex}
+  codex-model: ${WORKFLOW_CODEX_MODEL:gpt-5.6-sol}
+  reasoning-effort: medium
+  maven-command: ${MAVEN_COMMAND:mvn}
+  maven-repository: ${WORKFLOW_MAVEN_REPOSITORY:}
+  verification-offline: true
+  scenario-fixtures: true
+  concurrency: 2
+springdoc:
+  swagger-ui:
+    path: /docs

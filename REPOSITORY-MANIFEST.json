@@ -1,0 +1,941 @@
+{
+  "description": "Privacy-clean assessment source and evidence; generated JARs excluded. Checksums cover these repository export files.",
+  "files": [
+    {
+      "path": "pom.xml",
+      "sha256": "1a6fe3c953882d1e359660a0082ebc2bafc12ce3021016723d2e48f162b81938"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2a0b2de6417213a5129c2d4290356dbac1e4c552f74357fccbc0775bcd7bdbf3"
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "d24102ce382ed45e9976d159466ffd28a55c034f121e3e1ed7bcde8267f714ba"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "sha256": "d874335e89e622d3caca2a9927a4362f6bf31d685b3a55d0f11ae1554f161b4c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ca0b06ba2166fb110268f3bc869696a612a239b5a288df799f6f18c42582c164"
+    },
+    {
+      "path": "mvnw",
+      "sha256": "cae96cef89ebea3531221f4ae17c23cf8edf67d00eae8306d4186ae1bbed4d02"
+    },
+    {
+      "path": "mvnw.cmd",
+      "sha256": "46eedb8419bd14fe70d5bb2916d7b6f51806e51b39d5b76a42610384ca929c1c"
+    },
+    {
+      "path": ".mvn/wrapper/maven-wrapper.properties",
+      "sha256": "e475c49e0cb54793fef372f979672f56bfe7d272b981ad6f5ebd5e50e08ee1dd"
+    },
+    {
+      "path": "src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker",
+      "sha256": "8eca853a5a457f17e0479b71dfbe95f2a13aff9eeff250261ecdc8ca9b847a6a"
+    },
+    {
+      "path": "src/test/java/com/example/shortener/ApiIntegrationTest.java",
+      "sha256": "7b64284e6630b1c29af149ff63f815653a6015d478170d492f45d279be5e30c2"
+    },
+    {
+      "path": "src/test/java/com/example/shortener/links/LinkIntegrationTest.java",
+      "sha256": "db1be837a1c3af853df54f177c4be7b7b9db5c59ad45c36639813f9f44af3d07"
+    },
+    {
+      "path": "src/test/java/com/example/shortener/links/DestinationValidatorTest.java",
+      "sha256": "15cde43e4fa85b70a97e8f986fd7f9fa7038b68d4e9dde3a30978b660852f37d"
+    },
+    {
+      "path": "src/test/java/com/example/shortener/workflow/WorkflowControlTest.java",
+      "sha256": "6f6a3a43aa22fac4b5b96fd39a557f9e51b167348949a66411802ad54882ed34"
+    },
+    {
+      "path": "src/main/resources/log-template.json",
+      "sha256": "f11dce78b512ae8853f47ed5898bbfd588a8e7c30b09c184913887154e9168fd"
+    },
+    {
+      "path": "src/main/resources/log4j2-spring.xml",
+      "sha256": "b49cc23ce7e86c99022b02012b7682d22cd02cfb1fbac4f1b8cb11135aec90c1"
+    },
+    {
+      "path": "src/main/resources/application.yml",
+      "sha256": "416f233f9e744a73d3156372e1e258b4b836998cad799bebdd08c41d7237a591"
+    },
+    {
+      "path": "src/main/resources/db/migration/V2__workflow.sql",
+      "sha256": "88bef8ee21512da01d3bc7c5ec3ba5e59e7f91a994dbaacfa58f33c73d5145ac"
+    },
+    {
+      "path": "src/main/resources/db/migration/V1__links.sql",
+      "sha256": "c21a055d364a453f76e37bb2e65aa35064806fe4780e0e3efc1eb5af86048c73"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/ShortenerApplication.java",
+      "sha256": "2bed1fc71207f89b5ced0acf11660d806c512d23e85b0d31ac84f125a4e814ec"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/security/RequestBoundaryFilter.java",
+      "sha256": "e33ee7266130a3a8c61980d7c1a33fa2d5bc3fb72e510b4e69edb67dca1a4666"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/security/OperatorSecurity.java",
+      "sha256": "3fa6f82f92d1fe0cb083f5396d17498971c4120f3de4ce6b5f627a50c4f5272b"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/common/ApiException.java",
+      "sha256": "7ba51ad6fed31c65f2c5bf50543a002203893818f12e3f15f27b9b81cfed135f"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/common/ProblemResponses.java",
+      "sha256": "ae72cf573fafba0cf267b6bd8d346cb2158ac1536ee93e38afc11a942be5e763"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/common/ErrorCodes.java",
+      "sha256": "854641520b12864c74fcb76deae154f28dbf89fa9a4d3607539e7dadf79a37e5"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/common/ApiErrorAdvice.java",
+      "sha256": "9161fbc1900a445939ff76b3fdc4bbd5a0c0b614a8e17a8a9038557a511b8f06"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/links/LinkService.java",
+      "sha256": "8058d415ea4204402689cbcaceeb1de8a40a760c901c6a8c04767b9df0c41cb6"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/links/SecureCodeGenerator.java",
+      "sha256": "762bee68d8e0f20cd44185fbb32c387685cb1ba2d865cb5b224664cba9cfacf2"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/links/LinkModels.java",
+      "sha256": "fae50050974c6c2fa90943224bb4db59ee81c81d84104ed55441cf58f98c17ec"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/links/CodeGenerator.java",
+      "sha256": "7e6f61332cb9924d1413c78dddb066a5cf90eda9c69822aff75bd84db0a93635"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/links/DestinationValidator.java",
+      "sha256": "283f29190fedc1abfea1fbc68b503d593d5a6d8f8ae0272ab3cf06c70812d160"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/links/LinkController.java",
+      "sha256": "56c2b391134d440e1a679df1dd86c1e53ae8c60d8eb61f75d07a7ec2cca50d2e"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/links/LinkRepository.java",
+      "sha256": "0fe2d4079fa7c3367cdc9c4142f2e6927a2a0b109c26dc96c9ba3505839ab1c9"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowGraph.java",
+      "sha256": "981cdf01a223504fa50047ff4e272d75e40250b022a5901f53a01525bfe291d5"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowProcessAdapter.java",
+      "sha256": "cf6dd2953363647a28c8fd39fe9fbb073ea36477c61be4c334e9cca4f0a1003b"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkspaceStore.java",
+      "sha256": "5b5fdc62184afc6ed9b607d4237593e011ed77f49e6e7dc99841f915ea6959bb"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowScheduler.java",
+      "sha256": "fd727ee4c8308234cc585b4c26e61b757d0f37a2926414f96d776ab31dd2eeca"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowModels.java",
+      "sha256": "56ac12294368bcd923e9618689a98175b372c37537c2a486ef5eb85635ac4033"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowService.java",
+      "sha256": "7152237e856f560261346c404bfc69e08a9f9d3f338500cd806983b0ba20bae4"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowRepository.java",
+      "sha256": "187dfdd5ef4da0c99562ae1b2c11399f806aa2870e36f802f6d0fe9a20cb27e9"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowProperties.java",
+      "sha256": "1037b95cb11a01f31243f4e24373ad0392583471047de78b2c92383b9dcbd906"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/workflow/WorkflowController.java",
+      "sha256": "b4efa43e66ad75eba874aeef80f9934946b80b7c0b8af9e502a48e1d07ddfca7"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/analytics/AnalyticsRepository.java",
+      "sha256": "8279117b26f4ff4e422d285b8f9f27af4160e41fe7599a1ef58991da9e14c0c9"
+    },
+    {
+      "path": "src/main/java/com/example/shortener/analytics/AnalyticsService.java",
+      "sha256": "cf593ec93bd90aed95f5bdd85237a6b910083988d41da7d05b1ce9bb55babc7d"
+    },
+    {
+      "path": "scripts/run-local.sh",
+      "sha256": "e5628e5070651beda24f8cd7e864e0776e2205f4cd4672aa50b50864b9124f91"
+    },
+    {
+      "path": "agent-skills/shortener-requirements/SKILL.md",
+      "sha256": "422d1ce7ba18b5efd3bf44beafeb3b6af156a97a1fe28a6636d12460df13ad96"
+    },
+    {
+      "path": "agent-skills/shortener-implementation-repair/SKILL.md",
+      "sha256": "5567b7b2d81e514a49399c48ae79166afcb7cc3ef27795495ef603b4b519351d"
+    },
+    {
+      "path": "agent-skills/shortener-handoff/SKILL.md",
+      "sha256": "0b40efa9008b0058b2aee130c61617fb63bfe150cff4d22f351ca5e5505441a1"
+    },
+    {
+      "path": "agent-skills/shortener-verification-review/SKILL.md",
+      "sha256": "d286c4f6f9bb58847d8d3f8bf05bf2e1e0c79b00907b03177f065d8250728aab"
+    },
+    {
+      "path": "agent-skills/shortener-architecture/SKILL.md",
+      "sha256": "59828f7877bf95744e2c094f4ab4a3d1b30f551d5893ec44af509e60bf77a996"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "2a5a5928877f0630da5ec166cf2dff36446207e6c58d67c08ae90fa69b079f1b"
+    },
+    {
+      "path": "docs/WORKFLOW.md",
+      "sha256": "c02b37a2caad435c6dda28bfbf693b670374982640b9a72927eb2f52cc6fafd0"
+    },
+    {
+      "path": "docs/scenarios/SCENARIOS.md",
+      "sha256": "d8ea612b8aa2dda2520900f9912ffe85164e17532343a034bc6d3b2b7a5acb8c"
+    },
+    {
+      "path": "docs/scenarios/FINAL-REVIEW.md",
+      "sha256": "deb89758d2bb848fdb9e783386a9a0113f1cb1ed5d730ee97ee374b0d158206d"
+    },
+    {
+      "path": "docs/scenarios/DESIGN-REVIEW.md",
+      "sha256": "2497ed6271dcf150f4a3b8e3a1c6330b12ac27b57118a9b76a5f17977fa7697e"
+    },
+    {
+      "path": "docs/validation/automated-tests-after-api-simplification.json",
+      "sha256": "a21355d61c3add2b3da51fc3ae100ccf7391f6d2b8c73eb79a390677a80f41cd"
+    },
+    {
+      "path": "docs/validation/scenario-reverification.json",
+      "sha256": "752f9a63afb8538fc26a8b3eef39d8361e5fb94b79c98a73c42778bd8959eb29"
+    },
+    {
+      "path": "docs/validation/locked-database-startup.log",
+      "sha256": "59bba86c3972f3aacb6293cfcb8a32cafcaf9552d37ab6ee587c1df19a3d3302"
+    },
+    {
+      "path": "docs/validation/final-application-verify.log",
+      "sha256": "b3fcc9b4e43a0bf8e58472e40510e207eb6aff642b2a138bf39edbeb24176c08"
+    },
+    {
+      "path": "docs/validation/redirect-smoke.json",
+      "sha256": "e6b845a55bc4306c5cfaf0caec0f0564a9b00a2a8cc2e6a584b5657a6700b5e7"
+    },
+    {
+      "path": "docs/validation/scenario-reverification-greenfield.log",
+      "sha256": "92a009e0e800f7f9b782a53e3795824fa436f7c253e86785674c3f2fc3600cf2"
+    },
+    {
+      "path": "docs/validation/repository-refactor.json",
+      "sha256": "99717df59de98b8a1bdd71bb163a237338d3b7b080c99a48aa3b4da9a0e60804"
+    },
+    {
+      "path": "docs/validation/api-simplification.json",
+      "sha256": "c6291af70762fc968e428c94fae842ebd6c49059398ef2313f01d22b67f1d5bc"
+    },
+    {
+      "path": "docs/validation/redirect-smoke-with-active-workflows.json",
+      "sha256": "05071120c547b07482f991158049756e95806338f191af149d1ec1dd48927d08"
+    },
+    {
+      "path": "docs/validation/api-simplification-before-repository-refactor.json",
+      "sha256": "04cb3bb0102708e94cc54ff00feec42d5560c9d5cefa8f95c2b3dcb1e9062251"
+    },
+    {
+      "path": "docs/validation/locked-database-startup.json",
+      "sha256": "5bf1afb18c3824d996ebfcbb278f8a95d6170f06da6bc3f711db251317de37b0"
+    },
+    {
+      "path": "docs/validation/package.json",
+      "sha256": "f47c44669427260342c69639ff4f33673da4b6a2d4869f7e10507cb2ec2b9ef7"
+    },
+    {
+      "path": "docs/validation/unusable-database-path-startup.json",
+      "sha256": "a70e62836a22dbf8c204c9fc1e1715bf8e5609fe173c2a7fa177e80ba6f7b09f"
+    },
+    {
+      "path": "docs/validation/scenario-reverification-brownfield.log",
+      "sha256": "9828e5eae4704fae7abe3939963347d12eb205bb1c9a06b868bcd49f1e64ee20"
+    },
+    {
+      "path": "docs/validation/scenario-reverification-ambiguous.log",
+      "sha256": "837ca25bacb9b8bec50c456a5a813d9fa2d60c1d3fea564b0ed3a7a2c8618dae"
+    },
+    {
+      "path": "docs/validation/brownfield-baseline.log",
+      "sha256": "7f03fede49176c643b9ccc125eb909e857e5fea3b4e96d2611297fd9e9f02495"
+    },
+    {
+      "path": "docs/validation/scenario-reverification-brownfield-baseline.log",
+      "sha256": "f2401387ab7ea20bbfa027012720214b24fc32bdc6d5805901e20832cb7d052f"
+    },
+    {
+      "path": "docs/validation/unusable-database-path-startup.log",
+      "sha256": "a8669541415a61bb3740686b3a9641dc025eb2d1d55de2877786f95a132dbebc"
+    },
+    {
+      "path": "docs/validation/automated-tests.json",
+      "sha256": "d55b6e62a0d810ba0503e5e0c9f974bd6bad9871bd253796abfae257bec3d8d2"
+    },
+    {
+      "path": "docs/validation/process-restart.json",
+      "sha256": "28f80ece1349aaf92e3e6f7dfa1ced3b610de83160bd51d100814258373e1e89"
+    },
+    {
+      "path": "docs/validation/automated-tests-before-api-simplification.json",
+      "sha256": "fef119a882dee76fc27ccc6224dcf0f298771cef789329d85c4a391bcd46ff6c"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield-review.json",
+      "sha256": "8f029a226edfe5cd5c5cf0c1b312ff8a5826348b2a83f9acb2cede41e70d2bdf"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield-implementation.json",
+      "sha256": "477480b82ec1701a7d5990e4705967f74e17dbfe0ca475b1c5ec3287c019cb46"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous-architecture.json",
+      "sha256": "7b086d6a9c8215db9147bb82de7d6819265a7f4996738c7e5a9fe0e2db720998"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield-architecture.json",
+      "sha256": "f36637abcc8fb246ddc820091cc413a50e8a4dec7a62227d565a4e976c92db08"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield.json",
+      "sha256": "5f501f33dd284008ba0eb75121535c7ac4da02192765db9751339998c07b7f12"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield-architecture.json",
+      "sha256": "564b2c133a9b452066accd435f58b3b9e48ee2c9fb693abfe20e8be5e5a5150b"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield.json",
+      "sha256": "94bb08131ff51854f2b6005221f292cb6aeb19e085d99476ef790ae865dce84a"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield-review.json",
+      "sha256": "0fbb7933295f344229f584fd1722c8ab96bd779f9fd284a7e93650940f8c5f7d"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield-verify.json",
+      "sha256": "a0635bccda1f019cfd6beeb62b0d80e8b6f6f3f723671c8912cdf74c58f6f737"
+    },
+    {
+      "path": "docs/scenarios/reports/submission-index.json",
+      "sha256": "425494d5a0f584152c3092bf8e88699987b38631c3c0b9dd05dfbe32016012d3"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous-design-approval.json",
+      "sha256": "d9b9988b2431406593e050263491b67e80daf75691bf94f8df7e522440515b08"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield-design-approval.json",
+      "sha256": "37f9d5653d6ee3f7d106f467cea002ce69bd67924d86fd8fedc8a30f472202c8"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous-requirements.json",
+      "sha256": "bd59b66da9d656af079cf34e6ab6a87697d0c341a79ff178832fd6d5cc65bebc"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield-requirements.json",
+      "sha256": "4b8b56fa9fb27fcf0f573f6bcaee74e6d11fdda175843c9b9dd3210716e6d115"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous.json",
+      "sha256": "9cb9b132735dada1b384663f4a5c031c16799f3a733522b8be1615985ab18f08"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield-join.json",
+      "sha256": "2a0758e2a2f81e1829f2053897758198345744e20838b7b100304725f77f7c1f"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield-requirements.json",
+      "sha256": "c7123c353b50c39d3099c48f369b0c9b0f5c2928144d2fb754e9106e8b8ded47"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield-verify.json",
+      "sha256": "4823e06f0df460352de5f2233430664329b8a4c3e76c4dc028657eace5ee758b"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield-join.json",
+      "sha256": "8a1884dbefd35fe1db1764bbc43be3f019eee4763569bd87085e54e911bd34b8"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield-design-approval.json",
+      "sha256": "ccbb2381ba8b1d96f2f52b1638ef8e5aa353dac7ceae1ec5c1e8dc10886acc13"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield-implementation.json",
+      "sha256": "12e6c96588cdb69c3bbe34741fb25d8122e29ba935a14a754a1550a3c7f70334"
+    },
+    {
+      "path": "docs/scenarios/fixtures/ambiguous/pom.xml",
+      "sha256": "cb882cb2294f022d3b199815058f0e0ab261d4b8a7ca1d000bafa8917e3ec153"
+    },
+    {
+      "path": "docs/scenarios/fixtures/ambiguous/README.md",
+      "sha256": "8cd76b4e950755146ee89f719d184f0831540548f218687986bb06e2ca1e8ccd"
+    },
+    {
+      "path": "docs/scenarios/fixtures/greenfield/pom.xml",
+      "sha256": "cb882cb2294f022d3b199815058f0e0ab261d4b8a7ca1d000bafa8917e3ec153"
+    },
+    {
+      "path": "docs/scenarios/fixtures/greenfield/README.md",
+      "sha256": "8cd76b4e950755146ee89f719d184f0831540548f218687986bb06e2ca1e8ccd"
+    },
+    {
+      "path": "docs/scenarios/fixtures/brownfield/pom.xml",
+      "sha256": "2ebe3db702eac47f1213e949b365993121b8138496c27cee4f3299433685af23"
+    },
+    {
+      "path": "docs/scenarios/fixtures/brownfield/README.md",
+      "sha256": "8cd76b4e950755146ee89f719d184f0831540548f218687986bb06e2ca1e8ccd"
+    },
+    {
+      "path": "docs/scenarios/fixtures/ambiguous/src/test/java/demo/LinkBookTest.java",
+      "sha256": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+    },
+    {
+      "path": "docs/scenarios/fixtures/ambiguous/src/main/java/demo/LinkBook.java",
+      "sha256": "9c8ac443d900be4d45b859b0ee0e973dfdde01e2c362f48f11260f80e26d540e"
+    },
+    {
+      "path": "docs/scenarios/fixtures/greenfield/src/test/java/demo/LinkBookTest.java",
+      "sha256": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+    },
+    {
+      "path": "docs/scenarios/fixtures/brownfield/src/test/java/demo/LinkBookTest.java",
+      "sha256": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+    },
+    {
+      "path": "docs/scenarios/fixtures/brownfield/src/main/java/demo/LinkBook.java",
+      "sha256": "6166c17e87d15e24dc6dbec4364cd4a5b2c5048dfbc3bc22307aa339467b5639"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield-review.json",
+      "sha256": "8f029a226edfe5cd5c5cf0c1b312ff8a5826348b2a83f9acb2cede41e70d2bdf"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield-implementation.json",
+      "sha256": "477480b82ec1701a7d5990e4705967f74e17dbfe0ca475b1c5ec3287c019cb46"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/ambiguous-architecture.json",
+      "sha256": "7b086d6a9c8215db9147bb82de7d6819265a7f4996738c7e5a9fe0e2db720998"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield-architecture.json",
+      "sha256": "32afae9784d21a34fc2fe5e74867a20a0dcced8573f52855f89614b797bc9e25"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield.json",
+      "sha256": "b4b146ba332252844d113bdeb78c4178491f529891b8e568faa601b118f5d3c7"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield-architecture.json",
+      "sha256": "be99b219218336a537202db50256041c9fe96caeb7a8033324d45677bb8f802f"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield.json",
+      "sha256": "e1e48375b1481320f172f5a059d0a7bcedff9d297b2b07e71d0d6a95a079454c"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield-review.json",
+      "sha256": "0fbb7933295f344229f584fd1722c8ab96bd779f9fd284a7e93650940f8c5f7d"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield-verify.json",
+      "sha256": "a0635bccda1f019cfd6beeb62b0d80e8b6f6f3f723671c8912cdf74c58f6f737"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/ambiguous-design-approval.json",
+      "sha256": "d9b9988b2431406593e050263491b67e80daf75691bf94f8df7e522440515b08"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield-design-approval.json",
+      "sha256": "cd428a45207a1e4e988e072a68c6d4bb2be4a91679bda3c9122407a202ebeaa4"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/ambiguous-requirements.json",
+      "sha256": "bd59b66da9d656af079cf34e6ab6a87697d0c341a79ff178832fd6d5cc65bebc"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield-requirements.json",
+      "sha256": "db1c6391ecc1b4aa1326e86850cfbded50a390d0a5433ec916e7fdf60880d63f"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/ambiguous.json",
+      "sha256": "0ef16153df01cb94ed9626506034b964c7fd98193ceede1a1b0906a30b03dbe1"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/DESIGN-REVIEW.md",
+      "sha256": "cf353d97e9f406e2a173015b5dba247e629834d45d592fd08e2cbf6df30d5d22"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield-join.json",
+      "sha256": "2a0758e2a2f81e1829f2053897758198345744e20838b7b100304725f77f7c1f"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield-requirements.json",
+      "sha256": "d921b153f050c4cb1c9e06aab0f8d33d078660c863efb436ba8a94ce64d0b51f"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/brownfield-verify.json",
+      "sha256": "4823e06f0df460352de5f2233430664329b8a4c3e76c4dc028657eace5ee758b"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield-join.json",
+      "sha256": "8a1884dbefd35fe1db1764bbc43be3f019eee4763569bd87085e54e911bd34b8"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield-design-approval.json",
+      "sha256": "61b47726393525927728f26e10fda87a5877a0438aa0970bffdf3691bfdbc413"
+    },
+    {
+      "path": "docs/scenarios/reports/legacy-handoff-question-stop/greenfield-implementation.json",
+      "sha256": "12e6c96588cdb69c3bbe34741fb25d8122e29ba935a14a754a1550a3c7f70334"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/requirements.json",
+      "sha256": "bd59b66da9d656af079cf34e6ab6a87697d0c341a79ff178832fd6d5cc65bebc"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/report-version-4.json",
+      "sha256": "7debf0d6bb7424ea6f5092a2c0c721a592d9544ab4e90ada775adb90d98144a1"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/design-approval.json",
+      "sha256": "d9b9988b2431406593e050263491b67e80daf75691bf94f8df7e522440515b08"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/report-version-3.json",
+      "sha256": "956d70d4d2c056a9324c3f3d1dd262bc9db14a7402bcb10979c520624fb2ac10"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/architecture.json",
+      "sha256": "7b086d6a9c8215db9147bb82de7d6819265a7f4996738c7e5a9fe0e2db720998"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/report-version-7.json",
+      "sha256": "9cb9b132735dada1b384663f4a5c031c16799f3a733522b8be1615985ab18f08"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/report-version-6.json",
+      "sha256": "e490f56cee2de19c50e1f64ddb0fe16bd16a628636c062581fd3d0973ed3d478"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/final-approval-dab5174fd2113865fcc282a7518cb5ed36880cba07cf6014f261ccd67de99457.json",
+      "sha256": "335e15ce1126b52e16998e28caf0507b07ec11d2aee3599387c5722c74051a6b"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/join-1d3d6a471fab07fb342fe8e1503b12b8b7e5897f75fc9504ca4063af2b95a746.json",
+      "sha256": "f03574cc91b8ac1101fa0ea29bc7f2523a0cfd7b58d07322335058c48dfc6607"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/review-02ce60aec339fc80f26dc141f4eeda93d90e87ababc7d80e764779406554c718.json",
+      "sha256": "f99f051e10ade9a93f06b8239f3c8aef560215f86803d1ab640137a487f407cd"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/implementation-caf763ac8305249442c333e7a8a1a47f56f99c0082c9a514986f4d2b45f97e4e.json",
+      "sha256": "e31b3fe81aff0f940997c057977056bffa382764bb83e458d9e2879ade960b18"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/design-approval-e8ceb135d5168efa0820b9324e165c59cad79f9e0daa59fc9acb8b67b2f38fff.json",
+      "sha256": "762bbc4752a0bb1fe5e27aceb8e7c084eb614a93337d0bf9d235811496150739"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/handoff-9201af7c99958bba2d8b71e4578a6a627de68653ac16b5ec079bc9cb578813a9.json",
+      "sha256": "eb8a183d8d3ed22f7f55c45da2e105678d96df64ba3d1bb25d93b798d5e5440b"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/architecture-ddd657cc8039b99624372cff8e7db4e83d39ab95a391c0ce9ee7e1c722cbff94.json",
+      "sha256": "ff3571a76dce03e53a20c4c98c625fcb5ae359abe82e6343f439dfab68105030"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/requirements-40ff4b18cf0aaee5b3c500f4ebea7213c4cf4a786ddd7533ba6dc34eae403f69.json",
+      "sha256": "d1520772a1e7ac7d17492a255d1a1e613e1ea725d39e4c6130adc502f60bb6a9"
+    },
+    {
+      "path": "docs/scenarios/reports/ambiguous/revision-2/review-evidence/verify-4242d48b489a2b3ff7b99c4111a3c3c70782a08566d8bacc56e51a3fb0511795.json",
+      "sha256": "ab3914f8fdd92b2eab691620ecf096fe6034e49c57f50313075c32aff5a1afae"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/report-version-9.json",
+      "sha256": "0b392d87c7f269ad7c7d72d239c44a46437af813be666edf2ebeeeb68cac58d3"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/requirements.json",
+      "sha256": "4b8b56fa9fb27fcf0f573f6bcaee74e6d11fdda175843c9b9dd3210716e6d115"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/design-approval.json",
+      "sha256": "ccbb2381ba8b1d96f2f52b1638ef8e5aa353dac7ceae1ec5c1e8dc10886acc13"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/report-version-11.json",
+      "sha256": "94bb08131ff51854f2b6005221f292cb6aeb19e085d99476ef790ae865dce84a"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/architecture.json",
+      "sha256": "f36637abcc8fb246ddc820091cc413a50e8a4dec7a62227d565a4e976c92db08"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/report-version-10.json",
+      "sha256": "b3b45fe2cbf19b31fe3658728e28343d5ce1e10376cd4a920fc8123df04851ee"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/report-version-7.json",
+      "sha256": "8834641cb0f5c46c72f3db2184555798f4a5ec56c39aaaf132cd16686c18c9cf"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/report-version-6.json",
+      "sha256": "7ea0bdee77a02a247f954d5adafb4b2372698ba14ff964f67f758c249a2094b8"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/review-07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f.json",
+      "sha256": "5a9ff6de1c2d582ca478b24a61a4b0fc8292c0a0893524cea505168788a10077"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/handoff-e833ee203522b255fd2a182a0ac156f9e41931ddeeac920684c1fe56095d7544.json",
+      "sha256": "3ee4566915b8e8782d1f156ed0fd8759eca45a177b5431bc00363745f3319065"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/verify-774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd.json",
+      "sha256": "9a76ee1bdeaac97a52e3e40bbaa523001dcbe558b2aa4f1b1228b8bb7b7e3aff"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/implementation-0ee74bc9865f9abedc6a716c0b8116ab19a72737252fa713c882b7c86b697010.json",
+      "sha256": "bd194ce7f0e79c15093e546777ce2808f82fc91a33ace2fecc4ab5a5a7e35dee"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/architecture-a2f3f1f53ff5f4e3e666b0cb489c17f0fd522c13d44081936b40e8be50d9af8a.json",
+      "sha256": "d0dcd99e64d06be22ad142b55f265fe6e9143d0b1ba338744fc8081affbde26a"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/final-approval-285f586dfe8d69e74348d983847742acc6fee0d5a2619fcdffaaedf40bc48f4d.json",
+      "sha256": "ebe2a9c9ae9c3f79839dcb1275d1f764bf429511cd2253484b76d64cc6b010f3"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/requirements-9052cb3da04c2640f169161a9f06a1468c0a0776dc4df92624845fad4e1e48da.json",
+      "sha256": "d3e808605691d7264a7d8b14685b5f90095df143e13256a6120773b4afd963b2"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/design-approval-c053d0835f1539e60280d9445a9395c5df637e1a7158f24182e8f6af41706421.json",
+      "sha256": "d9f49bad305c9b734addff4b9d7e2284d49e9a435bdec8056e4cc6194dc00e61"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-2/review-evidence/join-ce76991313b7d7ced82f07776e9507f371a913e6aad127bf3fb56127aebc3151.json",
+      "sha256": "8c7458a3032addaf789026d77abb194411ddcaab226f45c59c09fd0cc982e0f4"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/architecture-10c1c824aa0a3cb12d28ced8f2345958edcea233bda7ca840a5a425c4f79b178.json",
+      "sha256": "703fca272c3f9ac217095fb42706699eb904a8997ed8de018ff5b1c08b448fa9"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/review-f98c5357f6904a73d997728f889ffd8ee0bb0ac2ab5d442df1508b7cefff37ff.json",
+      "sha256": "362e9afa8aef2acf0dcc996ddf5ce78f3b152d18bee80eeb4143f987097db455"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/join-cfe20580a76a10001b4c8db3d5c967e4ce15337859691c838769a2a563c25c9f.json",
+      "sha256": "9d8f015cf4fe95f3df4b553316414af46e06539b74d120e26fc866b014f9dd74"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/requirements-09bfa6d85adbf343404e23eba8605826a100c73338fd91aee232391602aadb4d.json",
+      "sha256": "224b1a889c619bf0dbc87ef4bfa33d5dfabb9a4abebf68b206f49ab83b4dd03e"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/verify-ba8805edc095aab106687e938387fb493fdde71dd3ae40c21cadd3136ecd5b4a.json",
+      "sha256": "7f116051058bc2cae720fa46370f35f19b5a91428a2b0c18f01b2e29b6cf860c"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/handoff-f67ed930c92cfb4b0dd899ac8b13452f448f48e8e36df2df72ee8d63b7172106.json",
+      "sha256": "e315e988e5520e9981457c815293f378786322425f237c5229bda787f739946b"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/implementation-6ca172956f9a3a3429aa9466c93364a87afef0b007c81a7661f37209348253f4.json",
+      "sha256": "774623edf83fce7e784713699e0a99fb192d475290b88aad8be085ff4d7b2887"
+    },
+    {
+      "path": "docs/scenarios/reports/greenfield/revision-1/review-evidence/design-approval-ab7ecea2fec69de056d13b0c361e542550dbf72c399a47f38d69793d175cc7ac.json",
+      "sha256": "39ab8e847ff14643febe49190165d71249dd9fcea24fbddcee9a21fad711392d"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/report-version-9.json",
+      "sha256": "395899a9e7952afd1d53b3110e0b1c2a132b562eb4144c36f588c417c317c8ba"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/requirements.json",
+      "sha256": "c7123c353b50c39d3099c48f369b0c9b0f5c2928144d2fb754e9106e8b8ded47"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/design-approval.json",
+      "sha256": "37f9d5653d6ee3f7d106f467cea002ce69bd67924d86fd8fedc8a30f472202c8"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/report-version-11.json",
+      "sha256": "5f501f33dd284008ba0eb75121535c7ac4da02192765db9751339998c07b7f12"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/architecture.json",
+      "sha256": "564b2c133a9b452066accd435f58b3b9e48ee2c9fb693abfe20e8be5e5a5150b"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/report-version-10.json",
+      "sha256": "3cb7f7c32b0758c8a392dadd891edfc66465043c9bfaec6fec848cb7cceb3e18"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/report-version-7.json",
+      "sha256": "632e5e2fdc0a72e794b11733b2b71e9e7276224c4d2e1797cf58a29348177e39"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/report-version-6.json",
+      "sha256": "3b457028dbcadb2717dc0890ca2d4c83a2ef29c48efcd176843a0f5a092975ee"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/design-approval-009c2715c22c042abd34f70015d8b84e8b05e208cd7fac8d5372a0acb85fa31a.json",
+      "sha256": "5d1e5d9f527e964b57bc4b21730d89b682f7b60055407142340a56a6e328bc35"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/final-approval-0ad7c89c15168cad915367c062ccaa2fac9d4750e031586af382970beca90085.json",
+      "sha256": "ed534e54b25f884580a5d2d6ec7584718bfc8e69ef825ffdfb741ddd05287b67"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/verify-69301996bd2969af1aad34792b6305038ebaafb6b03ddef2df27c54a8375c30d.json",
+      "sha256": "ddd6fb3b2f3d69ee56a1641212f24cec33002c4c6928dfa0927c64ba4cd7c6ba"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/implementation-a260de109f13e803a798acbdfc1ad6bb1f9fa9769501eea487fd4427cfc096ce.json",
+      "sha256": "636a6a1efdaa3f348e9a084996589cd9f4241dd9b9eefde3af095b46e87f5840"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/handoff-8f62507e56aff3adbd2a35366752efdf921b5d3b8dda254246691da7c918db48.json",
+      "sha256": "c2347a4bae601b05328d575394a168c5a4e91a4f2e7dbc403bac5d7ed9ea9df6"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/architecture-44e75640f55d263577a1400a216e14c39a86fbfacb38680aecd71dfc351e4930.json",
+      "sha256": "3992335de209033632e03121c1b28331295fcb01900c20968a59239768fdf939"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/requirements-ab2d13994d4b77a4a63555d06cf5035e6a74be2adde23f0d33025805ffb364a5.json",
+      "sha256": "e8e7f0035ffdb6c41d5a5a3e43891bb42254a71217928b4a6b8021028d8b7823"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/join-0dbd4f5d4d43949a9ce1d9b0df98c1e51b53bba2dafd7c7650a9c1e2d85252b7.json",
+      "sha256": "e0bfdc51a22a772064661823671d1ed3ad06da6d4a89bca1f8c288e68ff29614"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-2/review-evidence/review-a282ca23fbca919725debd0f5e8cfcf33aba64132fc99b2560edfe05f0894544.json",
+      "sha256": "f86e81a610aa5e5930a4b895771d505789fca470592c4cf8673986300e8aef0a"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/handoff-fe4e6dfaed3dd0f0fbfcce02af41cb3686512c06522cfeaef7968b8d76dd83d7.json",
+      "sha256": "dd7d4df23d3fcd593cb37fe1459921e59a410227ddfe1fec9849c35998546c93"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/join-5a8c2673f42deda52b5eb8c7c659f531c6e6551bc10c5d12545604a5894a5808.json",
+      "sha256": "c18fc3c629cdfea19fdb4400662753012f64e69ebb66432962c4f09c77183028"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/implementation-0d43a88113fdfb486914f36c8c044187250a430e32b2497c7c4a2f97e4c602fe.json",
+      "sha256": "5223f6e4c9b1035f396c7e07675371fdc989e536cdd0789ce87bda9fcabb4216"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/requirements-219dbe89244d47184b20fe1ae64f79d94406fdfaf122bc02ddee844421826754.json",
+      "sha256": "6f9ac13304dada8f03a694aad15dda20cd0fd9c2a4ab40ff3d530bd375229d14"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/architecture-6f291e650dcf83d1ca533dc7ecd38608d43a9dc6ebc18628a6d3c2dbb66e7fd1.json",
+      "sha256": "896d00736b733590920fb7b66509403ebd855d073df5db6865d96663875b0b6b"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/verify-b9529d8571c8661f4bd5bb313a745bc0d4e2e9575d1e979c4fa565e5212291d2.json",
+      "sha256": "2fb9b805d3a0213b2bd588f28f1b75217e8bf5778891e46d87b7b80bc36bb565"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/design-approval-d92a21fe984540a8f3b03af9465ac5be64284f72d30593b78defe7116a1d3dcc.json",
+      "sha256": "5574a8525d74f38dac19ad6b9b1bda0c19e0a08a1ba6eb0b376b70bde0157987"
+    },
+    {
+      "path": "docs/scenarios/reports/brownfield/revision-1/review-evidence/review-1b0a266d2444fd1a09c68ec83ff40a9861b611707a703aac028c906c18400eb3.json",
+      "sha256": "f6105b0e29ca1b0e0068dc40be3f87265236179f2c93d1225073df5807b14c0d"
+    },
+    {
+      "path": "scenarios/greenfield/pom.xml",
+      "sha256": "cb882cb2294f022d3b199815058f0e0ab261d4b8a7ca1d000bafa8917e3ec153"
+    },
+    {
+      "path": "scenarios/greenfield/README.md",
+      "sha256": "8cd76b4e950755146ee89f719d184f0831540548f218687986bb06e2ca1e8ccd"
+    },
+    {
+      "path": "scenarios/greenfield/src/test/java/demo/LinkBookTest.java",
+      "sha256": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+    },
+    {
+      "path": "scenarios/greenfield/src/main/java/demo/LinkBook.java",
+      "sha256": "528d3bc0943f4d32ca016c8bbc4216ea74e8642dd1b9dfc408d941b21935e790"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/9003ca98-fa67-4cae-a06d-450ecf01ea05.json",
+      "sha256": "8343666538d1d7702ff1066dc6de312712f8bf492c964bf93bfe8bfc0ac8d0df"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/d4082528-3dd3-494b-a3f7-6ef1eaab7a43.json",
+      "sha256": "ccbb2381ba8b1d96f2f52b1638ef8e5aa353dac7ceae1ec5c1e8dc10886acc13"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/997df7f6-e17e-487b-b41e-79cafea6e269.json",
+      "sha256": "f36637abcc8fb246ddc820091cc413a50e8a4dec7a62227d565a4e976c92db08"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/9270b152-465f-47f9-bd02-76ff8d41084e.json",
+      "sha256": "ec60820a1c48c858a7ff83814a90b77a60cf190b69ccda82dece6775096a1a9a"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/599d9d24-0f02-4c49-86a0-f28b52f39f43.json",
+      "sha256": "d7733956d49e315cc753efe4b200c61479c6f5c5b4ad755f7c030118e0c3033e"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/88fd55c5-bd2b-4a18-84c4-4d846a641f78.json",
+      "sha256": "4b8b56fa9fb27fcf0f573f6bcaee74e6d11fdda175843c9b9dd3210716e6d115"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/d56eaff7-e255-4b68-83df-ba6a60d4db40.json",
+      "sha256": "f5cd8fab809b28b874cfa5d520957ccaef5001766e2577987603672675ced1cd"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/ca4dc0d8-60dd-4a02-810d-b15c26dde580.json",
+      "sha256": "4bc81f83f5c95a70dcba2de368350c4ae1c47ee88f657bab24d3b0dc923f9d06"
+    },
+    {
+      "path": "scenarios/greenfield/evidence/dd703019-be50-4b8f-8333-5c2df7ece43d.json",
+      "sha256": "a3e7baa162a2a9e10ec6147f149058bc2051eb0527c00e8d37962c38b6bf0f18"
+    },
+    {
+      "path": "scenarios/brownfield/pom.xml",
+      "sha256": "2ebe3db702eac47f1213e949b365993121b8138496c27cee4f3299433685af23"
+    },
+    {
+      "path": "scenarios/brownfield/README.md",
+      "sha256": "8cd76b4e950755146ee89f719d184f0831540548f218687986bb06e2ca1e8ccd"
+    },
+    {
+      "path": "scenarios/brownfield/src/test/java/demo/LinkBookTest.java",
+      "sha256": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+    },
+    {
+      "path": "scenarios/brownfield/src/main/java/demo/LinkBook.java",
+      "sha256": "9c8ac443d900be4d45b859b0ee0e973dfdde01e2c362f48f11260f80e26d540e"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/66f40b7b-c2d7-4267-bca9-ad5f59e17b2d.json",
+      "sha256": "37f9d5653d6ee3f7d106f467cea002ce69bd67924d86fd8fedc8a30f472202c8"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/b965d4a8-b5f7-4baa-9ab9-f32f2591ba90.json",
+      "sha256": "2373e211273f05ceb14b8a7554c6aa24c2e4b9c93a56248dcdb1e585839063d5"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/c6ec8c9f-c63a-446d-ae7b-c3f2bf7d93a5.json",
+      "sha256": "ff5891eedd2deaa994f976b15ab69a1804fb0d0ac76d3f4e07b2269d75e3e14d"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/ae4d9c81-dec1-494a-aec1-034a8b71a29f.json",
+      "sha256": "835cfc1ddc447405d347f295684af1923fdb9914af361405e85d732eecab2186"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/ce0a5803-5dc9-4a3d-aa4e-4b959fc610ae.json",
+      "sha256": "e3ec41004a45c41e38ce272275aa9acce703eb1b6b7f4f078c351569a4aaa57c"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/d12cdea0-40a4-4a4e-ac98-75fa2492945a.json",
+      "sha256": "564b2c133a9b452066accd435f58b3b9e48ee2c9fb693abfe20e8be5e5a5150b"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/52165ee1-ce8e-4ac5-b674-853c3483b05b.json",
+      "sha256": "c7123c353b50c39d3099c48f369b0c9b0f5c2928144d2fb754e9106e8b8ded47"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/ac08a529-dd73-47e8-b5c0-36d8942cf16a.json",
+      "sha256": "1702a710452294eb6b4ff306aba0fcc22083ff78bd687f2c69760b5dc0fcc345"
+    },
+    {
+      "path": "scenarios/brownfield/evidence/8d3b2157-fe39-4b80-a7db-bb06cc031861.json",
+      "sha256": "93b5b51064c3d87c8c68b7da02b8ac19d68cecc64f5713618ecf94c845a96506"
+    },
+    {
+      "path": "scenarios/ambiguous/pom.xml",
+      "sha256": "cb882cb2294f022d3b199815058f0e0ab261d4b8a7ca1d000bafa8917e3ec153"
+    },
+    {
+      "path": "scenarios/ambiguous/README.md",
+      "sha256": "8cd76b4e950755146ee89f719d184f0831540548f218687986bb06e2ca1e8ccd"
+    },
+    {
+      "path": "scenarios/ambiguous/src/test/java/demo/LinkBookTest.java",
+      "sha256": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+    },
+    {
+      "path": "scenarios/ambiguous/src/main/java/demo/LinkBook.java",
+      "sha256": "9c8ac443d900be4d45b859b0ee0e973dfdde01e2c362f48f11260f80e26d540e"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/18d8898c-ad66-4cc2-9af3-0a4bddc89770.json",
+      "sha256": "af7e1d39a86558d4299b89fd07df9c6d5c058fb0cb21a1d6a6a6b810d9895193"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/3eff8e16-18c3-443e-849b-d11b43e5043b.json",
+      "sha256": "0f2c682daa5322dccb118ed6aeae36671c81bf36d7828001a520d114a8ce248c"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/70c7d900-e8c8-41da-9f4a-069427f4d217.json",
+      "sha256": "9043b1c00d4cf281215130dd71a81cba005e43981d2e74101826234afa7e0643"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/c4dac7cf-130a-434c-a82d-0cdbe200d0dd.json",
+      "sha256": "7b086d6a9c8215db9147bb82de7d6819265a7f4996738c7e5a9fe0e2db720998"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/8f144b0c-7642-4383-98b0-e0fb989c1edf.json",
+      "sha256": "e16496894bfa78577ba18b7bb9021360ee4bdcac97b49305b50dceed51dba220"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/5e48db4f-9eb2-4d73-90de-df997c06d132.json",
+      "sha256": "bd59b66da9d656af079cf34e6ab6a87697d0c341a79ff178832fd6d5cc65bebc"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/7845c798-fa4a-4fac-945b-6c86bd51cd86.json",
+      "sha256": "36f1d6a1b34492d0b6129fb68e6f8d367b8129541ce8e06599e908c07116ff82"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/631ec532-a99e-4327-adf5-7aebdccab348.json",
+      "sha256": "2b715025657bca6a0d8a1f63debe4df20edd3b6cbc7832c631a3fa4e35a22f55"
+    },
+    {
+      "path": "scenarios/ambiguous/evidence/eccd00ab-0b28-4d10-9b2d-470a3955a01c.json",
+      "sha256": "d9b9988b2431406593e050263491b67e80daf75691bf94f8df7e522440515b08"
+    },
+    {
+      "path": "PRIVACY.md",
+      "sha256": "c5da6f3c501457ed6dbcb4aca737f6bdd1f0fa8bcc4200c7c1476b21eedf41f3"
+    }
+  ]
+}

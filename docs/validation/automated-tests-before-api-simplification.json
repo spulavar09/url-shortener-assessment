@@ -1,0 +1,38 @@
+{
+  "classification": "actual automated verification",
+  "result": "PASS",
+  "totalTests": 52,
+  "suites": [
+    {
+      "name": "com.example.shortener.ApiIntegrationTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "4.53"
+    },
+    {
+      "name": "com.example.shortener.links.LinkIntegrationTest",
+      "tests": "25",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "1.49"
+    },
+    {
+      "name": "com.example.shortener.workflow.WorkflowControlTest",
+      "tests": "24",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.015"
+    }
+  ],
+  "command": "Maven wrapper 3.10.0 offline verify with Java 21.0.12",
+  "limitations": [
+    "Real HTTP integration tests require permission to bind loopback sockets. A sandbox-only attempt failed on socket permission; the permitted run passed all 52 tests.",
+    "H2 2.4.240 is newer than the Flyway reported verified H2 version 2.3.232; actual migrations and tests passed."
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

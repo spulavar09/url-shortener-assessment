@@ -1,0 +1,28 @@
+{
+  "revision": 2,
+  "task_id": "join",
+  "state": "SUCCEEDED",
+  "input_hash": "6f1594c1d80a459c56b1f51d9a430ced943d00f68ae4f8e634216693f07b0b2e",
+  "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+  "evidenceHash": "ce76991313b7d7ced82f07776e9507f371a913e6aad127bf3fb56127aebc3151",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "dependencies": [
+    {
+      "task_id": "verify",
+      "state": "SUCCEEDED",
+      "evidence_hash": "774ab817d55624a96fced057e100ddb9b3ab7559cbdc7de4b8e629781b29b0bd",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "84236ea06e94372861a1f5f18341f34bc8b20eec3285aa29f2dda6529f446d20"
+    },
+    {
+      "task_id": "review",
+      "state": "SUCCEEDED",
+      "evidence_hash": "07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f",
+      "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "input_hash": "179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab"
+    }
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

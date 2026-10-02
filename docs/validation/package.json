@@ -1,0 +1,35 @@
+{
+  "classification": "actual final application verification and packaging",
+  "result": "PASS",
+  "atUtc": "2026-10-02T16:46:33.721972+00:00",
+  "applicationTestsRun": true,
+  "jar": "target/url-shortener-0.1.0.jar",
+  "jarSha256": "b1d1af7956f8fd78076a9f8412560efdde12f3f8fd40973b579d1db2976a4cc4",
+  "notes": [
+    "Final Maven verify passed all 87 tests and produced this exact JAR.",
+    "All current simplifications and clarification-pause fixes are included."
+  ],
+  "codeReduction": {
+    "WorkflowProperties": {
+      "beforeLines": 98,
+      "afterLines": 32
+    },
+    "ApiErrorAdvice": {
+      "beforeLines": 89,
+      "afterLines": 75
+    },
+    "totalLinesRemovedFromTheseFiles": 80
+  },
+  "clarificationPauseFix": {
+    "behavior": "A parallel failure retains failure evidence and task outcome while preserving AWAITING_INPUT and its revision; no automatic retry or repair.",
+    "regressionCases": [
+      "ordinary verifier failure after reviewer questions",
+      "transient verifier failure after reviewer questions"
+    ],
+    "regressionCasesCompiled": true,
+    "regressionCasesExecuted": true
+  },
+  "applicationTestsPassed": 87,
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

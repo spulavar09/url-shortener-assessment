@@ -1,0 +1,13 @@
+{
+  "tokenUsage": "unavailable",
+  "monetaryCost": "unavailable",
+  "invocationId": "e475e6db-6f92-48b5-978a-dbdf0d78c5c5",
+  "inputHash": "0cd360f8b636813ff8c2b2e8adf9503b8e009a87df6f076f2e5e33ec199c43c0",
+  "exitCode": 0,
+  "result": "Actual Maven verify exit 0",
+  "sandbox": "filtered environment; fixed Maven verify",
+  "execution": "actual",
+  "candidateHash": "fa43fa0191525857b0b0aaab5f861eef5d4d60a9cdd65abde37b4b696de3eadf",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

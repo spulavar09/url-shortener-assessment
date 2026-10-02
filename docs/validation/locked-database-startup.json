@@ -1,0 +1,10 @@
+{
+  "classification": "actual final packaged-service startup failure check",
+  "atUtc": "2026-10-02T16:45:37.414899+00:00",
+  "result": "PASS",
+  "expected": "Second application cannot acquire existing H2 file",
+  "exitCode": 1,
+  "limits": "Checks file locking or unusable path; not corruption or filesystem ACLs",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

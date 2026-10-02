@@ -1,0 +1,17 @@
+{
+  "tokenUsage": {
+    "input_tokens": 81537,
+    "cached_input_tokens": 70656,
+    "output_tokens": 1549
+  },
+  "monetaryCost": "unavailable",
+  "invocationId": "2c341996-8be2-497d-902f-1a432bc8f53a",
+  "inputHash": "a13fb1e7df0b6ba7be219a6ec13ee009c5e4da7d2c5bd345bc9f6338b97525c2",
+  "exitCode": 0,
+  "result": "{\"summary\": \"The smallest proposed architecture is the existing synchronized, in-memory `demo.LinkBook` domain model. Each reserved code owns one immutable destination, optional expiry, active state, lifetime count, and UTC-date count map. Resolution performs eligibility checks before recording, with expiry defined as `now >= expiresAt`; only successful `record=true` resolutions update both counters atomically. Disable and delete retain the record so its code and analytics remain preserved. No HTTP, database, external dependency, destination fetch, or deployment component is warranted. The supplied implementation appears structurally aligned with this design, but actual Maven verification remains an execution gate.\", \"questions\": [], \"risks\": [\"“Permanent” is domain permanence within the lifetime of this in-memory fixture, not durability across process restarts; persistence is explicitly outside scope.\", \"The source may require no engineering change, but that conclusion must remain provisional until the unchanged combined candidate is independently checked with `mvn verify`.\", \"Any future refactor could incorrectly separate eligibility checking from counter updates, allowing failed, HEAD, or concurrent resolutions to corrupt analytics.\", \"Changing the UTC conversion, equality boundary, destination string, supplied acceptance tests, dependency versions, or `pom.xml` verification behavior would violate the approved contract.\", \"A domain-only fixture must not be represented as demonstrating a complete REST or persistent shortener service.\"], \"tasks\": [{\"id\": \"ARCH-1\", \"description\": \"Using the declared requirements evidence, README contract, supplied acceptance tests, current `LinkBook` implementation, and fixture POM as inputs, produce an architecture artifact under `artifacts/architecture/` that records the minimal in-memory design and proposed downstream task graph. Specify immutable destinations; permanently retained code records; nullable expiry with `now >= expiresAt`; synchronized eligibility-and-recording behavior; lifetime and UTC daily counters; count preservation after disable/delete; zero analytics for unknown codes; and no counting for HEAD or failed resolutions. The proposed graph must preserve the fixture POM and acceptance tests, limit implementation work to `LinkBook` only if a behavioral gap is found, allow focused supplementary test work after the shared contract, and join all changes at a final `mvn verify` gate without claiming that gate has passed.\", \"dependencies\": [\"REQ-1\"], \"allowedPaths\": [\"artifacts/architecture/\"]}]}",
+  "sandbox": "read-only",
+  "execution": "actual",
+  "candidateHash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

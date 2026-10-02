@@ -1,0 +1,17 @@
+{
+  "invocationId": "7e457c1b-1308-4246-b573-9f38db2a869b",
+  "inputHash": "84214383eb6079a9b5fb435060960c2103d550accf7b7c6598967baefdd0f31f",
+  "exitCode": 0,
+  "result": "{\"summary\": \"Confirmed defect: LinkBook.resolve currently expires links only when now is after expiresAt, so equality incorrectly resolves and may increment analytics. Required boundary: a link is expired when now is equal to or after expiresAt; such resolution returns Optional.empty() and changes neither total nor UTC daily counts. Preserve behavior before expiry, null expiry, record=false, missing/disabled/deleted links, immutable destinations, permanent code reservation, retained counts, UTC buckets, the POM, and supplied acceptance tests. This requirements-only pass made no files or source changes.\", \"questions\": [], \"risks\": [\"The declared write scope is limited to artifacts/requirements/, so repairing src/main/java/demo/LinkBook.java requires a later execution authorization with that source path allowed.\", \"Downstream verification should run the supplied Maven acceptance suite without changing pom.xml verification configuration; no independent Maven verification is claimed here.\"], \"tasks\": [{\"id\": \"REQ-EXPIRY-BOUNDARY\", \"description\": \"Record the approved repair requirement and observable acceptance criteria: resolve succeeds before expiresAt; at exactly expiresAt and afterward it returns empty and does not increment total or UTC daily counts; all other LinkBook behavior, pom.xml, and supplied tests remain unchanged. The intended source correction is to treat non-null expiry as expired whenever now is not before expiresAt.\", \"dependencies\": [], \"allowedPaths\": [\"artifacts/requirements/\"]}]}",
+  "sandbox": "read-only",
+  "execution": "actual",
+  "candidateHash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+  "tokenUsage": {
+    "input_tokens": 82282,
+    "cached_input_tokens": 63232,
+    "output_tokens": 1437
+  },
+  "monetaryCost": "unavailable",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

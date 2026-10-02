@@ -1,0 +1,48 @@
+{
+  "revision": 2,
+  "task_id": "review",
+  "state": "SUCCEEDED",
+  "input_hash": "179d9b4ca09abafa471a79615dde62f947b2d6309ab2d99079d35931369b58ab",
+  "candidate_hash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+  "evidenceHash": "07fe4f2f01de7d63c969e86034a9ba4c79960c0b58e2a8bc7c688a076d13190f",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 86668,
+    "cached_input_tokens": 62464,
+    "output_tokens": 2178
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Review completed without modifying files. No blocking contract defect was found in the exact supplied candidate: destinations are fixed; codes remain reserved after deletion; expiration begins at equality; only recorded successful resolutions increment counts; disabled, deleted, expired, and missing resolutions do not count; counts survive disable/delete; and daily counts use UTC. The POM and acceptance-test hashes match the declared implementation transcript, with no added dependencies, weakened assertions, bypasses, credentials, live data, server, database, or deployment scope. The Maven evidence is actual execution, not simulation, but it failed during plugin resolution before compilation or tests; therefore this review does not claim independent verification passed or grant final approval.",
+    "questions": [],
+    "risks": [
+      "The fixed Maven verifier has not successfully compiled or tested this candidate, so static review cannot establish executable correctness.",
+      "The supplied acceptance tests do not separately exercise every implemented edge, including reservation after disable, daily-count retention after deletion, and unsuccessful-resolution daily counts, although source inspection indicates compliant behavior.",
+      "Counts are intentionally in memory and will be lost when the LinkBook instance or process is lost; this is consistent with the explicitly approved fixture scope but would not provide production durability.",
+      "The control layer must independently validate the declared aggregate candidate and input hashes; this review confirmed that the source, POM, and test hashes match those recorded in the implementation transcript."
+    ],
+    "tasks": [
+      {
+        "id": "fresh-fixed-verification",
+        "description": "Run the unchanged fixed Maven verifier against this exact candidate in an environment where required Maven artifacts are available and repository/build writes are permitted; preserve the failed attempt as prior evidence and do not modify pom.xml to bypass checks.",
+        "dependencies": [],
+        "allowedPaths": []
+      },
+      {
+        "id": "human-approval-gate",
+        "description": "After successful actual verification, present its evidence together with this candidate review for the separate mandatory human approval decision; do not infer approval automatically.",
+        "dependencies": [
+          "fresh-fixed-verification"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "78ebf55780874ab94faf8f43c20f25a5d514129d7f08c33dd40045080d8a84ae",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

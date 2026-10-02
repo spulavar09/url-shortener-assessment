@@ -1,0 +1,38 @@
+{
+  "revision": 2,
+  "task_id": "review",
+  "state": "SUCCEEDED",
+  "input_hash": "94ada231eaf7721cc1fa1919588146b54ee02bb3e4fbb69d85c5e1ebe6f1c2b4",
+  "candidate_hash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+  "evidenceHash": "02ce60aec339fc80f26dc141f4eeda93d90e87ababc7d80e764779406554c718",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 87061,
+    "cached_input_tokens": 76928,
+    "output_tokens": 1558
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Review found no implementation defect in the supplied candidate. LinkBook preserves fixed destinations and permanently reserves codes; supports null expiry; treats now == expiresAt as expired; records only successful resolutions when record=true; retains counts after disable/delete; and assigns daily counts by UTC date. The preserved tests cover destination fidelity, deleted-code reservation, the exact expiry boundary, HEAD exclusion, missing/expired/disabled resolution exclusion, count retention, and UTC rollover. The POM remains unchanged, no bypasses or unrelated systems were introduced, and no credentials or live data appear in the supplied files. The declared Maven run is actual execution but failed before tests ran because offline dependencies were unavailable; therefore this review does not claim independent Maven verification passed.",
+    "questions": [],
+    "risks": [
+      "The acceptance behavior is supported by source inspection and test assertions, but it remains execution-unverified because Maven never reached test execution.",
+      "Analytics are intentionally in-memory and will be lost on process termination; this is consistent with the supplied fixture and the clarification that no persistence system is requested."
+    ],
+    "tasks": [
+      {
+        "id": "independent-verification",
+        "description": "Run the preserved `mvn verify` command in an approved environment where the declared Maven dependencies are already available, without changing the POM or tests.",
+        "dependencies": [],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "b5824a09b43f22bb65a5f8ed55b054a8549e1b2cc1638f371e4f147588170105",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

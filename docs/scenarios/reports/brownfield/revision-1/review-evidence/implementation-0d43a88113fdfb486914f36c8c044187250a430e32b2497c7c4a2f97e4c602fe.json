@@ -1,0 +1,30 @@
+{
+  "revision": 1,
+  "task_id": "implementation",
+  "state": "INVALIDATED",
+  "input_hash": "c9ef5552a96693e3967fe122dd5374b3ad7348fc77979a1b8f2783a0b7769b64",
+  "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+  "evidenceHash": "0d43a88113fdfb486914f36c8c044187250a430e32b2497c7c4a2f97e4c602fe",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "workspace-write",
+  "tokenUsage": {
+    "input_tokens": 232839,
+    "cached_input_tokens": 205440,
+    "output_tokens": 4980
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Repaired demo.LinkBook by treating expiration as reached when now is equal to or after expiresAt. This prevents boundary-time resolution and counting while preserving pre-expiry, HEAD, disabled, missing-link, destination, and counter behavior. The POM and supplied acceptance tests were unchanged. Main-source compilation succeeded; Maven verification was not run, and no independent Maven verification is claimed.",
+    "questions": [],
+    "risks": [
+      "The full Maven acceptance suite remains for the independent verifier to execute."
+    ],
+    "tasks": []
+  },
+  "fullOutputHash": "5c9eac0b1c814f9a6d54a4ad28882ec09a50c194373dcd43d92e6ff257a8a190",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

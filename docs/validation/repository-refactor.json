@@ -1,0 +1,46 @@
+{
+  "classification": "actual repository extraction verification plus packaged-service compatibility check",
+  "result": "PASS",
+  "atUtc": "2026-10-02T15:24:45.886120+00:00",
+  "repositories": [
+    "LinkRepository",
+    "AnalyticsRepository",
+    "WorkflowRepository"
+  ],
+  "servicesContainSqlOrJdbcTemplate": false,
+  "existingSqlTemplatesPreserved": true,
+  "sqlTemplateNote": "The previous dynamic FOR UPDATE suffix is now an explicit findRunForUpdate query.",
+  "transactionTimeoutsAndReadIsolationPreserved": true,
+  "automatedTestsPassed": 54,
+  "crossRepositoryCreationRollbackVerified": true,
+  "businessHttpOperations": 11,
+  "persistedWorkflowChecks": [
+    {
+      "scenario": "greenfield",
+      "state": "AWAITING_APPROVAL",
+      "revision": 2,
+      "version": 7,
+      "gateHashPreserved": true,
+      "reviewEvidenceArtifacts": 11
+    },
+    {
+      "scenario": "brownfield",
+      "state": "AWAITING_APPROVAL",
+      "revision": 2,
+      "version": 7,
+      "gateHashPreserved": true,
+      "reviewEvidenceArtifacts": 11
+    },
+    {
+      "scenario": "ambiguous",
+      "state": "AWAITING_APPROVAL",
+      "revision": 2,
+      "version": 3,
+      "gateHashPreserved": true,
+      "reviewEvidenceArtifacts": 3
+    }
+  ],
+  "schemaMigrationRequired": false,
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

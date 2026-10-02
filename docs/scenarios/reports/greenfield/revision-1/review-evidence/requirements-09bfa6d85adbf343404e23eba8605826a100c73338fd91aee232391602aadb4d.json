@@ -1,0 +1,48 @@
+{
+  "revision": 1,
+  "task_id": "requirements",
+  "state": "INVALIDATED",
+  "input_hash": "68c46745e60e9bf269a433ada57553135053e68fb065b8da1fb142ce986b02bf",
+  "candidate_hash": "00443b4643f8f3954a47f92b6e9760254f8e92ea6135203615579f725e1f4b4b",
+  "evidenceHash": "09bfa6d85adbf343404e23eba8605826a100c73338fd91aee232391602aadb4d",
+  "originalEvidenceHashValidatedAtExport": true,
+  "fullEvidenceRetained": true,
+  "execution": "actual",
+  "exitCode": 0,
+  "sandbox": "read-only",
+  "tokenUsage": {
+    "input_tokens": 65252,
+    "cached_input_tokens": 46976,
+    "output_tokens": 1533
+  },
+  "monetaryCost": "unavailable",
+  "structuredResult": {
+    "summary": "Requirements are complete and unambiguous: implement an in-memory demo.LinkBook that permanently reserves codes, preserves destinations, treats expiresAt equality as expired, resolves only active links, records only successful record=true resolutions, retains counts after disable/delete, and exposes total plus UTC daily counts. No HTTP server, database, destination fetch, deployment, dependency, or POM change is in scope. This requirements-only invocation wrote no files and did not run or claim Maven verification.",
+    "questions": [],
+    "risks": [
+      "Implementation is blocked in this invocation: the selected skill prohibits source changes, and the sole allowed write path artifacts/requirements/ does not include the required Java source path.",
+      "Thread-safety and behavior for null arguments other than expiresAt are unspecified; implementations should avoid inventing additional validation unless separately approved."
+    ],
+    "tasks": [
+      {
+        "id": "implement-linkbook",
+        "description": "In a separately authorized implementation phase, add demo.LinkBook with the exact README behavior while preserving pom.xml and the supplied acceptance tests.",
+        "dependencies": [],
+        "allowedPaths": [
+          "src/main/java/demo/LinkBook.java"
+        ]
+      },
+      {
+        "id": "verify-linkbook",
+        "description": "After implementation, run the existing Maven verification lifecycle without changing verification plugins; report the actual result without claiming independent verification.",
+        "dependencies": [
+          "implement-linkbook"
+        ],
+        "allowedPaths": []
+      }
+    ]
+  },
+  "fullOutputHash": "8efee039d9e3081f231c45c2107f88a358e4a678e565b58970e93c6dd92a54e5",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

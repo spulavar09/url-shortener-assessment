@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    {
+      "run_id": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+      "revision": 1,
+      "task_id": "verify",
+      "definition": "{\"id\": \"verify\", \"type\": \"VERIFY\", \"skill\": null, \"prompt\": \"Run Maven verification\", \"dependencies\": [\"implementation\"], \"allowedPaths\": []}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:33:13.637238Z",
+      "retry_after": null,
+      "skill_hash": null,
+      "evidence_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/evidence/9faef22e-98bc-4590-aaa5-9ae405bb554d.json",
+      "evidence_hash": "b9529d8571c8661f4bd5bb313a745bc0d4e2e9575d1e979c4fa565e5212291d2",
+      "candidate_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/candidates/1fe21a30-0abd-4502-8f0d-005aa55f52e2",
+      "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "input_hash": "d34204c62ea5be8327f212bafaac47a7649491ad14c42895e77beda8873ffb74"
+    },
+    {
+      "run_id": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+      "revision": 1,
+      "task_id": "review",
+      "definition": "{\"id\": \"review\", \"type\": \"AGENT\", \"skill\": \"shortener-verification-review\", \"prompt\": \"Review the exact implementation candidate\", \"dependencies\": [\"implementation\"], \"allowedPaths\": [\"artifacts/review/\"]}",
+      "state": "SUCCEEDED",
+      "attempts": 1,
+      "fence": 1,
+      "lease_until": "2026-10-02T14:33:46.001997Z",
+      "retry_after": null,
+      "skill_hash": "bfe1344b6c7732d3e5d62322e57ec536e31a2f195587e0bcefda84e3c3e64e6f",
+      "evidence_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/evidence/083b963f-0e6d-4ecc-b079-dab3ccf7e210.json",
+      "evidence_hash": "1b0a266d2444fd1a09c68ec83ff40a9861b611707a703aac028c906c18400eb3",
+      "candidate_path": "<project-root>/.local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/candidates/1fe21a30-0abd-4502-8f0d-005aa55f52e2",
+      "candidate_hash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "input_hash": "6b3f471b3858f8827c527a50401dbf278022d6c38f74421a3d9ff77729707b45"
+    }
+  ],
+  "revision": 1,
+  "candidateHash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+  "inputHash": "4ba3a053340a849b18eddd46f40f3056339529d1cbf52eda3227bf407e45f7de",
+  "task": {
+    "id": "join",
+    "type": "JOIN",
+    "skill": null,
+    "prompt": "Synchronize independent checks",
+    "dependencies": [
+      "verify",
+      "review"
+    ],
+    "allowedPaths": []
+  },
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

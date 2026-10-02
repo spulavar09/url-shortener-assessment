@@ -1,0 +1,7 @@
+target/
+.maven-repository/
+.local-data/
+.runtime/
+.env
+*.log
+.DS_Store

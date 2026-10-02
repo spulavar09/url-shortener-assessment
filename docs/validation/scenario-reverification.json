@@ -1,0 +1,125 @@
+{
+  "startedAt": "2026-10-02T16:45:47.565610+00:00",
+  "scope": "Independent offline verification of disposable copies; no AI generation or gate decisions",
+  "maven": "<project-root>/.runtime/maven-home/wrapper/dists/apache-maven-3.10.0/dae9a06d/bin/mvn",
+  "results": [
+    {
+      "scenario": "greenfield",
+      "runId": "e0cd39a1-e027-447e-b436-8101fcf2f89f",
+      "revision": 2,
+      "implementationAttemptId": "d56eaff7-e255-4b68-83df-ba6a60d4db40",
+      "source": ".local-data/workflow/e0cd39a1-e027-447e-b436-8101fcf2f89f/candidates/d56eaff7-e255-4b68-83df-ba6a60d4db40",
+      "disposableCopy": ".runtime/final-scenarios/greenfield",
+      "candidateHash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "reportedCandidateHash": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "originalHashAfter": "e49499cf8a55c92947d3a9a154a610bbabc0e5912a198555bcfbb7057152b9be",
+      "originalPreserved": true,
+      "pinnedPomAndAcceptanceTestsPreserved": true,
+      "pinnedFileHashes": {
+        "pom.xml": "cb882cb2294f022d3b199815058f0e0ab261d4b8a7ca1d000bafa8917e3ec153",
+        "src/test/java/demo/LinkBookTest.java": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+      },
+      "exitCode": 0,
+      "testCounts": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failedTests": [],
+      "expectedOutcome": "verification success",
+      "expectedOutcomeObserved": true,
+      "log": "docs/validation/scenario-reverification-greenfield.log"
+    },
+    {
+      "scenario": "brownfield",
+      "runId": "cf5243dd-3640-4d95-aa6d-0a83a509b7a3",
+      "revision": 2,
+      "implementationAttemptId": "ae4d9c81-dec1-494a-aec1-034a8b71a29f",
+      "source": ".local-data/workflow/cf5243dd-3640-4d95-aa6d-0a83a509b7a3/candidates/ae4d9c81-dec1-494a-aec1-034a8b71a29f",
+      "disposableCopy": ".runtime/final-scenarios/brownfield",
+      "candidateHash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "reportedCandidateHash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "originalHashAfter": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+      "originalPreserved": true,
+      "pinnedPomAndAcceptanceTestsPreserved": true,
+      "pinnedFileHashes": {
+        "pom.xml": "2ebe3db702eac47f1213e949b365993121b8138496c27cee4f3299433685af23",
+        "src/test/java/demo/LinkBookTest.java": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+      },
+      "exitCode": 0,
+      "testCounts": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failedTests": [],
+      "expectedOutcome": "verification success",
+      "expectedOutcomeObserved": true,
+      "log": "docs/validation/scenario-reverification-brownfield.log"
+    },
+    {
+      "scenario": "ambiguous",
+      "runId": "fe5d1047-93ba-4e5a-82a0-a91cd4c1c873",
+      "revision": 2,
+      "implementationAttemptId": "70c7d900-e8c8-41da-9f4a-069427f4d217",
+      "source": ".local-data/workflow/fe5d1047-93ba-4e5a-82a0-a91cd4c1c873/candidates/70c7d900-e8c8-41da-9f4a-069427f4d217",
+      "disposableCopy": ".runtime/final-scenarios/ambiguous",
+      "candidateHash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "reportedCandidateHash": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "originalHashAfter": "3b93bd8ec85f362fe11efb848adb131b53eb2671ef3de043f81c690068067b5a",
+      "originalPreserved": true,
+      "pinnedPomAndAcceptanceTestsPreserved": true,
+      "pinnedFileHashes": {
+        "pom.xml": "cb882cb2294f022d3b199815058f0e0ab261d4b8a7ca1d000bafa8917e3ec153",
+        "src/test/java/demo/LinkBookTest.java": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+      },
+      "exitCode": 0,
+      "testCounts": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failedTests": [],
+      "expectedOutcome": "verification success",
+      "expectedOutcomeObserved": true,
+      "log": "docs/validation/scenario-reverification-ambiguous.log"
+    },
+    {
+      "scenario": "brownfield-baseline",
+      "runId": null,
+      "revision": null,
+      "implementationAttemptId": null,
+      "source": "docs/scenarios/fixtures/brownfield",
+      "disposableCopy": ".runtime/final-scenarios/brownfield-baseline",
+      "candidateHash": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "reportedCandidateHash": null,
+      "originalHashAfter": "98107c9c4b15b6ebcc2305cf9a3730bf5cb4724775a3e6970e7d5127f7591ba0",
+      "originalPreserved": true,
+      "pinnedPomAndAcceptanceTestsPreserved": true,
+      "pinnedFileHashes": {
+        "pom.xml": "2ebe3db702eac47f1213e949b365993121b8138496c27cee4f3299433685af23",
+        "src/test/java/demo/LinkBookTest.java": "2e5ddb6549c75d33ac79f6f80a1f2621ebd09d16bc27c211a86d1750cff8d263"
+      },
+      "exitCode": 1,
+      "testCounts": {
+        "tests": 3,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failedTests": [
+        "expirationStartsAtEqualityAndFailedOrHeadRequestsAreNotCounted"
+      ],
+      "expectedOutcome": "expiry-equality assertion failure",
+      "expectedOutcomeObserved": true,
+      "log": "docs/validation/scenario-reverification-brownfield-baseline.log"
+    }
+  ],
+  "allExpectedOutcomesObserved": true,
+  "finishedAt": "2026-10-02T16:46:00.687013+00:00",
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

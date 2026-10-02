@@ -1,0 +1,17 @@
+{
+  "inputHash": "7b166c933ffa797c873f10326135dc66f329d73ca076331890e9a9b6c73f73c9",
+  "invocationId": "cb9c2bd0-2be1-4fb7-a380-3ddfd7f8788d",
+  "monetaryCost": "unavailable",
+  "tokenUsage": {
+    "input_tokens": 140947,
+    "cached_input_tokens": 116352,
+    "output_tokens": 2190
+  },
+  "candidateHash": "ff9be009d7622c691b9569fa826ae954a69a8faf953698dd2bb6c78fcb129935",
+  "execution": "actual",
+  "sandbox": "workspace-write",
+  "result": "{\"summary\": \"Repaired src/main/java/demo/LinkBook.java with the smallest boundary fix: a link is now expired when now is equal to or later than expiresAt, so equality returns no destination and records no total or UTC-daily count. No tests or pom.xml were changed. Ran `mvn -o test`, but Maven stopped before test execution because required plugin dependencies were absent from the local cache; therefore no independent Maven verification is claimed.\", \"questions\": [], \"risks\": [\"Acceptance tests did not execute locally because offline Maven dependencies were unavailable.\", \"Independent verification, candidate review, and final human approval remain mandatory gates.\"], \"tasks\": [{\"id\": \"independent-verification\", \"description\": \"Run the supplied Maven acceptance tests in the approved verifier environment and preserve the result as fresh evidence.\", \"dependencies\": [], \"allowedPaths\": []}, {\"id\": \"candidate-review\", \"description\": \"Review the one-line candidate change and the fresh verification evidence, confirming that all non-expiry behavior remains unchanged.\", \"dependencies\": [\"independent-verification\"], \"allowedPaths\": []}, {\"id\": \"final-human-approval\", \"description\": \"Request the separate mandatory human approval only after successful independent verification and candidate review.\", \"dependencies\": [\"candidate-review\"], \"allowedPaths\": []}]}",
+  "exitCode": 0,
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}

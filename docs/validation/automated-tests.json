@@ -1,0 +1,49 @@
+{
+  "classification": "actual full final application Maven verification including all latest changes",
+  "result": "PASS",
+  "atUtc": "2026-10-02T16:46:33.721972+00:00",
+  "totalTests": 87,
+  "suites": [
+    {
+      "name": "com.example.shortener.ApiIntegrationTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "4.685"
+    },
+    {
+      "name": "com.example.shortener.links.DestinationValidatorTest",
+      "tests": "27",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.066"
+    },
+    {
+      "name": "com.example.shortener.links.LinkIntegrationTest",
+      "tests": "28",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.907"
+    },
+    {
+      "name": "com.example.shortener.workflow.WorkflowControlTest",
+      "tests": "28",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.958"
+    }
+  ],
+  "command": "Maven wrapper 3.10.0 offline verify with Java 21.0.12",
+  "notes": [
+    "URL validation, HTTP error contracts, H2 concurrency, lifecycle, idempotency, retention, repository rollback and workflow safety passed.",
+    "Includes configuration record, Spring MVC exception-handler cleanup, logging/JavaDoc edits, and both ordinary/transient parallel verifier failure regression cases.",
+    "H2 2.4.240 is newer than the Flyway reported verified H2 version 2.3.232; migrations and tests passed.",
+    "Fault-injected controller cases establish tested safety behavior, not model reliability statistics."
+  ],
+  "submissionExportSanitized": true,
+  "exportNote": "Original evidence hashes refer to private originals retained locally; this redacted export has its own checksum in MANIFEST.json."
+}
