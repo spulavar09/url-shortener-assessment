@@ -382,4 +382,12 @@ Expiry remains a service decision after idempotency replay, rather than a `@Futu
 
 ## 17. Approved Spring simplification — October 2, 2026
 
-With a thirty-minute submission window, the human approved replacing workflow configuration boilerplate with a Spring-bound record and delegating standard MVC exception handling to `ResponseEntityExceptionHandler`. Configuration scanning registers the record; `@DefaultValue` preserves defaults and its compact constructor retains numeric clamping and supported reasoning values. Spring now supplies MVC exception dispatch, statuses and headers, while the application retains its error codes, correlation IDs, validation field errors and domain/storage exception responses. No dependency or migration was added. Existing test constructors were adapted and compiled; application tests remain paused.
+With a thirty-minute submission window, the human approved replacing workflow configuration boilerplate with a Spring-bound record and delegating standard MVC exception handling to `ResponseEntityExceptionHandler`. Configuration scanning registers the record; `@DefaultValue` preserves defaults and its compact constructor retains numeric clamping and supported reasoning values. Spring now supplies MVC exception dispatch, statuses and headers, while the application retains its error codes, correlation IDs, validation field errors and domain/storage exception responses. No dependency or migration was added. Final application verification subsequently passed all 87 tests, including these changes.
+
+## 18. Implementation reference
+
+Controllers translate HTTP requests, services enforce business rules, and the three repositories own SQL and row mapping. Services coordinate transactions across repository calls: link creation, analytics initialization, and idempotency reservation commit together. Analytics reads use a repeatable-read snapshot; workflow SQL retains conditional version and fence checks. API error codes are centralized in `common/ErrorCodes.java`.
+
+Log4j2 emits JSON operational logs with correlation IDs. Lifecycle events use INFO, operational failures use WARN/ERROR, and request timing and redirect/polling detail use DEBUG. Enable detail with `--logging.level.com.example.shortener=DEBUG`. Application logs omit destination URLs, request bodies, workflow prompts, and credentials. API controller JavaDoc describes endpoint inputs and lifecycle rules.
+
+Stop the application before backing up the H2 database and its workflow evidence together. Database rows refer to immutable evidence files; an independent database backup may omit those artifacts. See `docs/WORKFLOW.md` for recovery, process reconciliation, and execution limits.

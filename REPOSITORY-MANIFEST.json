@@ -7,11 +7,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "2a0b2de6417213a5129c2d4290356dbac1e4c552f74357fccbc0775bcd7bdbf3"
+      "sha256": "6a6cb2081645979d071a968270470db586c4cc53353e8284ad6d5753eb6dbc96"
     },
     {
       "path": "DESIGN.md",
-      "sha256": "d24102ce382ed45e9976d159466ffd28a55c034f121e3e1ed7bcde8267f714ba"
+      "sha256": "aac735392027bc36f8ac3d251554a6f5e93d01d6818244afa9391465ce354696"
     },
     {
       "path": "SUBMISSION.md",
@@ -203,7 +203,7 @@
     },
     {
       "path": "docs/WORKFLOW.md",
-      "sha256": "c02b37a2caad435c6dda28bfbf693b670374982640b9a72927eb2f52cc6fafd0"
+      "sha256": "f5dd7f52285df51ab81292306f4a3f8806ec162aaebbb9572dce1ee47dfc618b"
     },
     {
       "path": "docs/scenarios/SCENARIOS.md",

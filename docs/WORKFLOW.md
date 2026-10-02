@@ -2,6 +2,12 @@
 
 The control layer persists plans, task dependencies, attempt reservations, decisions, approvals, and event history in H2. Skills provide engineering procedures. Model output is evidence or a proposal; it cannot approve itself, change execution commands, deploy, or merge into the original checkout.
 
+## Runtime prerequisites
+
+Build the application as described in the root README before launching it. Live runs require Java 21, a signed-in Codex CLI, and a Maven executable. The verifier invokes `mvn` by default; install Maven on `PATH` or set `MAVEN_COMMAND` to the executable's absolute path before starting the service. Building with `./mvnw` does not automatically make `mvn` available to child processes.
+
+Verification is offline. The launcher supplies `.maven-repository` when present; prepare additional fixture dependencies in that cache before starting their runs. The default runtime model is configured in `application.yml`; `WORKFLOW_CODEX_MODEL` selects another supported CLI model. Confirm CLI sign-in using `codex login status`.
+
 ## Create and inspect a run
 
 Start the service using the root README. In your local terminal, load the token without printing it:
